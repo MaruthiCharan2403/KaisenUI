@@ -53,59 +53,60 @@ const componentCategories = [
 const sampleComponents = {
   Button: [
     {
-      id: "primary-button",
-      name: "Primary Button",
-      description: "A primary action button with gradient background",
-      code: `<button className="px-4 py-2 bg-gradient-to-r from-rose-500 to-purple-600 text-white rounded-md font-medium">
-  Primary Button
-</button>`,
+      id: "glow-button",
+      name: "Glow Button",
+      description: "A button with a glowing effect",
+      code: `<div className="relative group">
+  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 opacity-0 group-hover:opacity-100 blur-md transition-all duration-500 animate-[pulse_2s_infinite]"></div>
+  <button className="relative px-6 py-3 bg-white dark:bg-gray-900 rounded-lg font-medium text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 group-hover:border-transparent transition-all duration-300 group-hover:text-white group-hover:bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 shadow-lg group-hover:shadow-indigo-500/20">
+    Kaisen Mode
+  </button>
+</div>`,
       preview: () => (
-        <button className="px-4 py-2 bg-gradient-to-r from-rose-500 to-purple-600 text-white rounded-md font-medium">
-          Primary Button
-        </button>
+        <div className="relative group">
+  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 opacity-0 group-hover:opacity-100 blur-md transition-all duration-500 animate-[pulse_2s_infinite]"></div>
+  <button className="relative px-6 py-3 bg-white dark:bg-gray-900 rounded-lg font-medium text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 group-hover:border-transparent transition-all duration-300 group-hover:text-white group-hover:bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 shadow-lg group-hover:shadow-indigo-500/20">
+    Kaisen Mode
+  </button>
+</div>
       ),
     },
     {
-      id: "secondary-button",
-      name: "Secondary Button",
-      description: "A secondary action button with outline style",
-      code: `<button className="px-4 py-2 border border-zinc-600 text-zinc-300 rounded-md font-medium hover:bg-zinc-800 transition-colors">
-  Secondary Button
+      id: "neon-button",
+      name: "Neon Button",
+      description: "A button with a neon effect",
+      code: `<button className="relative px-6 py-3 font-medium text-indigo-600 dark:text-indigo-400 bg-white dark:bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:text-white">
+  <span className="relative z-10">Activate UI</span>
+  <div className="absolute inset-0 border-2 border-indigo-400 dark:border-indigo-500 rounded-lg opacity-70 hover:opacity-100 hover:animate-[spin_3s_linear_infinite]"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 opacity-0 hover:opacity-100 rounded-lg transition-opacity duration-300"></div>
 </button>`,
       preview: () => (
-        <button className="px-4 py-2 border border-zinc-600 text-zinc-300 rounded-md font-medium hover:bg-zinc-800 transition-colors">
-          Secondary Button
-        </button>
+        <button className="relative px-6 py-3 font-medium text-indigo-600 dark:text-indigo-400 bg-white dark:bg-gray-900 rounded-lg overflow-hidden transition-all duration-500 hover:text-white">
+  <span className="relative z-10">Activate UI</span>
+  <div className="absolute inset-0 border-2 border-indigo-400 dark:border-indigo-500 rounded-lg opacity-70 hover:opacity-100 hover:animate-[spin_3s_linear_infinite]"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 opacity-0 hover:opacity-100 rounded-lg transition-opacity duration-300"></div>
+</button>
       ),
     },
     {
-      id: "icon-button",
-      name: "Icon Button",
-      description: "A button with an icon and text",
-      code: `<button className="px-4 py-2 bg-zinc-800 text-zinc-200 rounded-md font-medium flex items-center gap-2 hover:bg-zinc-700 transition-colors">
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-  </svg>
-  Upload
-</button>`,
+      id: "liquid-button",
+      name: "Liquid Button",
+      description: "A button with a liquid effect",
+      code: `<div className="relative group">
+  <button className="px-8 py-4 font-bold text-white bg-gray-900 dark:bg-gray-800 rounded-xl overflow-hidden transition-all duration-700 hover:bg-transparent">
+    <span className="relative z-10">Unlock Kaisen</span>
+    <div className="absolute bottom-0 left-0 right-0 h-0 group-hover:h-full bg-gradient-to-r from-indigo-500 to-purple-600 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)]"></div>
+  </button>
+  <div className="absolute -bottom-1 -left-1 -right-1 -top-1 rounded-xl border-2 border-indigo-500 dark:border-indigo-400 opacity-0 group-hover:opacity-100 group-hover:animate-[ping_1.5s_ease-in-out_infinite] pointer-events-none"></div>
+</div>`,
       preview: () => (
-        <button className="px-4 py-2 bg-zinc-800 text-zinc-200 rounded-md font-medium flex items-center gap-2 hover:bg-zinc-700 transition-colors">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
-            />
-          </svg>
-          Upload
-        </button>
+        <div className="relative group">
+  <button className="px-8 py-4 font-bold text-white bg-gray-900 dark:bg-gray-800 rounded-xl overflow-hidden transition-all duration-700 hover:bg-transparent">
+    <span className="relative z-10">Unlock Kaisen</span>
+    <div className="absolute bottom-0 left-0 right-0 h-0 group-hover:h-full bg-gradient-to-r from-indigo-500 to-purple-600 transition-all duration-500 ease-[cubic-bezier(0.65,0,0.35,1)]"></div>
+  </button>
+  <div className="absolute -bottom-1 -left-1 -right-1 -top-1 rounded-xl border-2 border-indigo-500 dark:border-indigo-400 opacity-0 group-hover:opacity-100 group-hover:animate-[ping_1.5s_ease-in-out_infinite] pointer-events-none"></div>
+</div>
       ),
     },
   ],
