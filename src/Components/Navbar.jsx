@@ -36,11 +36,9 @@ export default function Navbar() {
               Components
             </Link>
             <Link to="#docs" className="text-zinc-300 hover:text-white transition-colors">
-              Docs
+              About Us
             </Link>
-            <Link to="#pricing" className="text-zinc-300 hover:text-white transition-colors">
-              Pricing
-            </Link>
+            
           </div>
           <div className="flex items-center space-x-4">
             <a 

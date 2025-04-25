@@ -44,22 +44,7 @@ export default function Home() {
                 Get Started
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
-              <div className="relative group">
-                <div
-                  className="flex items-center justify-between px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-md cursor-pointer"
-                  onClick={copyToClipboard}
-                >
-                  <code className="text-sm text-zinc-300">npm install @yourlib/ui</code>
-                  <button className="ml-2 text-zinc-400 hover:text-white">
-                    {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                  </button>
-                </div>
-                {copied && (
-                  <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-zinc-800 text-xs rounded">
-                    Copied!
-                  </div>
-                )}
-              </div>
+              
             </div>
           </div>
 
