@@ -93,31 +93,7 @@ const sampleComponents = {
       ),
     },
   ],
-  Card: [
-    {
-      id: "basic-card",
-      name: "Basic Card",
-      description: "A simple card with title and content",
-      code: `        <div className="bg-black bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 border-4 border-yellow-400 transform hover:rotate-1 hover:scale-105 transition-all duration-300 shadow-2xl shadow-yellow-500/20">
-          <div className="text-6xl mb-4 text-yellow-400">🔍</div>
-          <h2 className="text-3xl font-bold mb-4 text-white">LASER-EYE DETECTION</h2>
-          <p className="text-gray-300 text-lg">
-            Our AI-powered scanners at toll plazas examine your tires with precision that would make NASA jealous. 
-            We spot tread wear, pressure issues, and potential blowouts before they happen!
-          </p>
-        </div>`,
-      preview: () => (
-        <div className="bg-black bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 border-4 border-yellow-400 transform hover:rotate-1 hover:scale-105 transition-all duration-300 shadow-2xl shadow-yellow-500/20">
-          <div className="text-6xl mb-4 text-yellow-400">🔍</div>
-          <h2 className="text-3xl font-bold mb-4 text-white">LASER-EYE DETECTION</h2>
-          <p className="text-gray-300 text-lg">
-            Our AI-powered scanners at toll plazas examine your tires with precision that would make NASA jealous.
-            We spot tread wear, pressure issues, and potential blowouts before they happen!
-          </p>
-        </div>
-      ),
-    },
-  ],
+  
   Article: [
     {
       id: "basic-article",
