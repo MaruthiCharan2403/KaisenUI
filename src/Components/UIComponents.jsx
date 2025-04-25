@@ -346,7 +346,7 @@ const sampleComponents = {
     },
   ],
   Banner: [
-    
+
     {
       id: "hero-banner",
       name: "Hero Banner",
@@ -361,17 +361,17 @@ const sampleComponents = {
 </div>`,
       preview: () => (
         <div className="relative p-6 bg-white dark:bg-gray-900 rounded-lg group">
-  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 p-0.5 -z-10">
-    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 rounded-lg animate-[spin_3s_linear_infinite] opacity-0 group-hover:opacity-20 transition-opacity"></div>
-  </div>
-  <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Why Kaisen UI?</h3>
-  <p className="mt-2 text-gray-600 dark:text-gray-300">Experience the perfect blend of customization and performance with our atomic design system.</p>
-  <div className="mt-4 inline-block px-4 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">Explore Components</div>
-</div>
+          <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 p-0.5 -z-10">
+            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 rounded-lg animate-[spin_3s_linear_infinite] opacity-0 group-hover:opacity-20 transition-opacity"></div>
+          </div>
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">Why Kaisen UI?</h3>
+          <p className="mt-2 text-gray-600 dark:text-gray-300">Experience the perfect blend of customization and performance with our atomic design system.</p>
+          <div className="mt-4 inline-block px-4 py-2 text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">Explore Components</div>
+        </div>
       ),
     },
     {
-      id:"Marketing Banner",
+      id: "Marketing Banner",
       name: "Marketing Banner",
       description: "A marketing banner with image and text",
       code: `<div className="relative isolate overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 px-6 py-8 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-600/30">
@@ -416,48 +416,48 @@ const sampleComponents = {
 </div>`,
       preview: () => (
         <div className="relative isolate overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 px-6 py-8 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-600/30">        <div className="absolute -top-16 -right-4 h-32 w-32 rounded-full bg-indigo-400/10 dark:bg-indigo-600/10 blur-xl"></div>
-        <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-purple-400/10 dark:bg-purple-600/10 blur-xl"></div>
-        <div className="relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="max-w-xl">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                Supercharge Your Development
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
-                Kaisen UI v2.0 is here - 40% faster, 30% lighter, and packed with new components. Join 10,000+ developers who ship better UIs faster.
-              </p>
+          <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-purple-400/10 dark:bg-purple-600/10 blur-xl"></div>
+          <div className="relative z-10">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="max-w-xl">
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                  Supercharge Your Development
+                </h2>
+                <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
+                  Kaisen UI v2.0 is here - 40% faster, 30% lighter, and packed with new components. Join 10,000+ developers who ship better UIs faster.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="inline-flex items-center gap-x-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white shadow-sm bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                  <span>Get Started</span>
+                  <span className="h-3 w-3 rounded-full bg-white/20 animate-pulse"></span>
+                </div>
+              </div>
             </div>
-            <div className="flex-shrink-0">
-              <div className="inline-flex items-center gap-x-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white shadow-sm bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                <span>Get Started</span>
-                <span className="h-3 w-3 rounded-full bg-white/20 animate-pulse"></span>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
+                <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">100+</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Components</p>
+              </div>
+              <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
+                <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">10K+</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Developers</p>
+              </div>
+              <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
+                <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">40%</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Faster</p>
+              </div>
+              <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
+                <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0ms</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Runtime</p>
               </div>
             </div>
           </div>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
-              <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">100+</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Components</p>
-            </div>
-            <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
-              <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">10K+</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Developers</p>
-            </div>
-            <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
-              <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">40%</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Faster</p>
-            </div>
-            <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
-              <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">0ms</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Runtime</p>
-            </div>
-          </div>
         </div>
-      </div>
       )
     },
     {
-      id:"pricing-banner",
+      id: "pricing-banner",
       name: "Pricing Banner",
       description: "A pricing banner with image and call to action",
       code: `<div className="relative bg-gradient-to-r from-purple-500 to-purple-400 dark:from-purple-700 dark:to-purple-500 w-full p-6 flex flex-col sm:flex-row items-center justify-between rounded-lg overflow-hidden shadow-lg border border-purple-300/30 dark:border-purple-600/30">      
@@ -481,30 +481,30 @@ const sampleComponents = {
     </div>`,
       preview: () => (
         <div className="relative bg-gradient-to-r from-purple-500 to-purple-400 dark:from-purple-700 dark:to-purple-500 w-full p-6 flex flex-col sm:flex-row items-center justify-between rounded-lg overflow-hidden shadow-lg border border-purple-300/30 dark:border-purple-600/30">
-      <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
-      <div className="absolute -top-8 -left-8 w-40 h-40 bg-purple-300/20 dark:bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
-      <div className="text-left z-10 transform -rotate-1">
-        <h2 className="text-4xl font-black text-white drop-shadow-sm">Up to 50% Off</h2>
-      </div>
-      
-      <div className="text-white text-lg font-medium my-3 sm:my-0 mx-4 z-10 flex items-center">
-        <div className="inline-block mr-2 w-1.5 h-1.5 bg-yellow-300 rounded-full"></div>
-        Plus free shipping! Use code: 
-        <span className="ml-2 font-mono font-bold bg-white/20 backdrop-blur-sm px-3 py-1 rounded border-b-2 border-white/30">KAISEN50</span>
-      </div>
-      
-      <div className="z-10">
-        <button className="relative group bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-300 px-8 py-2.5 rounded-lg font-semibold overflow-hidden">
-          <span className="relative z-10">Shop Now</span>
-          <div className="absolute inset-0 h-full w-0 bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-500 dark:to-pink-500 transition-all duration-300 group-hover:w-full"></div>
-          <div className="absolute inset-0 -translate-x-full transition-transform duration-300 group-hover:translate-x-0 bg-white/20 dark:bg-white/10 blur-xl"></div>
-        </button>
-      </div>
-      
-      
-    </div>
+          <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+          <div className="absolute -top-8 -left-8 w-40 h-40 bg-purple-300/20 dark:bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
+          <div className="text-left z-10 transform -rotate-1">
+            <h2 className="text-4xl font-black text-white drop-shadow-sm">Up to 50% Off</h2>
+          </div>
+
+          <div className="text-white text-lg font-medium my-3 sm:my-0 mx-4 z-10 flex items-center">
+            <div className="inline-block mr-2 w-1.5 h-1.5 bg-yellow-300 rounded-full"></div>
+            Plus free shipping! Use code:
+            <span className="ml-2 font-mono font-bold bg-white/20 backdrop-blur-sm px-3 py-1 rounded border-b-2 border-white/30">KAISEN50</span>
+          </div>
+
+          <div className="z-10">
+            <button className="relative group bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-300 px-8 py-2.5 rounded-lg font-semibold overflow-hidden">
+              <span className="relative z-10">Shop Now</span>
+              <div className="absolute inset-0 h-full w-0 bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-500 dark:to-pink-500 transition-all duration-300 group-hover:w-full"></div>
+              <div className="absolute inset-0 -translate-x-full transition-transform duration-300 group-hover:translate-x-0 bg-white/20 dark:bg-white/10 blur-xl"></div>
+            </button>
+          </div>
+
+
+        </div>
       )
-      
+
     }
   ],
   Blog: [
@@ -530,21 +530,21 @@ const sampleComponents = {
 </div>`,
       preview: () => (
         <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:shadow-xl transition-all duration-300">
-  <div className="h-48 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
-  <div className="p-6">
-    <div className="flex gap-2 mb-4">
-      <span className="px-3 py-1 text-xs font-medium rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">Kaisen UI</span>
-      <span className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">Tutorial</span>
-    </div>
-    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Mastering Component Composition</h3>
-    <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Learn how to combine Kaisen UI components like atomic particles to create stunning interfaces with minimal effort.</p>
-    <div className="flex items-center text-sm text-gray-500 dark:text-gray-500">
-      <span>May 15, 2023</span>
-      <span className="mx-2">•</span>
-      <span>5 min read</span>
-    </div>
-  </div>
-</div>
+          <div className="h-48 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+          <div className="p-6">
+            <div className="flex gap-2 mb-4">
+              <span className="px-3 py-1 text-xs font-medium rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">Kaisen UI</span>
+              <span className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">Tutorial</span>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Mastering Component Composition</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Learn how to combine Kaisen UI components like atomic particles to create stunning interfaces with minimal effort.</p>
+            <div className="flex items-center text-sm text-gray-500 dark:text-gray-500">
+              <span>May 15, 2023</span>
+              <span className="mx-2">•</span>
+              <span>5 min read</span>
+            </div>
+          </div>
+        </div>
       ),
     },
     {
@@ -569,23 +569,62 @@ const sampleComponents = {
 </div>`,
       preview: () => (
         <div className="relative isolate">
-  <div className="absolute inset-0 -z-10 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl transform group-hover:scale-[1.01] transition-transform duration-300"></div>
-  <div className="p-8">
-    <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-6">Why Kaisen UI is the Future of React Development</h2>
-    <div className="flex items-start gap-8">
-      <div className="flex-1">
-        <p className="text-lg leading-8 text-gray-600 dark:text-gray-400 mb-6">Discover how Kaisen UI's zero-runtime approach eliminates bundle bloat while delivering stunning visual results through our atomic design system.</p>
-        <div className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-          Continue Reading
-          <span className="ml-2 w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl transform group-hover:scale-[1.01] transition-transform duration-300"></div>
+          <div className="p-8">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-6">Why Kaisen UI is the Future of React Development</h2>
+            <div className="flex items-start gap-8">
+              <div className="flex-1">
+                <p className="text-lg leading-8 text-gray-600 dark:text-gray-400 mb-6">Discover how Kaisen UI's zero-runtime approach eliminates bundle bloat while delivering stunning visual results through our atomic design system.</p>
+                <div className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                  Continue Reading
+                  <span className="ml-2 w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                </div>
+              </div>
+              <div className="hidden md:block w-32 h-32 rounded-lg bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+            </div>
+          </div>
         </div>
+      ),
+    },
+    {
+      id:"blog-post",
+      name: "Blog Post",
+      description: "A blog post with image and text",
+      code:`<div className="py-6 border-b border-gray-200 dark:border-gray-800 group">
+  <div className="flex gap-6">
+    <div className="flex-shrink-0 w-24 h-24 rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 overflow-hidden"></div>
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Advanced Theming in Kaisen UI</h3>
+      <p className="mt-1 text-gray-600 dark:text-gray-400 line-clamp-2">Deep dive into our theming system that adapts to both light and dark modes while maintaining perfect contrast ratios.</p>
+      <div className="mt-3 flex items-center text-sm text-gray-500 dark:text-gray-500">
+        <span>June 2, 2023</span>
+        <span className="mx-2">•</span>
+        <span>Kaisen UI Team</span>
+        <span className="mx-2">•</span>
+        <span>7 min read</span>
       </div>
-      <div className="hidden md:block w-32 h-32 rounded-lg bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+    </div>
+  </div>
+</div>`,
+preview: () => (
+  <div className="py-6 border-b border-gray-200 dark:border-gray-800 group">
+  <div className="flex gap-6">
+    <div className="flex-shrink-0 w-24 h-24 rounded-xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 overflow-hidden"></div>
+    <div>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Advanced Theming in Kaisen UI</h3>
+      <p className="mt-1 text-gray-600 dark:text-gray-400 line-clamp-2">Deep dive into our theming system that adapts to both light and dark modes while maintaining perfect contrast ratios.</p>
+      <div className="mt-3 flex items-center text-sm text-gray-500 dark:text-gray-500">
+        <span>June 2, 2023</span>
+        <span className="mx-2">•</span>
+        <span>Kaisen UI Team</span>
+        <span className="mx-2">•</span>
+        <span>7 min read</span>
+      </div>
     </div>
   </div>
 </div>
-      ),
-    },
+)
+    }
   ],
 }
 
