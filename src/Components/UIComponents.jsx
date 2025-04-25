@@ -12,7 +12,7 @@ const componentCategories = [
   { name: "Blog" },
   { name: "Breadcrumb" },
   { name: "Button" },
-  { name: "Call to action" },
+  { name: "CTA" },
   { name: "Card" },
   { name: "Carousel" },
   { name: "Contact" },
@@ -684,6 +684,103 @@ preview: () => (
   <span className="text-gray-400 dark:text-gray-500">›</span>  
   <span className="px-2 py-1 font-semibold text-gray-900 dark:text-white">Breadcrumbs</span>  
 </div>  
+      ),
+    },
+  ],
+  CTA: [
+    {
+      id: "quick-cta",
+      name: "Gradient CTA",
+      description: "A simple CTA with a button",
+      code: `<div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-8 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900">
+  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-xl"></div>
+  <div className="relative z-10">
+    <h3 className="mb-2 text-2xl font-bold text-white">Elevate Your UI Experience</h3>
+    <p className="mb-4 text-white/80">Join thousands of developers using Kaisen UI to build stunning interfaces.</p>
+    <button className="rounded-lg bg-white px-6 py-2 font-medium text-indigo-600 shadow-lg transition-all hover:bg-opacity-90 dark:shadow-indigo-900/20">Get Started</button>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-8 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900">
+  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-xl"></div>
+  <div className="relative z-10">
+    <h3 className="mb-2 text-2xl font-bold text-white">Elevate Your UI Experience</h3>
+    <p className="mb-4 text-white/80">Join thousands of developers using Kaisen UI to build stunning interfaces.</p>
+    <button className="rounded-lg bg-white px-6 py-2 font-medium text-indigo-600 shadow-lg transition-all hover:bg-opacity-90 dark:shadow-indigo-900/20">Get Started</button>
+  </div>
+</div>
+      ),
+    },
+    {
+      id: "border-cta",
+      name: "Border CTA",
+      description: "A CTA with border",
+      code: `<div className="relative bg-gray-50 dark:bg-gray-900/50 rounded-xl p-8 border border-gray-200 dark:border-gray-800 overflow-hidden">
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#333_1px,transparent_1px),linear-gradient(to_bottom,#333_1px,transparent_1px)] bg-[size:40px_40px] opacity-5 hover:opacity-10 transition-opacity duration-500"></div>
+  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Join the UI Revolution</h3>
+  <p className="text-gray-600 dark:text-gray-400 mb-6">10,000+ developers trust Kaisen for production-grade interfaces</p>
+  <button className="px-6 py-2.5 font-medium bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg border border-gray-300 dark:border-gray-700 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 hover:border-indigo-500 dark:hover:border-indigo-400 relative overflow-hidden">
+    <span className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 -skew-x-12"></span>
+    <span className="relative">Get Started</span>
+  </button>
+</div>`,
+      preview: () => (
+        <div className="relative p-0.5 rounded-xl bg-gradient-to-br from-indigo-400 via-purple-500 to-pink-500 dark:from-indigo-500 dark:via-purple-600 dark:to-pink-600 animate-[gradient_8s_ease_infinite] bg-[length:400%_400%]">
+  <div className="bg-white dark:bg-gray-900 rounded-xl p-8">
+    <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">Code at Light Speed</h3>
+    <p className="text-gray-600 dark:text-gray-300 mb-6">Kaisen UI components compile 40% faster than alternatives</p>
+    <button className="w-full px-6 py-3.5 font-bold text-white bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 rounded-lg hover:shadow-lg hover:shadow-indigo-500/30 dark:hover:shadow-indigo-600/20 transition-all duration-300 transform hover:-translate-y-1">
+      Download Now
+    </button>
+  </div>
+</div>
+      ),
+    },
+    {
+      id: "input-cta",
+      name: "Input CTA",
+      description: "A CTA with input field and button",
+      code: `<div className="relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-700 dark:bg-slate-800">
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-700 hover:opacity-10 dark:via-slate-700"></div>
+  <div className="mb-4 flex justify-between">
+    <div className="w-2/3">
+      <h3 className="mb-2 text-lg font-bold text-slate-800 dark:text-white">Join Kaisen UI Community</h3>
+      <p className="text-sm text-slate-600 dark:text-slate-300">Access premium components and early updates.</p>
+    </div>
+    <div className="flex items-start justify-end">
+      <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400">Limited Time</span>
+    </div>
+  </div>
+  <div className="flex items-center gap-2">
+    <input 
+      type="email" 
+      placeholder="Enter your email" 
+      className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-sm text-slate-800 placeholder-slate-400 focus:border-blue-500 focus:outline-none dark:border-slate-600 dark:bg-slate-700 dark:text-white dark:placeholder-slate-500" 
+    />
+    <button className="rounded-lg bg-slate-800 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600">Subscribe</button>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-slate-700 dark:bg-slate-800">
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-700 hover:opacity-10 dark:via-slate-700"></div>
+  <div className="mb-4 flex justify-between">
+    <div className="w-2/3">
+      <h3 className="mb-2 text-lg font-bold text-slate-800 dark:text-white">Join Kaisen UI Community</h3>
+      <p className="text-sm text-slate-600 dark:text-slate-300">Access premium components and early updates.</p>
+    </div>
+    <div className="flex items-start justify-end">
+      <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400">Limited Time</span>
+    </div>
+  </div>
+  <div className="flex items-center gap-2">
+    <input 
+      type="email" 
+      placeholder="Enter your email" 
+      className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-sm text-slate-800 placeholder-slate-400 focus:border-blue-500 focus:outline-none dark:border-slate-600 dark:bg-slate-700 dark:text-white dark:placeholder-slate-500" 
+    />
+    <button className="rounded-lg bg-slate-800 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-slate-700 dark:bg-slate-700 dark:hover:bg-slate-600">Subscribe</button>
+  </div>
+</div>
       ),
     },
   ],
