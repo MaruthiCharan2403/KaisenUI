@@ -14,7 +14,6 @@ const componentCategories = [
   { name: "Button" },
   { name: "CTA" },
   { name: "Card" },
-  { name: "Carousel" },
   { name: "Contact" },
   { name: "Error" },
   { name: "Faq" },
@@ -1450,6 +1449,141 @@ preview: () => (
 </div>
       ),}
   ],
+  Contact: [
+    {
+      id: "contact-card",
+      name: "Contact Card",
+      description: "A simple contact card with a gradient background",
+      code: `<div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl p-8 border border-gray-100">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.05)_0%,transparent_70%)]"></div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-1">Let's Build <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Something Amazing</span></h2>
+  <p className="text-gray-600 mb-8">Kaisen UI powers 10,000+ projects. Yours could be next.</p>
+  
+  <div className="space-y-6">
+    <div className="relative">
+      <input type="text" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="Your Name" />
+      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400 w-0 group-hover:w-full transition-all duration-500"></div>
+    </div>
+    
+    <div className="relative">
+      <input type="email" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="Email" />
+      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 w-0 group-hover:w-full transition-all duration-500"></div>
+    </div>
+    
+    <div className="relative">
+      <textarea className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all min-h-[120px]" placeholder="Tell us about your project"></textarea>
+      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-pink-400 to-rose-400 w-0 group-hover:w-full transition-all duration-500"></div>
+    </div>
+    
+    <button className="w-full py-3.5 px-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-indigo-300 transition-all hover:-translate-y-0.5">
+      Send Message
+      <span className="ml-2 inline-block h-2 w-2 rounded-full bg-white/80 animate-pulse"></span>
+    </button>
+  </div>
+  
+  <div className="absolute top-4 right-4 h-8 w-8 rounded-full bg-indigo-100 animate-[ping_2s_infinite]"></div>
+</div>`,
+      preview: () => (
+        <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl p-8 border border-gray-100">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.05)_0%,transparent_70%)]"></div>
+  <h2 className="text-3xl font-bold text-gray-900 mb-1">Let's Build <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Something Amazing</span></h2>
+  <p className="text-gray-600 mb-8">Kaisen UI powers 10,000+ projects. Yours could be next.</p>
+  
+  <div className="space-y-6">
+    <div className="relative">
+      <input type="text" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="Your Name" />
+      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-indigo-400 to-purple-400 w-0 group-hover:w-full transition-all duration-500"></div>
+    </div>
+    
+    <div className="relative">
+      <input type="email" className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all" placeholder="Email" />
+      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 w-0 group-hover:w-full transition-all duration-500"></div>
+    </div>
+    
+    <div className="relative">
+      <textarea className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 transition-all min-h-[120px]" placeholder="Tell us about your project"></textarea>
+      <div className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-pink-400 to-rose-400 w-0 group-hover:w-full transition-all duration-500"></div>
+    </div>
+    
+    <button className="w-full py-3.5 px-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium rounded-lg hover:shadow-lg hover:shadow-indigo-300 transition-all hover:-translate-y-0.5">
+      Send Message
+      <span className="ml-2 inline-block h-2 w-2 rounded-full bg-white/80 animate-pulse"></span>
+    </button>
+  </div>
+  
+  <div className="absolute top-4 right-4 h-8 w-8 rounded-full bg-indigo-100 animate-[ping_2s_infinite]"></div>
+</div>
+      ),
+    },
+    {
+      id: "glow-card",
+      name: "Glow Card",
+      description: "A simple card with a glowing effect",
+      code: `<div className="relative isolate overflow-hidden rounded-2xl bg-white dark:bg-gray-900 p-6 border border-gray-200 dark:border-gray-800 hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors duration-300">
+  <div className="absolute -inset-2 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+    <div className="absolute inset-0 bg-gradient-to-r from-indigo-400/20 to-purple-500/20 dark:from-indigo-600/20 dark:to-purple-600/20 rounded-xl animate-[pulse_3s_infinite]"></div>
+  </div>
+  <div className="h-10 w-10 rounded-lg mb-4 bg-gradient-to-br from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700"></div>
+  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Performance Engine</h3>
+  <p className="text-gray-600 dark:text-gray-400 mb-6">Kaisen UI components render 40% faster than traditional React libraries</p>
+  <div className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+    Explore
+    <span className="ml-2 h-2 w-2 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-pulse"></span>
+  </div>
+</div> `,
+      preview: () => (
+        <div className="relative isolate overflow-hidden rounded-2xl bg-white dark:bg-gray-900 p-6 border border-gray-200 dark:border-gray-800 hover:border-indigo-300 dark:hover:border-indigo-600 transition-colors duration-300">
+  <div className="absolute -inset-2 -z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+    <div className="absolute inset-0 bg-gradient-to-r from-indigo-400/20 to-purple-500/20 dark:from-indigo-600/20 dark:to-purple-600/20 rounded-xl animate-[pulse_3s_infinite]"></div>
+  </div>
+  <div className="h-10 w-10 rounded-lg mb-4 bg-gradient-to-br from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700"></div>
+  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Performance Engine</h3>
+  <p className="text-gray-600 dark:text-gray-400 mb-6">Kaisen UI components render 40% faster than traditional React libraries</p>
+  <div className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+    Explore
+    <span className="ml-2 h-2 w-2 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-pulse"></span>
+  </div>
+</div>
+      ),
+    },
+    {
+      id:"release-card",
+      name: "Release Card",
+      description: "A card showcasing the latest release with a gradient background",
+      code:`<div className="group relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-600 dark:via-purple-600 dark:to-pink-600"></div>
+  <div className="pl-8 pr-6 py-6">
+    <div className="flex items-center gap-2 mb-4">
+      <div className="h-3 w-3 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-[pulse_2s_infinite]"></div>
+      <span className="text-xs font-semibold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">NEW RELEASE</span>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Kaisen v3.0</h3>
+    <p className="text-gray-600 dark:text-gray-400 mb-6">The most advanced version of our UI system yet - now with dark mode auto-detection</p>
+    <div className="inline-flex items-center px-5 py-2.5 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group-hover:border-indigo-300 dark:group-hover:border-indigo-600">
+      Learn More
+      <span className="ml-2 block h-3 w-3 rounded-sm bg-indigo-500 dark:bg-indigo-400 group-hover:animate-[spin_1s_linear_infinite] transition-transform"></span>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+<div className="group relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-600 dark:via-purple-600 dark:to-pink-600"></div>
+  <div className="pl-8 pr-6 py-6">
+    <div className="flex items-center gap-2 mb-4">
+      <div className="h-3 w-3 rounded-full bg-indigo-500 dark:bg-indigo-400 animate-[pulse_2s_infinite]"></div>
+      <span className="text-xs font-semibold tracking-wider text-indigo-600 dark:text-indigo-400 uppercase">NEW RELEASE</span>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Kaisen v3.0</h3>
+    <p className="text-gray-600 dark:text-gray-400 mb-6">The most advanced version of our UI system yet - now with dark mode auto-detection</p>
+    <div className="inline-flex items-center px-5 py-2.5 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group-hover:border-indigo-300 dark:group-hover:border-indigo-600">
+      Learn More
+      <span className="ml-2 block h-3 w-3 rounded-sm bg-indigo-500 dark:bg-indigo-400 group-hover:animate-[spin_1s_linear_infinite] transition-transform"></span>
+    </div>
+  </div>
+</div>
+      ),}
+  ],
+  
 }
 
 export default function ComponentsPage() {
