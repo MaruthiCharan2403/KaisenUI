@@ -45,7 +45,6 @@ const componentCategories = [
   { name: "Team" },
   { name: "Testimonial" },
   { name: "Timeline" },
-  { name: "Toggle" },
   { name: "Weather" },
 ]
 
@@ -686,6 +685,158 @@ preview: () => (
 </div>  
       ),
     },
+  ],
+  Timeline: [
+    {
+      id: "vertical-timeline",
+
+      name: "Vertical Timeline",
+      description: "A vertical timeline with events",
+      code: `<div className="space-y-6">
+  <div className="flex gap-4">
+    <div className="flex flex-col items-center">
+      <div className="w-4 h-4 bg-amber-400 dark:bg-amber-600 rounded-full"></div>
+      <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
+    </div>
+    <div>
+      <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.0</p>
+      <p className="font-medium dark:text-white">Initial Release</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Just the beginning of something great</p>
+    </div>
+  </div>
+  <div className="flex gap-4">
+    <div className="flex flex-col items-center">
+      <div className="w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full"></div>
+      <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
+    </div>
+    <div>
+      <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.5</p>
+      <p className="font-medium dark:text-white">Components Added</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More building blocks for your projects</p>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="space-y-6">
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center">
+              <div className="w-4 h-4 bg-amber-400 dark:bg-amber-600 rounded-full"></div>
+              <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
+            </div>
+            <div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.0</p>
+              <p className="font-medium dark:text-white">Initial Release</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Just the beginning of something great</p>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center">
+              <div className="w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full"></div>
+              <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
+            </div>
+            <div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.5</p>
+              <p className="font-medium dark:text-white">Components Added</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More building blocks for your projects</p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "horizontal-timeline",
+      name: "Horizontal Timeline",
+      description: "A horizontal timeline with events",
+      code: `<div className="relative">
+  <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-200 dark:bg-gray-700 transform -translate-y-1/2"></div>
+  <div className="flex justify-between relative">
+    <div className="flex flex-col items-center">
+      <div className="w-6 h-6 bg-amber-400 dark:bg-amber-600 rounded-full mb-2"></div>
+      <p className="text-xs font-medium dark:text-white">Start</p>
+      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Kaisen UI</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <div className="w-6 h-6 bg-gray-300 dark:bg-gray-500 rounded-full mb-2"></div>
+      <p className="text-xs font-medium dark:text-white">Progress</p>
+    </div>
+    <div className="flex flex-col items-center">
+      <div className="w-6 h-6 border-2 border-gray-300 dark:border-gray-500 rounded-full mb-2"></div>
+      <p className="text-xs font-medium dark:text-white">Future</p>
+    </div>
+  </div>
+</div>`,
+preview: () => (
+  <div className="relative">
+    <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-200 dark:bg-gray-700 transform -translate-y-1/2"></div>
+    <div className="flex justify-between relative px-4">
+      <div className="flex flex-col items-center w-20">
+        <div className="w-6 h-6 bg-amber-400 dark:bg-amber-600 rounded-full mb-2"></div>
+        <p className="text-xs font-medium dark:text-white text-center">Start</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">Kaisen UI</p>
+      </div>
+      <div className="flex flex-col items-center w-20">
+        <div className="w-6 h-6 bg-gray-300 dark:bg-gray-500 rounded-full mb-2"></div>
+        <p className="text-xs font-medium dark:text-white text-center">Progress</p>
+      </div>
+      <div className="flex flex-col items-center w-20">
+        <div className="w-6 h-6 border-2 border-gray-300 dark:border-gray-500 rounded-full mb-2"></div>
+        <p className="text-xs font-medium dark:text-white text-center">Future</p>
+      </div>
+    </div>
+  </div>
+)
+    },
+    {
+      id: "timeline-card",
+      name: "Timeline Card",
+      description: "A timeline card with a gradient background",
+      code: `<div className="space-y-4">
+  <div className="relative pl-8">
+    <div className="absolute left-0 top-0 w-4 h-4 bg-gray-800 dark:bg-gray-200 rounded-full mt-1"></div>
+    <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
+      <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+        <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
+        <p className="font-medium dark:text-white">Milestone Reached</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">100+ components added</p>
+      </div>
+    </div>
+  </div>
+  <div className="relative pl-8">
+    <div className="absolute left-0 top-0 w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full mt-1"></div>
+    <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
+      <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+        <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
+        <p className="font-medium dark:text-white">What's Next</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More innovative components coming</p>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="space-y-4">
+          <div className="relative pl-8">
+            <div className="absolute left-0 top-0 w-4 h-4 bg-gray-800 dark:bg-gray-200 rounded-full mt-1"></div>
+            <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
+                <p className="font-medium dark:text-white">Milestone Reached</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">100+ components added</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative pl-8">
+            <div className="absolute left-0 top-0 w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full mt-1"></div>
+            <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
+                <p className="font-medium dark:text-white">What's Next</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More innovative components coming</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    }
   ],
   Weather: [
     {
