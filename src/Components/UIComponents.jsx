@@ -783,6 +783,211 @@ preview: () => (
       ),
     },
   ],
+  Tabs : [
+    {
+      id: "minimal-underline-tabs",
+      name: "Minimal Underline Tabs",
+      description: "A simple tab component with underline effect",
+      code: `<div className="border-b border-gray-200 dark:border-gray-700">
+  <div className="flex space-x-8">
+    <button className="pb-3 px-1 border-b-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+      Kaisen UI
+    </button>
+    <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Components
+    </button>
+    <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Docs
+    </button>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="border-b border-gray-200 dark:border-gray-700">
+          <div className="flex space-x-8">
+            <button className="pb-3 px-1 border-b-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+              Kaisen UI
+            </button>
+            <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Components
+            </button>
+            <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Docs
+            </button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "contained-pill-tabs",
+      name: "Contained Pill Tabs",
+      description: "A tab component with pill shape",
+      code: `<div className="bg-gray-100 dark:bg-gray-800 rounded-full p-1 inline-flex">
+  <button className="px-4 py-2 text-sm font-medium rounded-full bg-white dark:bg-gray-900 shadow-sm text-gray-900 dark:text-white">
+    Overview
+  </button>
+  <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+    Kaisen UI
+  </button>
+  <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+    Features
+  </button>
+</div>`,
+      preview: () => (
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-full p-1 inline-flex">
+          <button className="px-4 py-2 text-sm font-medium rounded-full bg-white dark:bg-gray-900 shadow-sm text-gray-900 dark:text-white">
+            Overview
+          </button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+            Kaisen UI
+          </button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+            Features
+          </button>
+        </div>
+      ),
+    },
+    {
+      id: "vertical-border-tabs",
+      name: "Vertical Border Tabs",
+      description: "A vertical tab component with border",
+      code: `<div className="flex">
+  <div className="flex flex-col border-r border-gray-200 dark:border-gray-700 pr-4">
+    <button className="py-2 px-4 text-left border-l-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+      Introduction
+    </button>
+    <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Kaisen UI
+    </button>
+    <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Installation
+    </button>
+  </div>
+  <div className="flex-1 pl-4">
+    <p className="text-sm text-gray-600 dark:text-gray-300">Select a tab to view content</p>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="flex">
+          <div className="flex flex-col border-r border-gray-200 dark:border-gray-700 pr-4">
+            <button className="py-2 px-4 text-left border-l-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+              Introduction
+            </button>
+            <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Kaisen UI
+            </button>
+            <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Installation
+            </button>
+          </div>
+          <div className="flex-1 pl-4">
+            <p className="text-sm text-gray-600 dark:text-gray-300">Select a tab to view content</p>
+          </div>
+        </div>
+      ),
+
+    }
+  ],
+  Team: [
+    {
+      id: "team-member",
+      name: "Team Member",
+      description: "A simple Team member card",
+      code: `<div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 text-center w-64">
+  <div className="h-24 w-24 bg-gradient-to-br from-gray-300 to-gray-400 dark:from-gray-600 dark:to-gray-800 rounded-full mx-auto mb-4"></div>
+  <h3 className="text-lg font-medium dark:text-white">Taylor Morgan</h3>
+  <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Lead Designer</p>
+  <p className="text-xs text-gray-600 dark:text-gray-300">Crafted Kaisen UI's visual identity</p>
+</div>`,
+      preview: () => (
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 text-center w-64">
+          <div className="h-24 w-24 bg-gradient-to-br from-gray-300 to-gray-400 dark:from-gray-600 dark:to-gray-800 rounded-full mx-auto mb-4"></div>
+          <h3 className="text-lg font-medium dark:text-white">Taylor Morgan</h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Lead Designer</p>
+          <p className="text-xs text-gray-600 dark:text-gray-300">Crafted Kaisen UI's visual identity</p>
+        </div>
+      ),
+    },
+    {
+      id: "team-grid",
+      name: "Team Grid",
+      description: "A grid of team members",
+      code: `<div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+  <div className="flex flex-col items-center p-4">
+    <div className="h-16 w-16 bg-gray-300 dark:bg-gray-700 rounded-full mb-3"></div>
+    <h4 className="text-sm font-medium dark:text-white">Jordan Lee</h4>
+    <p className="text-xs text-gray-500 dark:text-gray-400">Frontend</p>
+  </div>
+  <div className="flex flex-col items-center p-4">
+    <div className="h-16 w-16 bg-gray-300 dark:bg-gray-700 rounded-full mb-3"></div>
+    <h4 className="text-sm font-medium dark:text-white">Casey Smith</h4>
+    <p className="text-xs text-gray-500 dark:text-gray-400">Backend</p>
+  </div>
+  <div className="flex flex-col items-center p-4">
+    <div className="h-16 w-16 bg-amber-400 dark:bg-amber-600 rounded-full mb-3"></div>
+    <h4 className="text-sm font-medium dark:text-white">Riley Jones</h4>
+    <p className="text-xs text-gray-500 dark:text-gray-400">Founder</p>
+  </div>
+  <div className="flex flex-col items-center p-4">
+    <div className="h-16 w-16 bg-gray-300 dark:bg-gray-700 rounded-full mb-3"></div>
+    <h4 className="text-sm font-medium dark:text-white">Morgan Taylor</h4>
+    <p className="text-xs text-gray-500 dark:text-gray-400">UX</p>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex flex-col items-center p-4">
+            <div className="h-16 w-16 bg-gray-300 dark:bg-gray-700 rounded-full mb-3"></div>
+            <h4 className="text-sm font-medium dark:text-white">Jordan Lee</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Frontend</p>
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <div className="h-16 w-16 bg-gray-300 dark:bg-gray-700 rounded-full mb-3"></div>
+            <h4 className="text-sm font-medium dark:text-white">Casey Smith</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Backend</p>
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <div className="h-16 w-16 bg-amber-400 dark:bg-amber-600 rounded-full mb-3"></div>
+            <h4 className="text-sm font-medium dark:text-white">Riley Jones</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Founder</p>
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <div className="h-16 w-16 bg-gray-300 dark:bg-gray-700 rounded-full mb-3"></div>
+            <h4 className="text-sm font-medium dark:text-white">Morgan Taylor</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">UX</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "team-profile-highlight",
+      name: "Team Profile Highlight",
+      description: "A team profile highlight with gradient",
+      code: `<div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+  <div className="h-32 bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-900"></div>
+  <div className="px-6 pb-6 -mt-12">
+    <div className="h-24 w-24 bg-gradient-to-br from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700 rounded-full border-4 border-white dark:border-gray-800 mx-auto"></div>
+    <div className="text-center mt-4">
+      <h3 className="text-xl font-medium dark:text-white">Riley Jones</h3>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Creator of Kaisen UI</p>
+      <p className="text-sm text-gray-600 dark:text-gray-300">Building tools that make development faster and more enjoyable</p>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+          <div className="h-32 bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-900"></div>
+          <div className="px-6 pb-6 -mt-12">
+            <div className="h-24 w-24 bg-gradient-to-br from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700 rounded-full border-4 border-white dark:border-gray-800 mx-auto"></div>
+            <div className="text-center mt-4">
+              <h3 className="text-xl font-medium dark:text-white">Riley Jones</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Creator of Kaisen UI</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Building tools that make development faster and more enjoyable</p>
+            </div>
+          </div>
+        </div>
+      ),
+    }
+  ],
   Testimonial: [
     {
       id: "basic-testimonial",
