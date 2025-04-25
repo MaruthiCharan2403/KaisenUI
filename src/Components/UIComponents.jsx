@@ -18,7 +18,7 @@ const componentCategories = [
   { name: "Faq" },
   { name: "Gallery" },
   { name: "Hero" },
-  { name: "Loading" },
+  { name: "Loaders" },
   { name: "Pagination" },
   { name: "Pricing" },
   { name: "Profile" },
@@ -2646,6 +2646,1154 @@ preview: () => (
 </div>
       ),
     }
+  ],
+  Loaders: [
+    {
+      id: "concentric-circles",
+      name: "Concentric Circles",
+      description: "A loader with concentric circles",
+      code: `<div className="relative w-40 h-40 flex items-center justify-center">
+  <div className="absolute inset-0 rounded-full border-[6px] border-transparent border-t-indigo-500 border-r-purple-500 border-b-pink-500 border-l-cyan-500 animate-[spin_1.5s_linear_infinite]"></div>
+  <div className="absolute w-24 h-24 rounded-full border-[6px] border-transparent border-t-purple-500 border-r-pink-500 border-b-cyan-500 border-l-indigo-500 animate-[spin_1.8s_linear_infinite_reverse]"></div>
+  <div className="absolute w-8 h-8 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 animate-[pulse_2s_ease-in-out_infinite]"></div>
+</div>`,
+      preview: () => (
+        <div className="relative w-40 h-40 flex items-center justify-center">
+  <div className="absolute inset-0 rounded-full border-[6px] border-transparent border-t-indigo-500 border-r-purple-500 border-b-pink-500 border-l-cyan-500 animate-[spin_1.5s_linear_infinite]"></div>
+  <div className="absolute w-24 h-24 rounded-full border-[6px] border-transparent border-t-purple-500 border-r-pink-500 border-b-cyan-500 border-l-indigo-500 animate-[spin_1.8s_linear_infinite_reverse]"></div>
+  <div className="absolute w-8 h-8 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 animate-[pulse_2s_ease-in-out_infinite]"></div>
+</div>
+      ),
+    },
+    {
+      id: "pulse-rings",
+      name: "Pulse Rings",
+      description: "A loader with pulse rings",
+      code: `<div className="relative w-20 h-20">
+  <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-indigo-500 animate-[spin_1.5s_linear_infinite]"></div>
+  <div className="absolute inset-2 rounded-full border-4 border-transparent border-t-purple-500 animate-[spin_1.8s_linear_infinite_reverse]"></div>
+  <div className="absolute inset-4 rounded-full border-4 border-transparent border-t-pink-500 animate-[spin_2.1s_linear_infinite]"></div>
+</div>`,
+      preview: () => (
+        <div className="relative w-20 h-20">
+  <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-indigo-500 animate-[spin_1.5s_linear_infinite]"></div>
+  <div className="absolute inset-2 rounded-full border-4 border-transparent border-t-purple-500 animate-[spin_1.8s_linear_infinite_reverse]"></div>
+  <div className="absolute inset-4 rounded-full border-4 border-transparent border-t-pink-500 animate-[spin_2.1s_linear_infinite]"></div>
+</div>
+      ),
+    },
+    {
+      id: "liquid-bounce",
+      name: "Liquid Bounce",
+      description: "A loader with a liquid bounce effect",
+      code: `<div className="flex space-x-1 h-8 items-end">
+  <div className="w-3 h-3 rounded-full bg-indigo-500 animate-[bounce_1s_infinite_0.1s]"></div>
+  <div className="w-3 h-6 rounded-full bg-purple-500 animate-[bounce_1s_infinite_0.2s]"></div>
+  <div className="w-3 h-4 rounded-full bg-pink-500 animate-[bounce_1s_infinite_0.3s]"></div>
+  <div className="w-3 h-5 rounded-full bg-cyan-500 animate-[bounce_1s_infinite_0.4s]"></div>
+  <div className="w-3 h-3 rounded-full bg-amber-500 animate-[bounce_1s_infinite_0.5s]"></div>
+</div>`,
+      preview: () => (
+        <div className="flex space-x-1 h-8 items-end">
+  <div className="w-3 h-3 rounded-full bg-indigo-500 animate-[bounce_1s_infinite_0.1s]"></div>
+  <div className="w-3 h-6 rounded-full bg-purple-500 animate-[bounce_1s_infinite_0.2s]"></div>
+  <div className="w-3 h-4 rounded-full bg-pink-500 animate-[bounce_1s_infinite_0.3s]"></div>
+  <div className="w-3 h-5 rounded-full bg-cyan-500 animate-[bounce_1s_infinite_0.4s]"></div>
+  <div className="w-3 h-3 rounded-full bg-amber-500 animate-[bounce_1s_infinite_0.5s]"></div>
+</div>
+      ),
+    },
+    
+  ],
+  Pagination: [
+    {
+      id: "color-wave",
+      name: "Color Wave",
+      description: "A loader with a color wave effect",
+      code: `div className="flex items-center justify-center space-x-1 gap-2">
+  <div className="px-4 py-2 rounded-lg bg-indigo-500/10 dark:bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 font-medium border border-indigo-400/30 dark:border-indigo-600/30 hover:bg-indigo-500/20 dark:hover:bg-indigo-600/20 transition-all">
+    Prev
+  </div>
+  <div className="flex items-center space-x-1 gap-2">
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500/20 to-purple-500/20 dark:from-indigo-600/20 dark:to-purple-600/20 flex items-center justify-center text-indigo-600 dark:text-indigo-400 font-medium hover:bg-gradient-to-br from-indigo-500/30 to-purple-500/30 dark:hover:from-indigo-600/30 dark:hover:to-purple-600/30 transition-all">
+      1
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500/20 to-rose-500/20 dark:from-pink-600/20 dark:to-rose-600/20 flex items-center justify-center text-pink-600 dark:text-pink-400 font-medium hover:bg-gradient-to-br from-pink-500/30 to-rose-500/30 dark:hover:from-pink-600/30 dark:hover:to-rose-600/30 transition-all">
+      2
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-500/20 dark:from-cyan-600/20 dark:to-blue-600/20 flex items-center justify-center text-cyan-600 dark:text-cyan-400 font-medium hover:bg-gradient-to-br from-cyan-500/30 to-blue-500/30 dark:hover:from-cyan-600/30 dark:hover:to-blue-600/30 transition-all">
+      3
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 dark:from-indigo-600 dark:to-purple-600 flex items-center justify-center text-white font-bold shadow-lg shadow-indigo-500/20 dark:shadow-indigo-600/30">
+      4
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500/20 to-orange-500/20 dark:from-amber-600/20 dark:to-orange-600/20 flex items-center justify-center text-amber-600 dark:text-amber-400 font-medium hover:bg-gradient-to-br from-amber-500/30 to-orange-500/30 dark:hover:from-amber-600/30 dark:hover:to-orange-600/30 transition-all">
+      5
+    </div>
+  </div>
+  <div className="px-4 py-2 rounded-lg bg-indigo-500/10 dark:bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 font-medium border border-indigo-400/30 dark:border-indigo-600/30 hover:bg-indigo-500/20 dark:hover:bg-indigo-600/20 transition-all">
+    Next
+  </div>
+</div>`,
+      preview: () => (
+        <div className="flex items-center justify-center space-x-1 gap-2">
+  <div className="px-4 py-2 rounded-lg bg-indigo-500/10 dark:bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 font-medium border border-indigo-400/30 dark:border-indigo-600/30 hover:bg-indigo-500/20 dark:hover:bg-indigo-600/20 transition-all">
+    Prev
+  </div>
+  <div className="flex items-center space-x-1 gap-2">
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500/20 to-purple-500/20 dark:from-indigo-600/20 dark:to-purple-600/20 flex items-center justify-center text-indigo-600 dark:text-indigo-400 font-medium hover:bg-gradient-to-br from-indigo-500/30 to-purple-500/30 dark:hover:from-indigo-600/30 dark:hover:to-purple-600/30 transition-all">
+      1
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-pink-500/20 to-rose-500/20 dark:from-pink-600/20 dark:to-rose-600/20 flex items-center justify-center text-pink-600 dark:text-pink-400 font-medium hover:bg-gradient-to-br from-pink-500/30 to-rose-500/30 dark:hover:from-pink-600/30 dark:hover:to-rose-600/30 transition-all">
+      2
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-500/20 dark:from-cyan-600/20 dark:to-blue-600/20 flex items-center justify-center text-cyan-600 dark:text-cyan-400 font-medium hover:bg-gradient-to-br from-cyan-500/30 to-blue-500/30 dark:hover:from-cyan-600/30 dark:hover:to-blue-600/30 transition-all">
+      3
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 dark:from-indigo-600 dark:to-purple-600 flex items-center justify-center text-white font-bold shadow-lg shadow-indigo-500/20 dark:shadow-indigo-600/30">
+      4
+    </div>
+    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500/20 to-orange-500/20 dark:from-amber-600/20 dark:to-orange-600/20 flex items-center justify-center text-amber-600 dark:text-amber-400 font-medium hover:bg-gradient-to-br from-amber-500/30 to-orange-500/30 dark:hover:from-amber-600/30 dark:hover:to-orange-600/30 transition-all">
+      5
+    </div>
+  </div>
+  <div className="px-4 py-2 rounded-lg bg-indigo-500/10 dark:bg-indigo-600/10 text-indigo-600 dark:text-indigo-400 font-medium border border-indigo-400/30 dark:border-indigo-600/30 hover:bg-indigo-500/20 dark:hover:bg-indigo-600/20 transition-all">
+    Next
+  </div>
+</div>
+      ),
+    },
+    
+    
+  ],
+  Pricing: [
+    {
+      id: "Basic-Pricing",
+      name: "Basic Pricing",
+      description: "A simple pricing card",
+      code: `<div className="flex flex-col md:flex-row gap-6 p-8 max-w-5xl mx-auto">
+  <div className="flex-1 rounded-2xl bg-gradient-to-br from-pink-100/40 to-rose-100/40 dark:from-pink-900/20 dark:to-rose-900/20 p-1 hover:shadow-lg hover:shadow-pink-200/30 dark:hover:shadow-pink-800/10 transition-all">
+    <div className="h-full rounded-xl bg-white dark:bg-gray-900 p-6">
+      <h3 className="text-xl font-bold text-pink-600 dark:text-pink-400 mb-4">Starter</h3>
+      <div className="mb-6">
+        <span className="text-4xl font-black text-gray-900 dark:text-white">$0</span>
+      </div>
+      <div className="h-px w-full bg-gradient-to-r from-pink-300/70 to-rose-300/70 dark:from-pink-700/50 dark:to-rose-700/50 mb-6"></div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-400">
+        <li>Core components</li>
+        <li>Community support</li>
+        <li>MIT license</li>
+      </ul>
+      <button className="w-full py-2.5 px-5 bg-pink-600/10 dark:bg-pink-600/20 text-pink-600 dark:text-pink-400 font-medium rounded-lg hover:bg-pink-600/20 dark:hover:bg-pink-600/30 transition-colors">
+        Get Started
+      </button>
+    </div>
+  </div>
+  <div className="flex-1 rounded-2xl bg-gradient-to-br from-indigo-100/40 to-violet-100/40 dark:from-indigo-900/20 dark:to-violet-900/20 p-1 scale-105 z-10 shadow-xl hover:shadow-indigo-200/30 dark:hover:shadow-indigo-800/10">
+    <div className="h-full rounded-xl bg-white dark:bg-gray-900 p-6 relative">
+      <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-indigo-500 dark:bg-indigo-600 text-white text-xs font-bold">BEST VALUE</div>
+      <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Pro</h3>
+      <div className="mb-6">
+        <span className="text-4xl font-black text-gray-900 dark:text-white">$29</span>
+        <span className="text-indigo-500/80 dark:text-indigo-400/80">/month</span>
+      </div>
+      <div className="h-px w-full bg-gradient-to-r from-indigo-300/70 to-violet-300/70 dark:from-indigo-700/50 dark:to-violet-700/50 mb-6"></div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-400">
+        <li>Premium components</li>
+        <li>Priority support</li>
+        <li>Commercial license</li>
+        <li>Private repos</li>
+      </ul>
+      <button className="w-full py-2.5 px-5 bg-gradient-to-r from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-600 text-white font-medium rounded-lg hover:shadow-lg transition-all">
+        Upgrade Now
+      </button>
+    </div>
+  </div>
+  <div className="flex-1 rounded-2xl bg-gradient-to-br from-teal-100/40 to-cyan-100/40 dark:from-teal-900/20 dark:to-cyan-900/20 p-1 hover:shadow-lg hover:shadow-teal-200/30 dark:hover:shadow-teal-800/10 transition-all">
+    <div className="h-full rounded-xl bg-white dark:bg-gray-900 p-6">
+      <h3 className="text-xl font-bold text-teal-600 dark:text-teal-400 mb-4">Enterprise</h3>
+      <div className="mb-6">
+        <span className="text-4xl font-black text-gray-900 dark:text-white">$99</span>
+      </div>
+      <div className="h-px w-full bg-gradient-to-r from-teal-300/70 to-cyan-300/70 dark:from-teal-700/50 dark:to-cyan-700/50 mb-6"></div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-400">
+        <li>Unlimited components</li>
+        <li>24/7 support</li>
+        <li>White-label</li>
+        <li>Dedicated SLAs</li>
+      </ul>
+      <button className="w-full py-2.5 px-5 bg-teal-600/10 dark:bg-teal-600/20 text-teal-600 dark:text-teal-400 font-medium rounded-lg hover:bg-teal-600/20 dark:hover:bg-teal-600/30 transition-colors">
+        Contact Sales
+      </button>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="flex flex-col md:flex-row gap-6 p-8 max-w-5xl mx-auto">
+  <div className="flex-1 rounded-2xl bg-gradient-to-br from-pink-100/40 to-rose-100/40 dark:from-pink-900/20 dark:to-rose-900/20 p-1 hover:shadow-lg hover:shadow-pink-200/30 dark:hover:shadow-pink-800/10 transition-all">
+    <div className="h-full rounded-xl bg-white dark:bg-gray-900 p-6">
+      <h3 className="text-xl font-bold text-pink-600 dark:text-pink-400 mb-4">Starter</h3>
+      <div className="mb-6">
+        <span className="text-4xl font-black text-gray-900 dark:text-white">$0</span>
+      </div>
+      <div className="h-px w-full bg-gradient-to-r from-pink-300/70 to-rose-300/70 dark:from-pink-700/50 dark:to-rose-700/50 mb-6"></div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-400">
+        <li>Core components</li>
+        <li>Community support</li>
+        <li>MIT license</li>
+      </ul>
+      <button className="w-full py-2.5 px-5 bg-pink-600/10 dark:bg-pink-600/20 text-pink-600 dark:text-pink-400 font-medium rounded-lg hover:bg-pink-600/20 dark:hover:bg-pink-600/30 transition-colors">
+        Get Started
+      </button>
+    </div>
+  </div>
+  <div className="flex-1 rounded-2xl bg-gradient-to-br from-indigo-100/40 to-violet-100/40 dark:from-indigo-900/20 dark:to-violet-900/20 p-1 scale-105 z-10 shadow-xl hover:shadow-indigo-200/30 dark:hover:shadow-indigo-800/10">
+    <div className="h-full rounded-xl bg-white dark:bg-gray-900 p-6 relative">
+      <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-indigo-500 dark:bg-indigo-600 text-white text-xs font-bold">BEST VALUE</div>
+      <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Pro</h3>
+      <div className="mb-6">
+        <span className="text-4xl font-black text-gray-900 dark:text-white">$29</span>
+        <span className="text-indigo-500/80 dark:text-indigo-400/80">/month</span>
+      </div>
+      <div className="h-px w-full bg-gradient-to-r from-indigo-300/70 to-violet-300/70 dark:from-indigo-700/50 dark:to-violet-700/50 mb-6"></div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-400">
+        <li>Premium components</li>
+        <li>Priority support</li>
+        <li>Commercial license</li>
+        <li>Private repos</li>
+      </ul>
+      <button className="w-full py-2.5 px-5 bg-gradient-to-r from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-600 text-white font-medium rounded-lg hover:shadow-lg transition-all">
+        Upgrade Now
+      </button>
+    </div>
+  </div>
+  <div className="flex-1 rounded-2xl bg-gradient-to-br from-teal-100/40 to-cyan-100/40 dark:from-teal-900/20 dark:to-cyan-900/20 p-1 hover:shadow-lg hover:shadow-teal-200/30 dark:hover:shadow-teal-800/10 transition-all">
+    <div className="h-full rounded-xl bg-white dark:bg-gray-900 p-6">
+      <h3 className="text-xl font-bold text-teal-600 dark:text-teal-400 mb-4">Enterprise</h3>
+      <div className="mb-6">
+        <span className="text-4xl font-black text-gray-900 dark:text-white">$99</span>
+      </div>
+      <div className="h-px w-full bg-gradient-to-r from-teal-300/70 to-cyan-300/70 dark:from-teal-700/50 dark:to-cyan-700/50 mb-6"></div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-400">
+        <li>Unlimited components</li>
+        <li>24/7 support</li>
+        <li>White-label</li>
+        <li>Dedicated SLAs</li>
+      </ul>
+      <button className="w-full py-2.5 px-5 bg-teal-600/10 dark:bg-teal-600/20 text-teal-600 dark:text-teal-400 font-medium rounded-lg hover:bg-teal-600/20 dark:hover:bg-teal-600/30 transition-colors">
+        Contact Sales
+      </button>
+    </div>
+  </div>
+</div>
+      ),
+    },
+    {
+      id:"Color-wave",
+      name: "Color Wave",
+      description: "A pricing card with a color wave effect",
+      code : `<div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 max-w-6xl mx-auto">
+  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-100/50 to-violet-100/50 dark:from-purple-900/20 dark:to-violet-900/20 border-2 border-purple-200 dark:border-purple-800 hover:shadow-lg hover:shadow-purple-200/50 dark:hover:shadow-purple-800/20 transition-all">
+    <div className="p-8">
+      <h3 className="text-2xl font-bold text-purple-600 dark:text-purple-400">Starter</h3>
+      <div className="my-6">
+        <span className="text-5xl font-black text-gray-900 dark:text-white">$0</span>
+        <span className="text-purple-500/80 dark:text-purple-400/80">/forever</span>
+      </div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-300">
+        <li>• 100+ components</li>
+        <li>• Community support</li>
+        <li>• MIT License</li>
+      </ul>
+      <button className="w-full py-3 px-6 bg-purple-600/10 dark:bg-purple-600/20 text-purple-600 dark:text-purple-400 font-bold rounded-lg hover:bg-purple-600/20 dark:hover:bg-purple-600/30 transition-colors">
+        Get Started
+      </button>
+    </div>
+  </div>
+
+  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-100/50 to-cyan-100/50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-300 dark:border-blue-700 scale-105 z-10 shadow-xl hover:shadow-blue-200/50 dark:hover:shadow-blue-800/20">
+    <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue-500 dark:bg-blue-600 text-white text-xs font-bold">POPULAR</div>
+    <div className="p-8">
+      <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400">Pro</h3>
+      <div className="my-6">
+        <span className="text-5xl font-black text-gray-900 dark:text-white">$29</span>
+        <span className="text-blue-500/80 dark:text-blue-400/80">/month</span>
+      </div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-300">
+        <li>• 500+ components</li>
+        <li>• Priority support</li>
+        <li>• Commercial License</li>
+        <li>• Private repos</li>
+      </ul>
+      <button className="w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-600 dark:to-cyan-600 text-white font-bold rounded-lg hover:shadow-lg transition-all">
+        Upgrade Now
+      </button>
+    </div>
+  </div>
+  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-100/50 to-teal-100/50 dark:from-emerald-900/20 dark:to-teal-900/20 border-2 border-emerald-200 dark:border-emerald-800 hover:shadow-lg hover:shadow-emerald-200/50 dark:hover:shadow-emerald-800/20 transition-all">
+    <div className="p-8">
+      <h3 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">Enterprise</h3>
+      <div className="my-6">
+        <span className="text-5xl font-black text-gray-900 dark:text-white">$99</span>
+        <span className="text-emerald-500/80 dark:text-emerald-400/80">/month</span>
+      </div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-300">
+        <li>• Unlimited components</li>
+        <li>• 24/7 Support</li>
+        <li>• White-label</li>
+        <li>• Dedicated SLAs</li>
+      </ul>
+      <button className="w-full py-3 px-6 bg-emerald-600/10 dark:bg-emerald-600/20 text-emerald-600 dark:text-emerald-400 font-bold rounded-lg hover:bg-emerald-600/20 dark:hover:bg-emerald-600/30 transition-colors">
+        Contact Sales
+      </button>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 max-w-6xl mx-auto">
+  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-100/50 to-violet-100/50 dark:from-purple-900/20 dark:to-violet-900/20 border-2 border-purple-200 dark:border-purple-800 hover:shadow-lg hover:shadow-purple-200/50 dark:hover:shadow-purple-800/20 transition-all">
+    <div className="p-8">
+      <h3 className="text-2xl font-bold text-purple-600 dark:text-purple-400">Starter</h3>
+      <div className="my-6">
+        <span className="text-5xl font-black text-gray-900 dark:text-white">$0</span>
+        <span className="text-purple-500/80 dark:text-purple-400/80">/forever</span>
+      </div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-300">
+        <li>• 100+ components</li>
+        <li>• Community support</li>
+        <li>• MIT License</li>
+      </ul>
+      <button className="w-full py-3 px-6 bg-purple-600/10 dark:bg-purple-600/20 text-purple-600 dark:text-purple-400 font-bold rounded-lg hover:bg-purple-600/20 dark:hover:bg-purple-600/30 transition-colors">
+        Get Started
+      </button>
+    </div>
+  </div>
+  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-100/50 to-cyan-100/50 dark:from-blue-900/20 dark:to-cyan-900/20 border-2 border-blue-300 dark:border-blue-700 scale-105 z-10 shadow-xl hover:shadow-blue-200/50 dark:hover:shadow-blue-800/20">
+    <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue-500 dark:bg-blue-600 text-white text-xs font-bold">POPULAR</div>
+    <div className="p-8">
+      <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400">Pro</h3>
+      <div className="my-6">
+        <span className="text-5xl font-black text-gray-900 dark:text-white">$29</span>
+        <span className="text-blue-500/80 dark:text-blue-400/80">/month</span>
+      </div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-300">
+        <li>• 500+ components</li>
+        <li>• Priority support</li>
+        <li>• Commercial License</li>
+        <li>• Private repos</li>
+      </ul>
+      <button className="w-full py-3 px-6 bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-600 dark:to-cyan-600 text-white font-bold rounded-lg hover:shadow-lg transition-all">
+        Upgrade Now
+      </button>
+    </div>
+  </div>
+  <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-100/50 to-teal-100/50 dark:from-emerald-900/20 dark:to-teal-900/20 border-2 border-emerald-200 dark:border-emerald-800 hover:shadow-lg hover:shadow-emerald-200/50 dark:hover:shadow-emerald-800/20 transition-all">
+    <div className="p-8">
+      <h3 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">Enterprise</h3>
+      <div className="my-6">
+        <span className="text-5xl font-black text-gray-900 dark:text-white">$99</span>
+        <span className="text-emerald-500/80 dark:text-emerald-400/80">/month</span>
+      </div>
+      <ul className="space-y-3 mb-8 text-gray-700 dark:text-gray-300">
+        <li>• Unlimited components</li>
+        <li>• 24/7 Support</li>
+        <li>• White-label</li>
+        <li>• Dedicated SLAs</li>
+      </ul>
+      <button className="w-full py-3 px-6 bg-emerald-600/10 dark:bg-emerald-600/20 text-emerald-600 dark:text-emerald-400 font-bold rounded-lg hover:bg-emerald-600/20 dark:hover:bg-emerald-600/30 transition-colors">
+        Contact Sales
+      </button>
+    </div>
+  </div>
+</div>
+      ),
+    }
+    
+    
+  ],
+  Profile: [
+    {
+      id: "Gradient-Profile",
+      name: "Gradient Wave",
+      description: "A profile card with a gradient wave effect",
+      code: `<div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-100 dark:from-purple-900 dark:to-blue-950 flex flex-col">
+  <div className="flex-1 p-6 md:p-10">
+    <div className="max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="w-full md:w-1/3">
+          <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-fuchsia-500 via-purple-600 to-indigo-500 p-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6">
+              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500"></div>
+              <h2 className="text-2xl font-bold text-center mt-4 text-gray-800 dark:text-white">Aiko Yamamoto</h2>
+              <p className="text-center text-purple-600 dark:text-purple-400 font-medium">Lead Designer at Kaisen UI</p>
+              <div className="mt-6 space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 dark:text-gray-400">Projects</span>
+                  <span className="font-semibold text-gray-800 dark:text-white">142</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 dark:text-gray-400">Followers</span>
+                  <span className="font-semibold text-gray-800 dark:text-white">8.2k</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 dark:text-gray-400">Following</span>
+                  <span className="font-semibold text-gray-800 dark:text-white">1.3k</span>
+                </div>
+              </div>
+              <div className="mt-8">
+                <button className="w-full py-3 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium">Follow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-2/3">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">About Me</h3>
+            <p className="mt-4 text-gray-600 dark:text-gray-300">Pioneering the future of UI design at Kaisen UI. I specialize in creating immersive digital experiences that blend aesthetics with functionality.</p>
+            
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white mt-8">Recent Projects</h3>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-purple-50 dark:bg-purple-900/30 p-4 rounded-xl">
+                <div className="h-40 rounded-lg bg-gradient-to-br from-pink-400 to-purple-500"></div>
+                <h4 className="font-semibold mt-3 text-gray-800 dark:text-white">Kaisen Dashboard 3.0</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Redesigned admin experience</p>
+              </div>
+              <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl">
+                <div className="h-40 rounded-lg bg-gradient-to-br from-blue-400 to-indigo-500"></div>
+                <h4 className="font-semibold mt-3 text-gray-800 dark:text-white">Kaisen Mobile App</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Cross-platform mobile experience</p>
+              </div>
+            </div>
+            
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white mt-8">Skills</h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">UI Design</span>
+              <span className="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">Prototyping</span>
+              <span className="px-4 py-2 rounded-full bg-pink-100 dark:bg-pink-900/50 text-pink-700 dark:text-pink-300">Animation</span>
+              <span className="px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">Design Systems</span>
+              <span className="px-4 py-2 rounded-full bg-violet-100 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300">Kaisen UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-100 dark:from-purple-900 dark:to-blue-950 flex flex-col">
+  <div className="flex-1 p-6 md:p-10">
+    <div className="max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="w-full md:w-1/3">
+          <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-fuchsia-500 via-purple-600 to-indigo-500 p-1">
+            <div className="bg-white dark:bg-gray-900 rounded-xl p-6">
+              <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500"></div>
+              <h2 className="text-2xl font-bold text-center mt-4 text-gray-800 dark:text-white">Aiko Yamamoto</h2>
+              <p className="text-center text-purple-600 dark:text-purple-400 font-medium">Lead Designer at Kaisen UI</p>
+              <div className="mt-6 space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 dark:text-gray-400">Projects</span>
+                  <span className="font-semibold text-gray-800 dark:text-white">142</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 dark:text-gray-400">Followers</span>
+                  <span className="font-semibold text-gray-800 dark:text-white">8.2k</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-600 dark:text-gray-400">Following</span>
+                  <span className="font-semibold text-gray-800 dark:text-white">1.3k</span>
+                </div>
+              </div>
+              <div className="mt-8">
+                <button className="w-full py-3 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium">Follow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-2/3">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">About Me</h3>
+            <p className="mt-4 text-gray-600 dark:text-gray-300">Pioneering the future of UI design at Kaisen UI. I specialize in creating immersive digital experiences that blend aesthetics with functionality.</p>
+            
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white mt-8">Recent Projects</h3>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-purple-50 dark:bg-purple-900/30 p-4 rounded-xl">
+                <div className="h-40 rounded-lg bg-gradient-to-br from-pink-400 to-purple-500"></div>
+                <h4 className="font-semibold mt-3 text-gray-800 dark:text-white">Kaisen Dashboard 3.0</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Redesigned admin experience</p>
+              </div>
+              <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-xl">
+                <div className="h-40 rounded-lg bg-gradient-to-br from-blue-400 to-indigo-500"></div>
+                <h4 className="font-semibold mt-3 text-gray-800 dark:text-white">Kaisen Mobile App</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Cross-platform mobile experience</p>
+              </div>
+            </div>
+            
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white mt-8">Skills</h3>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">UI Design</span>
+              <span className="px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">Prototyping</span>
+              <span className="px-4 py-2 rounded-full bg-pink-100 dark:bg-pink-900/50 text-pink-700 dark:text-pink-300">Animation</span>
+              <span className="px-4 py-2 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">Design Systems</span>
+              <span className="px-4 py-2 rounded-full bg-violet-100 dark:bg-violet-900/50 text-violet-700 dark:text-violet-300">Kaisen UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      ),
+    },
+    {
+      id:"Hexagonal",
+      name: "Hexagonal Profile",
+      description: "A profile card with a hexagonal design",
+      code : `<div className="min-h-screen bg-gradient-to-tr from-teal-50 to-cyan-100 dark:from-teal-950 dark:to-cyan-900 p-6 md:p-10">
+  <div className="max-w-6xl mx-auto">
+    <div className="relative">
+      <div className="absolute top-0 right-0 w-1/2 h-64 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-bl-[100px] -z-10 opacity-70 dark:opacity-30"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-48 bg-gradient-to-tr from-emerald-400 to-teal-500 rounded-tr-[80px] -z-10 opacity-70 dark:opacity-30"></div>
+      
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-4">
+          <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-2xl overflow-hidden shadow-xl">
+            <div className="h-32 bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500"></div>
+            <div className="relative px-6 pb-6">
+              <div className="w-28 h-28 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 absolute -top-14 left-6 border-4 border-white dark:border-gray-900 flex items-center justify-center">
+                <span className="text-3xl font-bold text-white">KU</span>
+              </div>
+              <div className="pt-16">
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Marcus Chen</h2>
+                <p className="text-teal-600 dark:text-teal-400">Product Manager at Kaisen UI</p>
+                
+                <div className="mt-6 grid grid-cols-3 gap-2 text-center">
+                  <div className="bg-teal-50 dark:bg-teal-900/30 p-3 rounded-lg">
+                    <div className="text-xl font-bold text-gray-800 dark:text-white">28</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">Projects</div>
+                  </div>
+                  <div className="bg-cyan-50 dark:bg-cyan-900/30 p-3 rounded-lg">
+                    <div className="text-xl font-bold text-gray-800 dark:text-white">14k</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">Followers</div>
+                  </div>
+                  <div className="bg-emerald-50 dark:bg-emerald-900/30 p-3 rounded-lg">
+                    <div className="text-xl font-bold text-gray-800 dark:text-white">3.2k</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">Following</div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 flex gap-3">
+                  <button className="flex-1 py-2.5 rounded-lg bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-medium text-sm">Connect</button>
+                  <button className="flex-1 py-2.5 rounded-lg border border-teal-500 dark:border-teal-600 text-teal-600 dark:text-teal-400 font-medium text-sm">Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="lg:col-span-8">
+          <div className="grid gap-6">
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-white mr-3">A</span>
+                About
+              </h3>
+              <p className="mt-4 text-gray-600 dark:text-gray-300">Leading product innovation at Kaisen UI, where we're redefining the boundaries of user interface design. My focus is on creating intuitive, accessible, and visually stunning experiences that make complex tasks feel simple.</p>
+              
+              <div className="mt-6 grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Location</h4>
+                  <p className="text-gray-800 dark:text-white">San Francisco, CA</p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Website</h4>
+                  <p className="text-teal-600 dark:text-teal-400">kaisenui.com</p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Joined</h4>
+                  <p className="text-gray-800 dark:text-white">March 2021</p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Team</h4>
+                  <p className="text-gray-800 dark:text-white">Product & Design</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-white mr-3">P</span>
+                Projects at Kaisen UI
+              </h3>
+              
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 p-4 rounded-xl">
+                  <div className="h-3 w-1/2 bg-teal-400 rounded-full mb-4"></div>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">Kaisen Design System</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Unified component library</p>
+                  <div className="mt-4 flex justify-between items-center">
+                    <span className="text-xs text-teal-600 dark:text-teal-400">89% complete</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">May 2023</span>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 p-4 rounded-xl">
+                  <div className="h-3 w-3/4 bg-cyan-400 rounded-full mb-4"></div>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">Kaisen Analytics</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">User behavior insights</p>
+                  <div className="mt-4 flex justify-between items-center">
+                    <span className="text-xs text-cyan-600 dark:text-cyan-400">76% complete</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">July 2023</span>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-4 rounded-xl">
+                  <div className="h-3 w-1/4 bg-blue-400 rounded-full mb-4"></div>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">Kaisen Mobile</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Cross-platform experience</p>
+                  <div className="mt-4 flex justify-between items-center">
+                    <span className="text-xs text-blue-600 dark:text-blue-400">24% complete</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">Oct 2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-white mr-3">E</span>
+                Experience
+              </h3>
+              
+              <div className="mt-6 space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center">
+                    <span className="text-teal-600 dark:text-teal-400 font-bold">KU</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 dark:text-white">Product Manager</h4>
+                    <p className="text-sm text-teal-600 dark:text-teal-400">Kaisen UI</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">2021 - Present</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                    <span className="text-blue-600 dark:text-blue-400 font-bold">DT</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 dark:text-white">UX Designer</h4>
+                    <p className="text-sm text-blue-600 dark:text-blue-400">DesignTech</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">2018 - 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="min-h-screen bg-gradient-to-tr from-teal-50 to-cyan-100 dark:from-teal-950 dark:to-cyan-900 p-6 md:p-10">
+  <div className="max-w-6xl mx-auto">
+    <div className="relative">
+      <div className="absolute top-0 right-0 w-1/2 h-64 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-bl-[100px] -z-10 opacity-70 dark:opacity-30"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-48 bg-gradient-to-tr from-emerald-400 to-teal-500 rounded-tr-[80px] -z-10 opacity-70 dark:opacity-30"></div>
+      
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-4">
+          <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-2xl overflow-hidden shadow-xl">
+            <div className="h-32 bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500"></div>
+            <div className="relative px-6 pb-6">
+              <div className="w-28 h-28 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 absolute -top-14 left-6 border-4 border-white dark:border-gray-900 flex items-center justify-center">
+                <span className="text-3xl font-bold text-white">KU</span>
+              </div>
+              <div className="pt-16">
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Marcus Chen</h2>
+                <p className="text-teal-600 dark:text-teal-400">Product Manager at Kaisen UI</p>
+                
+                <div className="mt-6 grid grid-cols-3 gap-2 text-center">
+                  <div className="bg-teal-50 dark:bg-teal-900/30 p-3 rounded-lg">
+                    <div className="text-xl font-bold text-gray-800 dark:text-white">28</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">Projects</div>
+                  </div>
+                  <div className="bg-cyan-50 dark:bg-cyan-900/30 p-3 rounded-lg">
+                    <div className="text-xl font-bold text-gray-800 dark:text-white">14k</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">Followers</div>
+                  </div>
+                  <div className="bg-emerald-50 dark:bg-emerald-900/30 p-3 rounded-lg">
+                    <div className="text-xl font-bold text-gray-800 dark:text-white">3.2k</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">Following</div>
+                  </div>
+                </div>
+                
+                <div className="mt-6 flex gap-3">
+                  <button className="flex-1 py-2.5 rounded-lg bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-medium text-sm">Connect</button>
+                  <button className="flex-1 py-2.5 rounded-lg border border-teal-500 dark:border-teal-600 text-teal-600 dark:text-teal-400 font-medium text-sm">Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="lg:col-span-8">
+          <div className="grid gap-6">
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-white mr-3">A</span>
+                About
+              </h3>
+              <p className="mt-4 text-gray-600 dark:text-gray-300">Leading product innovation at Kaisen UI, where we're redefining the boundaries of user interface design. My focus is on creating intuitive, accessible, and visually stunning experiences that make complex tasks feel simple.</p>
+              
+              <div className="mt-6 grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Location</h4>
+                  <p className="text-gray-800 dark:text-white">San Francisco, CA</p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Website</h4>
+                  <p className="text-teal-600 dark:text-teal-400">kaisenui.com</p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Joined</h4>
+                  <p className="text-gray-800 dark:text-white">March 2021</p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400">Team</h4>
+                  <p className="text-gray-800 dark:text-white">Product & Design</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-white mr-3">P</span>
+                Projects at Kaisen UI
+              </h3>
+              
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-900/20 dark:to-cyan-900/20 p-4 rounded-xl">
+                  <div className="h-3 w-1/2 bg-teal-400 rounded-full mb-4"></div>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">Kaisen Design System</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Unified component library</p>
+                  <div className="mt-4 flex justify-between items-center">
+                    <span className="text-xs text-teal-600 dark:text-teal-400">89% complete</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">May 2023</span>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20 p-4 rounded-xl">
+                  <div className="h-3 w-3/4 bg-cyan-400 rounded-full mb-4"></div>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">Kaisen Analytics</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">User behavior insights</p>
+                  <div className="mt-4 flex justify-between items-center">
+                    <span className="text-xs text-cyan-600 dark:text-cyan-400">76% complete</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">July 2023</span>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-4 rounded-xl">
+                  <div className="h-3 w-1/4 bg-blue-400 rounded-full mb-4"></div>
+                  <h4 className="font-semibold text-gray-800 dark:text-white">Kaisen Mobile</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">Cross-platform experience</p>
+                  <div className="mt-4 flex justify-between items-center">
+                    <span className="text-xs text-blue-600 dark:text-blue-400">24% complete</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">Oct 2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center">
+                <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center text-white mr-3">E</span>
+                Experience
+              </h3>
+              
+              <div className="mt-6 space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center">
+                    <span className="text-teal-600 dark:text-teal-400 font-bold">KU</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 dark:text-white">Product Manager</h4>
+                    <p className="text-sm text-teal-600 dark:text-teal-400">Kaisen UI</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">2021 - Present</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                    <span className="text-blue-600 dark:text-blue-400 font-bold">DT</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 dark:text-white">UX Designer</h4>
+                    <p className="text-sm text-blue-600 dark:text-blue-400">DesignTech</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">2018 - 2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      ),
+    },{
+      id:"Neon",
+      name: "Neon Profile",
+      description: "A profile card with a neon design",
+      code:`<div className="min-h-screen bg-gradient-to-b from-violet-950 to-black p-6 md:p-10">
+  <div className="max-w-6xl mx-auto">
+    <div className="relative">
+      <div className="absolute top-20 left-1/4 w-1/2 h-1/2 bg-fuchsia-600 rounded-full filter blur-[120px] opacity-20 animate-pulse"></div>
+      <div className="absolute bottom-20 right-1/4 w-1/3 h-1/3 bg-cyan-500 rounded-full filter blur-[100px] opacity-20 animate-pulse"></div>
+      
+      <div className="relative z-10">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="w-full lg:w-1/3">
+            <div className="bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)]">
+              <div className="p-8 flex flex-col items-center">
+                <div className="w-36 h-36 rounded-full bg-gradient-to-br from-fuchsia-600 via-violet-600 to-cyan-600 p-1">
+                  <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-fuchsia-500 via-violet-500 to-cyan-500 text-transparent bg-clip-text">KU</span>
+                  </div>
+                </div>
+                
+                <h2 className="text-2xl font-bold mt-6 text-white">Zara Neon</h2>
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-cyan-400 font-medium">Lead Developer at Kaisen UI</p>
+                
+                <div className="w-full h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent my-6"></div>
+                
+                <div className="grid grid-cols-3 w-full gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-white">63</div>
+                    <div className="text-xs text-violet-300">Projects</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-white">21.5k</div>
+                    <div className="text-xs text-violet-300">Followers</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-white">5.8k</div>
+                    <div className="text-xs text-violet-300">Following</div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 w-full">
+                  <button className="w-full py-3 rounded-xl bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white font-medium relative overflow-hidden group">
+                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="relative">Connect</span>
+                  </button>
+                </div>
+                
+                <div className="mt-6 w-full">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-xs text-violet-300">Profile Completion</span>
+                    <span className="text-xs text-violet-300">92%</span>
+                  </div>
+                  <div className="w-full h-1.5 bg-violet-900/50 rounded-full overflow-hidden">
+                    <div className="h-full w-[92%] bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)] p-6">
+              <h3 className="text-lg font-bold text-white">Tech Stack</h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-fuchsia-900/50 to-fuchsia-800/50 text-fuchsia-300 text-xs">React</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-violet-900/50 to-violet-800/50 text-violet-300 text-xs">TypeScript</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-purple-900/50 to-purple-800/50 text-purple-300 text-xs">Next.js</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-900/50 to-blue-800/50 text-blue-300 text-xs">Tailwind</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-cyan-900/50 to-cyan-800/50 text-cyan-300 text-xs">GraphQL</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-teal-900/50 to-teal-800/50 text-teal-300 text-xs">Node.js</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-fuchsia-900/50 to-violet-800/50 text-fuchsia-300 text-xs">Kaisen UI</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="w-full lg:w-2/3">
+            <div className="bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)] p-8">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">About Me</h3>
+                <div className="px-3 py-1 rounded-full bg-violet-900/50 text-violet-300 text-xs">Developer</div>
+              </div>
+              
+              <p className="mt-4 text-violet-200">Building the future of web interfaces at Kaisen UI. Passionate about creating seamless, accessible, and visually stunning user experiences that push the boundaries of what's possible on the web.</p>
+              
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white">Kaisen UI Projects</h3>
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-gradient-to-br from-black to-violet-950 border border-violet-500/20 rounded-xl p-5 group hover:border-violet-500/50 transition-all">
+                    <div className="flex justify-between items-start">
+                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-fuchsia-600 to-violet-600 flex items-center justify-center text-white font-bold">KU</div>
+                      <div className="px-2 py-1 rounded-full bg-violet-900/30 text-violet-300 text-xs">Active</div>
+                    </div>
+                    <h4 className="font-semibold mt-4 text-white">Kaisen UI Framework</h4>
+                    <p className="text-sm text-violet-300 mt-1">Component library with 200+ elements</p>
+                    <div className="mt-4 w-full h-1 bg-violet-900/30 rounded-full overflow-hidden">
+                      <div className="h-full w-[85%] bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-full"></div>
+                    </div>
+                    <div className="mt-2 flex justify-between items-center">
+                      <span className="text-xs text-violet-400">85% complete</span>
+                      <span className="text-xs text-violet-400">v2.4.0</span>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-black to-violet-950 border border-violet-500/20 rounded-xl p-5 group hover:border-violet-500/50 transition-all">
+                    <div className="flex justify-between items-start">
+                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center text-white font-bold">KA</div>
+                      <div className="px-2 py-1 rounded-full bg-blue-900/30 text-blue-300 text-xs">Beta</div>
+                    </div>
+                    <h4 className="font-semibold mt-4 text-white">Kaisen Analytics</h4>
+                    <p className="text-sm text-violet-300 mt-1">Real-time user behavior tracking</p>
+                    <div className="mt-4 w-full h-1 bg-violet-900/30 rounded-full overflow-hidden">
+                      <div className="h-full w-[62%] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
+                    </div>
+                    <div className="mt-2 flex justify-between items-center">
+                      <span className="text-xs text-violet-400">62% complete</span>
+                      <span className="text-xs text-violet-400">v0.9.2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white">Activity</h3>
+                <div className="mt-4 space-y-4">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-600 to-violet-600 flex-shrink-0 flex items-center justify-center text-white text-xs">ZN</div>
+                    <div>
+                      <p className="text-violet-200">Released <span className="text-white font-medium">Kaisen UI v2.4.0</span> with new animation library and improved accessibility</p>
+                      <p className="text-xs text-violet-400 mt-1">2 days ago</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-600 to-violet-600 flex-shrink-0 flex items-center justify-center text-white text-xs">ZN</div>
+                    <div>
+                      <p className="text-violet-200">Started development on <span className="text-white font-medium">Kaisen Mobile SDK</span></p>
+                      <p className="text-xs text-violet-400 mt-1">1 week ago</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-600 to-violet-600 flex-shrink-0 flex items-center justify-center text-white text-xs">ZN</div>
+                    <div>
+                      <p className="text-violet-200">Published article <span className="text-white font-medium">"The Future of UI Design with Kaisen"</span></p>
+                      <p className="text-xs text-violet-400 mt-1">2 weeks ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)] p-6">
+              <h3 className="text-lg font-bold text-white">Contact</h3>
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-fuchsia-600 to-violet-600 flex items-center justify-center text-white text-xs">@</div>
+                  <span className="text-violet-200">zara@kaisenui.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 flex items-center justify-center text-white text-xs">W</div>
+                  <span className="text-violet-200">kaisenui.com/team/zara</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center text-white text-xs">L</div>
+                  <span className="text-violet-200">Tokyo, Japan</span>
+                </div>
+              </div>
+              
+              <div className="mt-6 flex gap-3">
+                <button className="flex-1 py-2 rounded-lg bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white text-sm">Message</button>
+                <button className="flex-1 py-2 rounded-lg bg-black border border-violet-500 text-violet-300 text-sm">Share Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="min-h-screen bg-gradient-to-b from-violet-950 to-black p-6 md:p-10">
+  <div className="max-w-6xl mx-auto">
+    <div className="relative">
+      <div className="absolute top-20 left-1/4 w-1/2 h-1/2 bg-fuchsia-600 rounded-full filter blur-[120px] opacity-20 animate-pulse"></div>
+      <div className="absolute bottom-20 right-1/4 w-1/3 h-1/3 bg-cyan-500 rounded-full filter blur-[100px] opacity-20 animate-pulse"></div>
+      
+      <div className="relative z-10">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="w-full lg:w-1/3">
+            <div className="bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)]">
+              <div className="p-8 flex flex-col items-center">
+                <div className="w-36 h-36 rounded-full bg-gradient-to-br from-fuchsia-600 via-violet-600 to-cyan-600 p-1">
+                  <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-fuchsia-500 via-violet-500 to-cyan-500 text-transparent bg-clip-text">KU</span>
+                  </div>
+                </div>
+                
+                <h2 className="text-2xl font-bold mt-6 text-white">Zara Neon</h2>
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-cyan-400 font-medium">Lead Developer at Kaisen UI</p>
+                
+                <div className="w-full h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent my-6"></div>
+                
+                <div className="grid grid-cols-3 w-full gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-white">63</div>
+                    <div className="text-xs text-violet-300">Projects</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-white">21.5k</div>
+                    <div className="text-xs text-violet-300">Followers</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-white">5.8k</div>
+                    <div className="text-xs text-violet-300">Following</div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 w-full">
+                  <button className="w-full py-3 rounded-xl bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white font-medium relative overflow-hidden group">
+                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-fuchsia-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="relative">Connect</span>
+                  </button>
+                </div>
+                
+                <div className="mt-6 w-full">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-xs text-violet-300">Profile Completion</span>
+                    <span className="text-xs text-violet-300">92%</span>
+                  </div>
+                  <div className="w-full h-1.5 bg-violet-900/50 rounded-full overflow-hidden">
+                    <div className="h-full w-[92%] bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)] p-6">
+              <h3 className="text-lg font-bold text-white">Tech Stack</h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-fuchsia-900/50 to-fuchsia-800/50 text-fuchsia-300 text-xs">React</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-violet-900/50 to-violet-800/50 text-violet-300 text-xs">TypeScript</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-purple-900/50 to-purple-800/50 text-purple-300 text-xs">Next.js</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-900/50 to-blue-800/50 text-blue-300 text-xs">Tailwind</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-cyan-900/50 to-cyan-800/50 text-cyan-300 text-xs">GraphQL</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-teal-900/50 to-teal-800/50 text-teal-300 text-xs">Node.js</span>
+                <span className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-fuchsia-900/50 to-violet-800/50 text-fuchsia-300 text-xs">Kaisen UI</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="w-full lg:w-2/3">
+            <div className="bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)] p-8">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">About Me</h3>
+                <div className="px-3 py-1 rounded-full bg-violet-900/50 text-violet-300 text-xs">Developer</div>
+              </div>
+              
+              <p className="mt-4 text-violet-200">Building the future of web interfaces at Kaisen UI. Passionate about creating seamless, accessible, and visually stunning user experiences that push the boundaries of what's possible on the web.</p>
+              
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white">Kaisen UI Projects</h3>
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-gradient-to-br from-black to-violet-950 border border-violet-500/20 rounded-xl p-5 group hover:border-violet-500/50 transition-all">
+                    <div className="flex justify-between items-start">
+                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-fuchsia-600 to-violet-600 flex items-center justify-center text-white font-bold">KU</div>
+                      <div className="px-2 py-1 rounded-full bg-violet-900/30 text-violet-300 text-xs">Active</div>
+                    </div>
+                    <h4 className="font-semibold mt-4 text-white">Kaisen UI Framework</h4>
+                    <p className="text-sm text-violet-300 mt-1">Component library with 200+ elements</p>
+                    <div className="mt-4 w-full h-1 bg-violet-900/30 rounded-full overflow-hidden">
+                      <div className="h-full w-[85%] bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-full"></div>
+                    </div>
+                    <div className="mt-2 flex justify-between items-center">
+                      <span className="text-xs text-violet-400">85% complete</span>
+                      <span className="text-xs text-violet-400">v2.4.0</span>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-black to-violet-950 border border-violet-500/20 rounded-xl p-5 group hover:border-violet-500/50 transition-all">
+                    <div className="flex justify-between items-start">
+                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center text-white font-bold">KA</div>
+                      <div className="px-2 py-1 rounded-full bg-blue-900/30 text-blue-300 text-xs">Beta</div>
+                    </div>
+                    <h4 className="font-semibold mt-4 text-white">Kaisen Analytics</h4>
+                    <p className="text-sm text-violet-300 mt-1">Real-time user behavior tracking</p>
+                    <div className="mt-4 w-full h-1 bg-violet-900/30 rounded-full overflow-hidden">
+                      <div className="h-full w-[62%] bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
+                    </div>
+                    <div className="mt-2 flex justify-between items-center">
+                      <span className="text-xs text-violet-400">62% complete</span>
+                      <span className="text-xs text-violet-400">v0.9.2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8">
+                <h3 className="text-xl font-bold text-white">Activity</h3>
+                <div className="mt-4 space-y-4">
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-600 to-violet-600 flex-shrink-0 flex items-center justify-center text-white text-xs">ZN</div>
+                    <div>
+                      <p className="text-violet-200">Released <span className="text-white font-medium">Kaisen UI v2.4.0</span> with new animation library and improved accessibility</p>
+                      <p className="text-xs text-violet-400 mt-1">2 days ago</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-600 to-violet-600 flex-shrink-0 flex items-center justify-center text-white text-xs">ZN</div>
+                    <div>
+                      <p className="text-violet-200">Started development on <span className="text-white font-medium">Kaisen Mobile SDK</span></p>
+                      <p className="text-xs text-violet-400 mt-1">1 week ago</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-600 to-violet-600 flex-shrink-0 flex items-center justify-center text-white text-xs">ZN</div>
+                    <div>
+                      <p className="text-violet-200">Published article <span className="text-white font-medium">"The Future of UI Design with Kaisen"</span></p>
+                      <p className="text-xs text-violet-400 mt-1">2 weeks ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 bg-black/60 backdrop-blur-xl border border-violet-500/20 rounded-2xl overflow-hidden shadow-[0_0_15px_rgba(149,76,233,0.25)] p-6">
+              <h3 className="text-lg font-bold text-white">Contact</h3>
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-fuchsia-600 to-violet-600 flex items-center justify-center text-white text-xs">@</div>
+                  <span className="text-violet-200">zara@kaisenui.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-violet-600 to-blue-600 flex items-center justify-center text-white text-xs">W</div>
+                  <span className="text-violet-200">kaisenui.com/team/zara</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center text-white text-xs">L</div>
+                  <span className="text-violet-200">Tokyo, Japan</span>
+                </div>
+              </div>
+              
+              <div className="mt-6 flex gap-3">
+                <button className="flex-1 py-2 rounded-lg bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white text-sm">Message</button>
+                <button className="flex-1 py-2 rounded-lg bg-black border border-violet-500 text-violet-300 text-sm">Share Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      ),
+    }
+    
+    
   ],
   
 }
