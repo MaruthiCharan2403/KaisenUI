@@ -772,6 +772,168 @@ preview: () => (
       ),
     },
   ],
+  Steps : [
+    {
+      id: "glass-timeline-steps",
+      name: "Glassmorphic Timeline Steps",
+      description: "A timeline with glassmorphic effect",
+      code: `<div className="relative h-96 w-full overflow-hidden rounded-2xl">
+  <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 backdrop-blur-md"></div>
+  <div className="relative h-full flex">
+    <div className="w-1/4 border-r border-white/20 dark:border-gray-800/50 p-6 flex flex-col">
+      <div className="mb-8">
+        <div className="w-12 h-12 rounded-lg bg-amber-400/20 dark:bg-amber-600/20 backdrop-blur flex items-center justify-center text-amber-600 dark:text-amber-400 font-bold">1</div>
+        <h3 className="mt-4 text-lg font-medium dark:text-white">Discover</h3>
+      </div>
+      <div className="mb-8">
+        <div className="w-12 h-12 rounded-lg bg-gray-200/30 dark:bg-gray-700/30 backdrop-blur flex items-center justify-center text-gray-600 dark:text-gray-400 font-bold">2</div>
+        <h3 className="mt-4 text-lg font-medium dark:text-white/70">Customize</h3>
+      </div>
+      <div className="">
+        <div className="w-12 h-12 rounded-lg bg-gray-200/30 dark:bg-gray-700/30 backdrop-blur flex items-center justify-center text-gray-600 dark:text-gray-400 font-bold">3</div>
+        <h3 className="mt-4 text-lg font-medium dark:text-white/70">Launch</h3>
+      </div>
+    </div>
+    <div className="w-3/4 p-12 flex items-center justify-center">
+      <div className="w-full max-w-md bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl rounded-xl p-8 shadow-lg border border-white/30 dark:border-gray-800/50">
+        <h2 className="text-2xl font-bold dark:text-white mb-2">Welcome to Kaisen UI</h2>
+        <p className="text-gray-600 dark:text-gray-400">Build beautiful interfaces with our carefully crafted components</p>
+        <button className="mt-6 px-6 py-2 bg-amber-500 dark:bg-amber-600 text-white rounded-lg hover:bg-amber-600 dark:hover:bg-amber-700 transition-colors">Get Started</button>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative h-96 w-full overflow-hidden rounded-2xl">
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-800 dark:to-gray-900 backdrop-blur-md"></div>
+          <div className="relative h-full flex">
+            <div className="w-1/4 border-r border-white/20 dark:border-gray-800/50 p-6 flex flex-col">
+              <div className="mb-8">
+                <div className="w-12 h-12 rounded-lg bg-amber-400/20 dark:bg-amber-600/20 backdrop-blur flex items-center justify-center text-amber-600 dark:text-amber-400 font-bold">1</div>
+                <h3 className="mt-4 text-lg font-medium dark:text-white">Discover</h3>
+              </div>
+              <div className="mb-8">
+                <div className="w-12 h-12 rounded-lg bg-gray-200/30 dark:bg-gray-700/30 backdrop-blur flex items-center justify-center text-gray-600 dark:text-gray-400 font-bold">2</div>
+                <h3 className="mt-4 text-lg font-medium dark:text-white/70">Customize</h3>
+              </div>
+              <div className="">
+                <div className="w-12 h-12 rounded-lg bg-gray-200/30 dark:bg-gray-700/30 backdrop-blur flex items-center justify-center text-gray-600 dark:text-gray-400 font-bold">3</div>
+                <h3 className="mt-4 text-lg font-medium dark:text-white/70">Launch</h3>
+              </div>
+            </div>
+            <div className="w-3/4 p-12 flex items-center justify-center">
+              <div className="w-full max-w-md bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl rounded-xl p-8 shadow-lg border border-white/30 dark:border-gray-800/50">
+                <h2 className="text-2xl font-bold dark:text-white mb-2">Welcome to Kaisen UI</h2>
+                <p className="text-gray-600 dark:text-gray-400">Build beautiful interfaces with our carefully crafted components
+                </p>
+                <button className="mt-6 px-6 py-2 bg-amber-500 dark:bg-amber-600 text-white rounded-lg hover:bg-amber-600 dark:hover:bg-amber-700 transition-colors">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "neon-progress-steps",
+      name: "Neon Progress Steps",
+      description: "A neon-themed progress steps",
+      code: `<div className="relative h-64 w-full">
+  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200 dark:bg-gray-800">
+    <div className="h-full bg-gradient-to-r from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700" style={{width: '33%'}}></div>
+  </div>
+  <div className="absolute -bottom-2 left-[30%] w-6 h-6 rounded-full bg-amber-400 dark:bg-amber-600 border-4 border-white dark:border-gray-900 shadow-lg"></div>
+  <div className="flex h-full">
+    <div className="w-1/3 p-6 flex flex-col justify-end">
+      <div className="bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-800">
+        <h3 className="font-medium dark:text-white">Step 1</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Install Kaisen UI</p>
+      </div>
+    </div>
+    <div className="w-1/3 p-6 flex flex-col justify-end">
+      <div className="bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-800 opacity-70">
+        <h3 className="font-medium dark:text-white/80">Step 2</h3>
+        <p className="text-sm text-gray-600/80 dark:text-gray-400/80 mt-1">Import Components</p>
+      </div>
+    </div>
+    <div className="w-1/3 p-6 flex flex-col justify-end">
+      <div className="bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-800 opacity-40">
+        <h3 className="font-medium dark:text-white/60">Step 3</h3>
+        <p className="text-sm text-gray-600/60 dark:text-gray-400/60 mt-1">Build Your App</p>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative h-64 w-full">
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200 dark:bg-gray-800">
+            <div className="h-full bg-gradient-to-r from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700" style={{width: '33%'}}></div>
+          </div>
+          <div className="absolute -bottom-2 left-[30%] w-6 h-6 rounded-full bg-amber-400 dark:bg-amber-600 border-4 border-white dark:border-gray-900 shadow-lg"></div>
+          <div className="flex h-full">
+            <div className="w-1/3 p-6 flex flex-col justify-end">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-800">
+                <h3 className="font-medium dark:text-white">Step 1</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Install Kaisen UI</p>
+              </div>
+            </div>
+            <div className="w-1/3 p-6 flex flex-col justify-end">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-800 opacity-70">
+                <h3 className="font-medium dark:text-white/80">Step 2</h3>
+                <p className="text-sm text-gray-600/80 dark:text-gray-400/80 mt-1">Import Components</p>
+              </div>
+            </div>
+            <div className="w-1/3 p-6 flex flex-col justify-end">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-4 shadow-md border border-gray-200 dark:border-gray-800 opacity-40">
+                <h3 className="font-medium dark:text-white/60">Step 3</h3>
+                <p className="text-sm text-gray-600/60 dark:text-gray-400/60 mt-1">Build Your App</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "minimilist-card-steps",
+      name: "Minimalist Card Steps",
+      description: "A minimalist card with steps",
+      code: `<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+    <div className="w-10 h-10 rounded-full bg-amber-400 dark:bg-amber-600 flex items-center justify-center text-sm font-bold text-white mb-4">1</div>
+    <h3 className="text-lg font-medium dark:text-white">Get Started</h3>
+    <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">Install Kaisen UI package via npm or yarn</p>
+  </div>
+  <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+    <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-sm font-bold text-gray-600 dark:text-gray-400 mb-4">2</div>
+    <h3 className="text-lg font-medium dark:text-white">Import</h3>
+    <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">Add components to your project</p>
+  </div>
+  <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+    <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-sm font-bold text-gray-600 dark:text-gray-400 mb-4">3</div>
+    <h3 className="text-lg font-medium dark:text-white">Build</h3>
+    <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">Create amazing interfaces faster</p>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-amber-400 dark:bg-amber-600 flex items-center justify-center text-sm font-bold text-white mb-4">1</div>
+            <h3 className="text-lg font-medium dark:text-white">Get Started</h3>
+            <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">Install Kaisen UI package via npm or yarn</p>
+          </div>
+          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-sm font-bold text-gray-600 dark:text-gray-400 mb-4">2</div>
+            <h3 className="text-lg font-medium dark:text-white">Import</h3>
+            <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">Add components to your project</p>
+          </div>
+          <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+            <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-sm font-bold text-gray-600 dark:text-gray-400 mb-4">3</div>
+            <h3 className="text-lg font-medium dark:text-white">Build</h3>
+            <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm">Create amazing interfaces faster</p>
+          </div>
+        </div>
+      ),
+    }
+  ],
   Table : [
     {
       id: "glass-morphic-data-table",
