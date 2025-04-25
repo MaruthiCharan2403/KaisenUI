@@ -686,6 +686,108 @@ preview: () => (
       ),
     },
   ],
+  Testimonial: [
+    {
+      id: "basic-testimonial",
+      name: "Basic Testimonial",
+      description: "A simple Testimonial with a border",
+
+      code: `<div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 max-w-md">
+  <div className="h-3 w-16 bg-gradient-to-r from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700 mb-4"></div>
+  <p className="text-gray-700 dark:text-gray-300 italic mb-6">"Kaisen UI transformed our workflow. The components are so intuitive that our team adopted them instantly."</p>
+  <div className="flex items-center gap-3">
+    <div className="h-10 w-10 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
+    <div>
+      <p className="font-medium dark:text-white">Alex Rivera</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400">CTO, TechCorp</p>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 max-w-md">
+          <div className="h-3 w-16 bg-gradient-to-r from-amber-400 to-amber-600 dark:from-amber-500 dark:to-amber-700 mb-4"></div>
+          <p className="text-gray-700 dark:text-gray-300 italic mb-6">"Kaisen UI transformed our workflow. The components are so intuitive that our team adopted them instantly."</p>
+          <div className="flex items-center gap-3">
+            <div className="h-10 w-10 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
+            <div>
+              <p className="font-medium dark:text-white">Alex Rivera</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">CTO, TechCorp</p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "split-testimonial",
+      name: "Split Testimonial",
+      description: "A split testimonial with text",
+      code: `<div className="flex flex-col md:flex-row gap-6 bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+  <div className="md:w-1/3 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-900 p-8 flex items-center justify-center">
+    <p className="text-5xl font-light text-gray-400 dark:text-gray-500">"</p>
+  </div>
+  <div className="md:w-2/3 p-8">
+    <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">Using Kaisen UI cut our development time in half. The clean design system requires zero customization.</p>
+    <div>
+      <p className="font-medium dark:text-white">Samira Khan</p>
+      <p className="text-sm text-gray-500 dark:text-gray-400">Lead Designer, Creative Labs</p>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="flex flex-col md:flex-row gap-6 bg-gray-50 dark:bg-gray-800 rounded-xl overflow-hidden">
+          <div className="md:w-1/3 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-900 p-8 flex items-center justify-center">
+            <p className="text-5xl font-light text-gray-400 dark:text-gray-500">"</p>
+          </div>
+          <div className="md:w-2/3 p-8">
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">Using Kaisen UI cut our development time in half. The clean design system requires zero customization.</p>
+            <div>
+              <p className="font-medium dark:text-white">Samira Khan</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Lead Designer, Creative Labs</p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "timeline-testimonial",
+      name: "Timeline Testimonial",
+      description: "A timeline testimonial with gradient",
+      code: `<div className="relative pl-8">
+  <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-amber-400 to-gray-300 dark:from-amber-600 dark:to-gray-700"></div>
+  <div className="pb-8">
+    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+      <p className="text-gray-700 dark:text-gray-300 mb-4">"Kaisen UI's documentation is the best I've seen. We onboarded 15 developers in a week thanks to their clear examples."</p>
+      <div className="flex items-center gap-3">
+        <div className="h-8 w-8 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
+        <div>
+          <p className="text-sm font-medium dark:text-white">Jamie Chen</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">Engineering Manager</p>
+        </div>
+      </div>
+    </div>
+    <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 pl-6">Kaisen UI Case Study</p>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative pl-8">
+          <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-amber-400 to-gray-300 dark:from-amber-600 dark:to-gray-700"></div>
+          <div className="pb-8">
+            <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm">
+              <p className="text-gray-700 dark:text-gray-300 mb-4">"Kaisen UI's documentation is the best I've seen. We onboarded 15 developers in a week thanks to their clear examples."</p>
+              <div className="flex items-center gap-3">
+                <div className="h-8 w-8 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
+                <div>
+                  <p className="text-sm font-medium dark:text-white">Jamie Chen</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">Engineering Manager</p>
+                </div>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 pl-6">Kaisen UI Case Study</p>
+          </div>
+        </div>
+      ),
+    }
+  ],
   Timeline: [
     {
       id: "vertical-timeline",
