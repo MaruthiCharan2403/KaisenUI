@@ -783,6 +783,110 @@ preview: () => (
       ),
     },
   ],
+  Tabs : [
+    {
+      id: "minimal-underline-tabs",
+      name: "Minimal Underline Tabs",
+      description: "A simple tab component with underline effect",
+      code: `<div className="border-b border-gray-200 dark:border-gray-700">
+  <div className="flex space-x-8">
+    <button className="pb-3 px-1 border-b-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+      Kaisen UI
+    </button>
+    <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Components
+    </button>
+    <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Docs
+    </button>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="border-b border-gray-200 dark:border-gray-700">
+          <div className="flex space-x-8">
+            <button className="pb-3 px-1 border-b-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+              Kaisen UI
+            </button>
+            <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Components
+            </button>
+            <button className="pb-3 px-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Docs
+            </button>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "contained-pill-tabs",
+      name: "Contained Pill Tabs",
+      description: "A tab component with pill shape",
+      code: `<div className="bg-gray-100 dark:bg-gray-800 rounded-full p-1 inline-flex">
+  <button className="px-4 py-2 text-sm font-medium rounded-full bg-white dark:bg-gray-900 shadow-sm text-gray-900 dark:text-white">
+    Overview
+  </button>
+  <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+    Kaisen UI
+  </button>
+  <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+    Features
+  </button>
+</div>`,
+      preview: () => (
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-full p-1 inline-flex">
+          <button className="px-4 py-2 text-sm font-medium rounded-full bg-white dark:bg-gray-900 shadow-sm text-gray-900 dark:text-white">
+            Overview
+          </button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+            Kaisen UI
+          </button>
+          <button className="px-4 py-2 text-sm font-medium rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+            Features
+          </button>
+        </div>
+      ),
+    },
+    {
+      id: "vertical-border-tabs",
+      name: "Vertical Border Tabs",
+      description: "A vertical tab component with border",
+      code: `<div className="flex">
+  <div className="flex flex-col border-r border-gray-200 dark:border-gray-700 pr-4">
+    <button className="py-2 px-4 text-left border-l-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+      Introduction
+    </button>
+    <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Kaisen UI
+    </button>
+    <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+      Installation
+    </button>
+  </div>
+  <div className="flex-1 pl-4">
+    <p className="text-sm text-gray-600 dark:text-gray-300">Select a tab to view content</p>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="flex">
+          <div className="flex flex-col border-r border-gray-200 dark:border-gray-700 pr-4">
+            <button className="py-2 px-4 text-left border-l-2 border-amber-500 dark:border-amber-600 text-sm font-medium dark:text-white">
+              Introduction
+            </button>
+            <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Kaisen UI
+            </button>
+            <button className="py-2 px-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">
+              Installation
+            </button>
+          </div>
+          <div className="flex-1 pl-4">
+            <p className="text-sm text-gray-600 dark:text-gray-300">Select a tab to view content</p>
+          </div>
+        </div>
+      ),
+
+    }
+  ],
   Team: [
     {
       id: "team-member",
