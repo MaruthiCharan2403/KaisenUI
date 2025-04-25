@@ -38,7 +38,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                href="#"
+                to="/components"
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-zinc-200 transition-colors"
               >
                 Get Started
@@ -48,7 +48,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Code Preview */}
           </div>
       </section>
 
@@ -219,18 +218,13 @@ export default function Home() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="#"
+                  to="/components"
                   className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-purple-600 bg-white hover:bg-zinc-100 transition-colors"
                 >
                   Get Started
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
-                <Link
-                  href="#"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white/10 transition-colors"
-                >
-                  View Documentation
-                </Link>
+                
               </div>
             </div>
           </div>

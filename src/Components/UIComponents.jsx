@@ -23,10 +23,6 @@ const componentCategories = [
   { name: "Pricing" },
   { name: "Profile" },
   { name: "Review" },
-  { name: "Navbar" },
-  { name: "Slider" },
-  { name: "Snackbar" },
-  { name: "Stats" },
   { name: "Steps" },
   { name: "Table" },
   { name: "Tabs" },
@@ -3792,15 +3788,170 @@ preview: () => (
 </div>
       ),
     }
+  ],
+  Review: [
+    {
+      id: "Geometric",
+      name: "Geometric ",
+      description: "A geometric review card",
+      code: `<div className="relative w-full max-w-md p-6 bg-white dark:bg-gray-900 rounded-xl overflow-hidden">
+  <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500 dark:bg-purple-600 rounded-bl-[80px]"></div>
+  <div className="absolute bottom-0 left-0 w-16 h-16 bg-cyan-500 dark:bg-cyan-600 rounded-tr-[60px]"></div>
+  
+  <div className="relative z-10">
+    <div className="flex items-center mb-4">
+      <div className="w-12 h-12 rounded-full bg-pink-500 dark:bg-pink-600 flex items-center justify-center text-white font-bold text-xl">K</div>
+      <div className="ml-4">
+        <h3 className="text-lg font-bold text-gray-800 dark:text-white">Kaisen UI Framework</h3>
+        <p className="text-sm text-pink-600 dark:text-pink-400">by Mia Johnson</p>
+      </div>
+    </div>
     
+    <div className="mb-4">
+      <div className="flex mb-2">
+        <span className="text-yellow-500 dark:text-yellow-400 text-xl">★★★★</span>
+        <span className="text-gray-300 dark:text-gray-600 text-xl">★</span>
+      </div>
+      <p className="text-gray-700 dark:text-gray-300">The Kaisen UI components are revolutionary! They've completely transformed our design workflow and made our applications stand out.</p>
+    </div>
+    
+    <div className="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-700">
+      <span className="text-sm text-gray-500 dark:text-gray-400">Verified Purchase</span>
+      <span className="text-sm text-purple-600 dark:text-purple-400">2 days ago</span>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative w-full max-w-md p-6 bg-white dark:bg-gray-900 rounded-xl overflow-hidden">
+  <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500 dark:bg-purple-600 rounded-bl-[80px]"></div>
+  <div className="absolute bottom-0 left-0 w-16 h-16 bg-cyan-500 dark:bg-cyan-600 rounded-tr-[60px]"></div>
+  
+  <div className="relative z-10">
+    <div className="flex items-center mb-4">
+      <div className="w-12 h-12 rounded-full bg-pink-500 dark:bg-pink-600 flex items-center justify-center text-white font-bold text-xl">K</div>
+      <div className="ml-4">
+        <h3 className="text-lg font-bold text-gray-800 dark:text-white">Kaisen UI Framework</h3>
+        <p className="text-sm text-pink-600 dark:text-pink-400">by Mia Johnson</p>
+      </div>
+    </div>
+    
+    <div className="mb-4">
+      <div className="flex mb-2">
+        <span className="text-yellow-500 dark:text-yellow-400 text-xl">★★★★</span>
+        <span className="text-gray-300 dark:text-gray-600 text-xl">★</span>
+      </div>
+      <p className="text-gray-700 dark:text-gray-300">The Kaisen UI components are revolutionary! They've completely transformed our design workflow and made our applications stand out.</p>
+    </div>
+    
+    <div className="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-700">
+      <span className="text-sm text-gray-500 dark:text-gray-400">Verified Purchase</span>
+      <span className="text-sm text-purple-600 dark:text-purple-400">2 days ago</span>
+    </div>
+  </div>
+</div>
+      ),
+    },
+    {
+      id: "offset-blocks",
+      name: "Offset Blocks",
+      description: "A review card with offset blocks",
+      code: `<div className="w-full max-w-md bg-white dark:bg-gray-900 rounded-xl overflow-hidden">
+  <div className="relative">
+    <div className="absolute top-0 left-0 w-full h-16 bg-teal-500 dark:bg-teal-600"></div>
+    <div className="relative pt-6 px-6">
+      <div className="w-16 h-16 bg-orange-500 dark:bg-orange-600 rounded-lg mt-4 flex items-center justify-center text-white font-bold text-2xl">KU</div>
+    </div>
+  </div>
+  
+  <div className="p-6">
+    <div className="flex justify-between items-start mb-4">
+      <div>
+        <h3 className="text-lg font-bold text-gray-800 dark:text-white">Exceptional Design System</h3>
+        <p className="text-sm text-teal-600 dark:text-teal-400">by Alex Rivera</p>
+      </div>
+      <div className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 text-xs rounded-full">Top Reviewer</div>
+    </div>
+    
+    <div className="mb-4">
+      <div className="flex space-x-1 mb-2">
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-gray-200 dark:bg-gray-700 rounded-sm"></div>
+      </div>
+      <p className="text-gray-700 dark:text-gray-300">Kaisen UI has become our go-to for all projects. The attention to detail and the innovative approach to component design is unmatched in the industry.</p>
+    </div>
+    
+    <div className="flex flex-wrap gap-2 mb-4">
+      <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-300 text-xs rounded-full">Components</span>
+      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 text-xs rounded-full">Design System</span>
+      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 text-xs rounded-full">Accessibility</span>
+    </div>
+    
+    <div className="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-700">
+      <div className="flex items-center">
+        <div className="w-4 h-4 bg-green-500 dark:bg-green-600 rounded-full mr-2"></div>
+        <span className="text-sm text-gray-500 dark:text-gray-400">Verified</span>
+      </div>
+      <span className="text-sm text-teal-600 dark:text-teal-400">March 15, 2023</span>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="w-full max-w-md bg-white dark:bg-gray-900 rounded-xl overflow-hidden">
+  <div className="relative">
+    <div className="absolute top-0 left-0 w-full h-16 bg-teal-500 dark:bg-teal-600"></div>
+    <div className="relative pt-6 px-6">
+      <div className="w-16 h-16 bg-orange-500 dark:bg-orange-600 rounded-lg mt-4 flex items-center justify-center text-white font-bold text-2xl">KU</div>
+    </div>
+  </div>
+  
+  <div className="p-6">
+    <div className="flex justify-between items-start mb-4">
+      <div>
+        <h3 className="text-lg font-bold text-gray-800 dark:text-white">Exceptional Design System</h3>
+        <p className="text-sm text-teal-600 dark:text-teal-400">by Alex Rivera</p>
+      </div>
+      <div className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 text-xs rounded-full">Top Reviewer</div>
+    </div>
+    
+    <div className="mb-4">
+      <div className="flex space-x-1 mb-2">
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-yellow-500 dark:bg-yellow-600 rounded-sm"></div>
+        <div className="w-6 h-6 bg-gray-200 dark:bg-gray-700 rounded-sm"></div>
+      </div>
+      <p className="text-gray-700 dark:text-gray-300">Kaisen UI has become our go-to for all projects. The attention to detail and the innovative approach to component design is unmatched in the industry.</p>
+    </div>
+    
+    <div className="flex flex-wrap gap-2 mb-4">
+      <span className="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-300 text-xs rounded-full">Components</span>
+      <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 text-xs rounded-full">Design System</span>
+      <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 text-xs rounded-full">Accessibility</span>
+    </div>
+    
+    <div className="flex justify-between items-center pt-4 border-t border-gray-200 dark:border-gray-700">
+      <div className="flex items-center">
+        <div className="w-4 h-4 bg-green-500 dark:bg-green-600 rounded-full mr-2"></div>
+        <span className="text-sm text-gray-500 dark:text-gray-400">Verified</span>
+      </div>
+      <span className="text-sm text-teal-600 dark:text-teal-400">March 15, 2023</span>
+    </div>
+  </div>
+</div>
+      ),
+    },
     
   ],
   
 }
 
 export default function ComponentsPage() {
-  const [selectedCategory, setSelectedCategory] = useState("Button")
-  const [selectedComponent, setSelectedComponent] = useState("primary-button")
+  const [selectedCategory, setSelectedCategory] = useState("Article")
+  const [selectedComponent, setSelectedComponent] = useState("basic-article")
   const [viewMode, setViewMode] = useState("preview") // "preview" or "code"
   const [copied, setCopied] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
