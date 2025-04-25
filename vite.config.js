@@ -11,7 +11,7 @@ export default defineConfig({
         main: './index.html' 
       }
     }
-  }
+  },
   server: {
     watch: {
       usePolling: true
