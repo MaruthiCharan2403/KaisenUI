@@ -17,7 +17,6 @@ const componentCategories = [
   { name: "Contact" },
   { name: "Faq" },
   { name: "Gallery" },
-  { name: "Header" },
   { name: "Hero" },
   { name: "Loading" },
   { name: "Pagination" },
@@ -2416,7 +2415,237 @@ preview: () => (
 </div>
       ),
     },
-   
+  ],
+  Hero: [
+    {
+      id: "Gradient-Hero",
+      name: "Gradient Hero",
+      description: "A hero section with a gradient background",
+      code: `<div className="relative overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20">
+  <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.1)_0%,transparent_70%)]"></div>
+  
+  <div className="relative z-10 container mx-auto px-6 py-24 flex flex-col items-center text-center">
+    <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
+      Build Faster with Kaisen UI
+    </h1>
+    <p className="text-xl text-indigo-900/80 dark:text-indigo-100/80 max-w-2xl mb-10">
+      The atomic design system that compiles to pure CSS. Zero runtime. Maximum performance.
+    </p>
+    
+    <div className="flex gap-4">
+      <div className="px-8 py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-indigo-300/50 transition-shadow">
+        Get Started
+      </div>
+      <div className="px-8 py-3.5 bg-white/90 dark:bg-gray-900/90 text-indigo-600 dark:text-indigo-400 font-bold rounded-xl border-2 border-indigo-200 dark:border-indigo-800 hover:bg-white dark:hover:bg-gray-800 transition-colors">
+        Live Demo
+      </div>
+    </div>
+      </div>
+</div>`,
+      preview: () => (
+        <div className="relative overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20">
+  <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.1)_0%,transparent_70%)]"></div>
+  
+  <div className="relative z-10 container mx-auto px-6 py-24 flex flex-col items-center text-center">
+    <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
+      Build Faster with Kaisen UI
+    </h1>
+    <p className="text-xl text-indigo-900/80 dark:text-indigo-100/80 max-w-2xl mb-10">
+      The atomic design system that compiles to pure CSS. Zero runtime. Maximum performance.
+    </p>
+    
+    <div className="flex gap-4">
+      <div className="px-8 py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-xl shadow-lg hover:shadow-indigo-300/50 transition-shadow">
+        Get Started
+      </div>
+      <div className="px-8 py-3.5 bg-white/90 dark:bg-gray-900/90 text-indigo-600 dark:text-indigo-400 font-bold rounded-xl border-2 border-indigo-200 dark:border-indigo-800 hover:bg-white dark:hover:bg-gray-800 transition-colors">
+        Live Demo
+      </div>
+    </div>
+      </div>
+</div>
+      ),
+    },
+    {
+      id: "color-matrix",
+      name: "Color Matrix",
+      description: "A hero section with a color matrix effect",
+      code: `<div className="min-h-screen bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20">
+  <div className="container mx-auto px-6 py-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">
+          Why Kaisen UI?
+        </h2>
+        <p className="text-lg text-cyan-900/80 dark:text-cyan-100/80 mb-8">
+          Experience the future of React components with our zero-runtime atomic CSS system.
+        </p>
+        
+        <div className="space-y-4">
+          <div className="p-5 rounded-xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-cyan-200 dark:border-cyan-800/50">
+            <h3 className="text-xl font-semibold text-cyan-700 dark:text-cyan-400 mb-2">40% Faster Rendering</h3>
+            <p className="text-cyan-900/70 dark:text-cyan-100/70">Compiles to pure CSS during build</p>
+          </div>
+          
+          <div className="p-5 rounded-xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-blue-200 dark:border-blue-800/50">
+            <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-2">Automatic Dark Mode</h3>
+            <p className="text-blue-900/70 dark:text-blue-100/70">System preference detection</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-2 gap-4">
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-500 dark:from-cyan-600 dark:to-blue-700"></div>
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 dark:from-pink-600 dark:to-rose-700"></div>
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 dark:from-amber-600 dark:to-orange-700"></div>
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-purple-400 to-indigo-500 dark:from-purple-600 dark:to-indigo-700"></div>
+      </div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="min-h-screen bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-900/20 dark:to-blue-900/20">
+  <div className="container mx-auto px-6 py-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent">
+          Why Kaisen UI?
+        </h2>
+        <p className="text-lg text-cyan-900/80 dark:text-cyan-100/80 mb-8">
+          Experience the future of React components with our zero-runtime atomic CSS system.
+        </p>
+        
+        <div className="space-y-4">
+          <div className="p-5 rounded-xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-cyan-200 dark:border-cyan-800/50">
+            <h3 className="text-xl font-semibold text-cyan-700 dark:text-cyan-400 mb-2">40% Faster Rendering</h3>
+            <p className="text-cyan-900/70 dark:text-cyan-100/70">Compiles to pure CSS during build</p>
+          </div>
+          
+          <div className="p-5 rounded-xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-blue-200 dark:border-blue-800/50">
+            <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-2">Automatic Dark Mode</h3>
+            <p className="text-blue-900/70 dark:text-blue-100/70">System preference detection</p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-2 gap-4">
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-500 dark:from-cyan-600 dark:to-blue-700"></div>
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 dark:from-pink-600 dark:to-rose-700"></div>
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 dark:from-amber-600 dark:to-orange-700"></div>
+        <div className="aspect-square rounded-2xl bg-gradient-to-br from-purple-400 to-indigo-500 dark:from-purple-600 dark:to-indigo-700"></div>
+      </div>
+    </div>
+  </div>
+</div>
+      ),
+    },
+    {
+      id: "split-screen",
+      name: "Split Screen",
+      description: "A split-screen hero section with a gradient background",
+      code: `<div className="flex flex-col md:flex-row min-h-screen w-full">
+      <div className="w-full md:w-1/2 bg-gradient-to-br from-indigo-600 to-purple-700 flex items-center justify-center p-8 md:p-12">
+        <div>
+          <h1 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+            KAISEN UI<br/>
+            <span className="bg-gradient-to-r from-amber-300 to-rose-400 bg-clip-text text-transparent">UI COMPONENTS</span>
+          </h1>
+          <div className="h-1 w-24 bg-amber-400 mb-8"></div>
+          <p className="text-indigo-100 text-lg mb-10 max-w-md">
+            Kaisen UI delivers atomic design principles with zero runtime overhead for maximum performance.
+          </p>
+          <div className="px-8 py-3.5 bg-white text-indigo-700 font-bold rounded-full inline-block hover:bg-amber-100 transition-colors cursor-pointer">
+            EXPLORE 3.0
+          </div>
+        </div>
+      </div>
+      <div className="w-full md:w-1/2 bg-gradient-to-br from-amber-400 to-rose-500 flex items-center justify-center p-8 md:p-12">
+        <div className="w-full max-w-md h-96 rounded-3xl bg-white/20 backdrop-blur-md border-2 border-white/30"></div>
+      </div>
+    </div>`,
+      preview: () => (
+        <div className="flex flex-col md:flex-row min-h-screen w-full">
+      <div className="w-full md:w-1/2 bg-gradient-to-br from-indigo-600 to-purple-700 flex items-center justify-center p-8 md:p-12">
+        <div>
+          <h1 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+            KAISEN UI<br/>
+            <span className="bg-gradient-to-r from-amber-300 to-rose-400 bg-clip-text text-transparent">UI COMPONENTS</span>
+          </h1>
+          <div className="h-1 w-24 bg-amber-400 mb-8"></div>
+          <p className="text-indigo-100 text-lg mb-10 max-w-md">
+            Kaisen UI delivers atomic design principles with zero runtime overhead for maximum performance.
+          </p>
+          <div className="px-8 py-3.5 bg-white text-indigo-700 font-bold rounded-full inline-block hover:bg-amber-100 transition-colors cursor-pointer">
+            EXPLORE 3.0
+          </div>
+        </div>
+      </div>
+      <div className="w-full md:w-1/2 bg-gradient-to-br from-amber-400 to-rose-500 flex items-center justify-center p-8 md:p-12">
+        <div className="w-full max-w-md h-96 rounded-3xl bg-white/20 backdrop-blur-md border-2 border-white/30"></div>
+      </div>
+    </div>
+      ),
+    },
+    {
+      id:"diagonal-color-burst",
+      name: "Diagonal Color Burst",
+      description: "A hero section with a diagonal color burst effect",
+      code:`
+      <div className="relative min-h-screen overflow-hidden bg-gray-50 dark:bg-gray-950">
+  <div className="absolute inset-0 w-full h-full bg-[conic-gradient(from_90deg_at_50%_50%,#4f46e5,#9333ea,#f97316,#ec4899,#4f46e5)] opacity-10 dark:opacity-[0.15] -rotate-45 origin-bottom-left"></div>
+  <div className="relative z-10 w-full h-full min-h-screen flex flex-col justify-center px-6">
+    <div className="w-full max-w-[1800px] mx-auto flex justify-between items-center">
+      <div className="w-full max-w-3xl">
+        <h1 className="text-6xl font-black mb-6 leading-tight">
+          <span className="bg-gradient-to-r from-indigo-600 to-rose-500 dark:from-indigo-400 dark:to-rose-400 bg-clip-text text-transparent">KAISEN UI</span><br/>
+          <span className="text-gray-900 dark:text-white">FOR MODERN APPS</span>
+        </h1>
+        <div className="h-1.5 w-32 bg-gradient-to-r from-indigo-500 to-pink-500 mb-8 rounded-full"></div>
+        <p className="text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-lg">
+          The first atomic design system that compiles to pure CSS with React component convenience.
+        </p>
+        <div className="flex gap-4">
+          <div className="px-8 py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-full shadow-lg">
+            GET STARTED
+          </div>
+          <div className="px-8 py-3.5 bg-white/90 dark:bg-gray-900/90 text-indigo-600 dark:text-indigo-400 font-bold rounded-full border-2 border-indigo-200 dark:border-indigo-800">
+            LIVE DEMO
+          </div>
+        </div>
+      </div>
+      <div className="w-[50vw] h-[70vh] rounded-[40px] bg-gradient-to-br from-indigo-500/20 to-rose-500/20 border-2 border-white/20 dark:border-gray-800/50 backdrop-blur-md shadow-2xl ml-12"></div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative min-h-screen overflow-hidden bg-gray-50 dark:bg-gray-950">
+  <div className="absolute inset-0 w-full h-full bg-[conic-gradient(from_90deg_at_50%_50%,#4f46e5,#9333ea,#f97316,#ec4899,#4f46e5)] opacity-10 dark:opacity-[0.15] -rotate-45 origin-bottom-left"></div>
+  <div className="relative z-10 w-full h-full min-h-screen flex flex-col justify-center px-6">
+    <div className="w-full max-w-[1800px] mx-auto flex justify-between items-center">
+      <div className="w-full max-w-3xl">
+        <h1 className="text-6xl font-black mb-6 leading-tight">
+          <span className="bg-gradient-to-r from-indigo-600 to-rose-500 dark:from-indigo-400 dark:to-rose-400 bg-clip-text text-transparent">KAISEN UI</span><br/>
+          <span className="text-gray-900 dark:text-white">FOR MODERN APPS</span>
+        </h1>
+        <div className="h-1.5 w-32 bg-gradient-to-r from-indigo-500 to-pink-500 mb-8 rounded-full"></div>
+        <p className="text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-lg">
+          The first atomic design system that compiles to pure CSS with React component convenience.
+        </p>
+        <div className="flex gap-4">
+          <div className="px-8 py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold rounded-full shadow-lg">
+            GET STARTED
+          </div>
+          <div className="px-8 py-3.5 bg-white/90 dark:bg-gray-900/90 text-indigo-600 dark:text-indigo-400 font-bold rounded-full border-2 border-indigo-200 dark:border-indigo-800">
+            LIVE DEMO
+          </div>
+        </div>
+      </div>
+      <div className="w-[50vw] h-[70vh] rounded-[40px] bg-gradient-to-br from-indigo-500/20 to-rose-500/20 border-2 border-white/20 dark:border-gray-800/50 backdrop-blur-md shadow-2xl ml-12"></div>
+    </div>
+  </div>
+</div>
+      ),
+    }
   ],
   
 }
