@@ -375,11 +375,8 @@ const sampleComponents = {
       name: "Marketing Banner",
       description: "A marketing banner with image and text",
       code: `<div className="relative isolate overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 px-6 py-8 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-600/30">
-  {/* Decorative floating elements */}
   <div className="absolute -top-16 -right-4 h-32 w-32 rounded-full bg-indigo-400/10 dark:bg-indigo-600/10 blur-xl"></div>
   <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-purple-400/10 dark:bg-purple-600/10 blur-xl"></div>
-  
-  {/* Content */}
   <div className="relative z-10">
     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
       <div className="max-w-xl">
@@ -397,8 +394,6 @@ const sampleComponents = {
         </div>
       </div>
     </div>
-    
-    {/* Stats */}
     <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
       <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
         <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">100+</p>
@@ -420,12 +415,8 @@ const sampleComponents = {
   </div>
 </div>`,
       preview: () => (
-        <div className="relative isolate overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 px-6 py-8 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-600/30">
-        {/* Decorative floating elements */}
-        <div className="absolute -top-16 -right-4 h-32 w-32 rounded-full bg-indigo-400/10 dark:bg-indigo-600/10 blur-xl"></div>
+        <div className="relative isolate overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 px-6 py-8 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-600/30">        <div className="absolute -top-16 -right-4 h-32 w-32 rounded-full bg-indigo-400/10 dark:bg-indigo-600/10 blur-xl"></div>
         <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-purple-400/10 dark:bg-purple-600/10 blur-xl"></div>
-        
-        {/* Content */}
         <div className="relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="max-w-xl">
@@ -443,8 +434,6 @@ const sampleComponents = {
               </div>
             </div>
           </div>
-          
-          {/* Stats */}
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div className="p-4 rounded-lg bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
               <p className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">100+</p>
@@ -471,50 +460,132 @@ const sampleComponents = {
       id:"pricing-banner",
       name: "Pricing Banner",
       description: "A pricing banner with image and call to action",
-      code: `<div className="relative bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 md:p-8 overflow-hidden border border-gray-200 dark:border-gray-700">
-  {/* Decorative elements */}
-  <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-200/30 dark:bg-indigo-800/20 rounded-full filter blur-3xl"></div>
-  
-  {/* Content */}
-  <div className="relative z-10">
-    <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Up to 50% Off</h3>
-    <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-      Plus free shipping! Use code: <span className="font-bold bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-md">KAISEN50</span>
-    </p>
-    <div className="inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
-      Upgrade Now
-    </div>
-  </div>
-  
-  {/* Floating badge */}
-  <div className="absolute top-4 right-4 bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 text-xs font-bold px-3 py-1 rounded-full shadow-sm border border-gray-200 dark:border-gray-700">
-    LIMITED TIME
-  </div>
-</div>`,
+      code: `<div className="relative bg-gradient-to-r from-purple-500 to-purple-400 dark:from-purple-700 dark:to-purple-500 w-full p-6 flex flex-col sm:flex-row items-center justify-between rounded-lg overflow-hidden shadow-lg border border-purple-300/30 dark:border-purple-600/30">      
+      <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+      <div className="absolute -top-8 -left-8 w-40 h-40 bg-purple-300/20 dark:bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div className="text-left z-10 transform -rotate-1">
+        <h2 className="text-4xl font-black text-white drop-shadow-sm">Up to 50% Off</h2>
+      </div>
+      <div className="text-white text-lg font-medium my-3 sm:my-0 mx-4 z-10 flex items-center">
+        <div className="inline-block mr-2 w-1.5 h-1.5 bg-yellow-300 rounded-full"></div>
+        Plus free shipping! Use code: 
+        <span className="ml-2 font-mono font-bold bg-white/20 backdrop-blur-sm px-3 py-1 rounded border-b-2 border-white/30">KAISEN50</span>
+      </div>
+      <div className="z-10">
+        <button className="relative group bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-300 px-8 py-2.5 rounded-lg font-semibold overflow-hidden">
+          <span className="relative z-10">Shop Now</span>
+          <div className="absolute inset-0 h-full w-0 bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-500 dark:to-pink-500 transition-all duration-300 group-hover:w-full"></div>
+          <div className="absolute inset-0 -translate-x-full transition-transform duration-300 group-hover:translate-x-0 bg-white/20 dark:bg-white/10 blur-xl"></div>
+        </button>
+      </div>
+    </div>`,
       preview: () => (
-        <div className="relative bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 md:p-8 overflow-hidden border border-gray-200 dark:border-gray-700">
-  {/* Decorative elements */}
-  <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-200/30 dark:bg-indigo-800/20 rounded-full filter blur-3xl"></div>
-  
-  {/* Content */}
-  <div className="relative z-10">
-    <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Up to 50% Off</h3>
-    <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-      Plus free shipping! Use code: <span className="font-bold bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded-md">KAISEN50</span>
-    </p>
-    <div className="inline-block px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
-      Upgrade Now
+        <div className="relative bg-gradient-to-r from-purple-500 to-purple-400 dark:from-purple-700 dark:to-purple-500 w-full p-6 flex flex-col sm:flex-row items-center justify-between rounded-lg overflow-hidden shadow-lg border border-purple-300/30 dark:border-purple-600/30">
+      <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+      <div className="absolute -top-8 -left-8 w-40 h-40 bg-purple-300/20 dark:bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div className="text-left z-10 transform -rotate-1">
+        <h2 className="text-4xl font-black text-white drop-shadow-sm">Up to 50% Off</h2>
+      </div>
+      
+      <div className="text-white text-lg font-medium my-3 sm:my-0 mx-4 z-10 flex items-center">
+        <div className="inline-block mr-2 w-1.5 h-1.5 bg-yellow-300 rounded-full"></div>
+        Plus free shipping! Use code: 
+        <span className="ml-2 font-mono font-bold bg-white/20 backdrop-blur-sm px-3 py-1 rounded border-b-2 border-white/30">KAISEN50</span>
+      </div>
+      
+      <div className="z-10">
+        <button className="relative group bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-300 px-8 py-2.5 rounded-lg font-semibold overflow-hidden">
+          <span className="relative z-10">Shop Now</span>
+          <div className="absolute inset-0 h-full w-0 bg-gradient-to-r from-purple-300 to-pink-300 dark:from-purple-500 dark:to-pink-500 transition-all duration-300 group-hover:w-full"></div>
+          <div className="absolute inset-0 -translate-x-full transition-transform duration-300 group-hover:translate-x-0 bg-white/20 dark:bg-white/10 blur-xl"></div>
+        </button>
+      </div>
+      
+      
     </div>
-  </div>
-  
-  {/* Floating badge */}
-  <div className="absolute top-4 right-4 bg-white dark:bg-gray-800 text-indigo-600 dark:text-indigo-400 text-xs font-bold px-3 py-1 rounded-full shadow-sm border border-gray-200 dark:border-gray-700">
-    LIMITED TIME
-  </div>
-</div>
       )
       
     }
+  ],
+  Blog: [
+    {
+      id: "basic-blog",
+      name: "Basic Blog",
+      description: "A simple Blog with a border",
+      code: `<div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:shadow-xl transition-all duration-300">
+  <div className="h-48 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+  <div className="p-6">
+    <div className="flex gap-2 mb-4">
+      <span className="px-3 py-1 text-xs font-medium rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">Kaisen UI</span>
+      <span className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">Tutorial</span>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Mastering Component Composition</h3>
+    <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Learn how to combine Kaisen UI components like atomic particles to create stunning interfaces with minimal effort.</p>
+    <div className="flex items-center text-sm text-gray-500 dark:text-gray-500">
+      <span>May 15, 2023</span>
+      <span className="mx-2">•</span>
+      <span>5 min read</span>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:shadow-xl transition-all duration-300">
+  <div className="h-48 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+  <div className="p-6">
+    <div className="flex gap-2 mb-4">
+      <span className="px-3 py-1 text-xs font-medium rounded-full bg-indigo-50 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">Kaisen UI</span>
+      <span className="px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">Tutorial</span>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Mastering Component Composition</h3>
+    <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Learn how to combine Kaisen UI components like atomic particles to create stunning interfaces with minimal effort.</p>
+    <div className="flex items-center text-sm text-gray-500 dark:text-gray-500">
+      <span>May 15, 2023</span>
+      <span className="mx-2">•</span>
+      <span>5 min read</span>
+    </div>
+  </div>
+</div>
+      ),
+    },
+    {
+      id: "featured-blog",
+      name: "Featured Blog",
+      description: "A rounded avatar with shadow",
+      code: `<div className="relative isolate">
+  <div className="absolute inset-0 -z-10 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl transform group-hover:scale-[1.01] transition-transform duration-300"></div>
+  <div className="p-8">
+    <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-6">Why Kaisen UI is the Future of React Development</h2>
+    <div className="flex items-start gap-8">
+      <div className="flex-1">
+        <p className="text-lg leading-8 text-gray-600 dark:text-gray-400 mb-6">Discover how Kaisen UI's zero-runtime approach eliminates bundle bloat while delivering stunning visual results through our atomic design system.</p>
+        <div className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+          Continue Reading
+          <span className="ml-2 w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+        </div>
+      </div>
+      <div className="hidden md:block w-32 h-32 rounded-lg bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative isolate">
+  <div className="absolute inset-0 -z-10 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl transform group-hover:scale-[1.01] transition-transform duration-300"></div>
+  <div className="p-8">
+    <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-6">Why Kaisen UI is the Future of React Development</h2>
+    <div className="flex items-start gap-8">
+      <div className="flex-1">
+        <p className="text-lg leading-8 text-gray-600 dark:text-gray-400 mb-6">Discover how Kaisen UI's zero-runtime approach eliminates bundle bloat while delivering stunning visual results through our atomic design system.</p>
+        <div className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+          Continue Reading
+          <span className="ml-2 w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+        </div>
+      </div>
+      <div className="hidden md:block w-32 h-32 rounded-lg bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50"></div>
+    </div>
+  </div>
+</div>
+      ),
+    },
   ],
 }
 
