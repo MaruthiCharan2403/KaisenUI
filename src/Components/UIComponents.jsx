@@ -686,6 +686,119 @@ preview: () => (
       ),
     },
   ],
+  Weather: [
+    {
+      id: "weather-card",
+      name: "Weather Card",
+      description: "A clean weather display card with temperature, condition, and Kaisen UI branding.",
+      code: `<div className="relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 w-64 shadow-sm hover:shadow-md transition-shadow">
+  <div className="flex justify-between items-start">
+    <div>
+      <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI Weather</p>
+      <h3 className="text-2xl font-semibold dark:text-white">24°C</h3>
+      <p className="text-gray-700 dark:text-gray-300">Sunny</p>
+    </div>
+    <div className="h-12 w-12 bg-gradient-to-br from-amber-200 to-amber-400 dark:from-amber-400 dark:to-amber-600 rounded-full"></div>
+  </div>
+  <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+    <p className="text-xs text-gray-500 dark:text-gray-400">Powered by Kaisen UI</p>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="relative bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-6 w-64 shadow-sm hover:shadow-md transition-shadow">
+          <div className="flex justify-between items-start">
+            <div>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI Weather</p>
+              <h3 className="text-2xl font-semibold dark:text-white">24°C</h3>
+              <p className="text-gray-700 dark:text-gray-300">Sunny</p>
+            </div>
+            <div className="h-12 w-12 bg-gradient-to-br from-amber-200 to-amber-400 dark:from-amber-400 dark:to-amber-600 rounded-full"></div>
+          </div>
+          <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+            <p className="text-xs text-gray-500 dark:text-gray-400">Powered by Kaisen UI</p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "weather-forecast",
+      name: "Weather Forecast",
+      description: "A compact 3-day forecast with minimalist weather indicators and dark mode support.",
+      code: `<div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-4 w-full max-w-md overflow-hidden">
+  <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">3-Day Forecast • Kaisen UI</p>
+  <div className="flex gap-4">
+    <div className="flex-1 text-center">
+      <p className="font-medium dark:text-white">Mon</p>
+      <div className="h-10 w-10 mx-auto my-2 bg-gradient-to-br from-blue-100 to-blue-300 dark:from-blue-400 dark:to-blue-600 rounded-full"></div>
+      <p className="text-sm dark:text-gray-300">22° / 14°</p>
+    </div>
+    <div className="flex-1 text-center">
+      <p className="font-medium dark:text-white">Tue</p>
+      <div className="h-10 w-10 mx-auto my-2 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-400 dark:to-gray-600 rounded-full"></div>
+      <p className="text-sm dark:text-gray-300">19° / 12°</p>
+    </div>
+    <div className="flex-1 text-center">
+      <p className="font-medium dark:text-white">Wed</p>
+      <div className="h-10 w-10 mx-auto my-2 bg-gradient-to-br from-amber-100 to-amber-300 dark:from-amber-400 dark:to-amber-600 rounded-full"></div>
+      <p className="text-sm dark:text-gray-300">26° / 18°</p>
+    </div>
+  </div>
+</div>`,
+      preview: () => (
+        <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-4 w-full max-w-md overflow-hidden">
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">3-Day Forecast • Kaisen UI</p>
+          <div className="flex gap-4">
+            <div className="flex-1 text-center">
+              <p className="font-medium dark:text-white">Mon</p>
+              <div className="h-10 w-10 mx-auto my-2 bg-gradient-to-br from-blue-100 to-blue-300 dark:from-blue-400 dark:to-blue-600 rounded-full"></div>
+              <p className="text-sm dark:text-gray-300">22° / 14°</p>
+            </div>
+            <div className="flex-1 text-center">
+              <p className="font-medium dark:text-white">Tue</p>
+              <div className="h-10 w-10 mx-auto my-2 bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-400 dark:to-gray-600 rounded-full"></div>
+              <p className="text-sm dark:text-gray-300">19° / 12°</p>
+            </div>
+            <div className="flex-1 text-center">
+              <p className="font-medium dark:text-white">Wed</p>
+              <div className="h-10 w-10 mx-auto my-2 bg-gradient-to-br from-amber-100 to-amber-300 dark:from-amber-400 dark:to-amber-600 rounded-full"></div>
+              <p className="text-sm dark:text-gray-300">26° / 18°</p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "weather-widget",
+      name: "Weather Widget",
+      description: "A tiny yet functional weather widget with current temperature and precipitation data.",
+      code: `<div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-xl w-60">
+  <p className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">Kaisen UI</p>
+  <div className="flex items-center justify-between">
+    <div>
+      <p className="text-5xl font-light dark:text-white">18°</p>
+      <p className="text-gray-600 dark:text-gray-300">Cloudy</p>
+    </div>
+    <div className="h-16 w-16 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-500 dark:to-gray-700 rounded-full"></div>
+  </div>
+  <div className="mt-3 h-px bg-gray-200 dark:bg-gray-700"></div>
+  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">Precipitation: 10%</p>
+</div>`,
+      preview: () => (
+        <div className="bg-gray-50 dark:bg-gray-800 p-5 rounded-xl w-60">
+          <p className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">Kaisen UI</p>
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-5xl font-light dark:text-white">18°</p>
+              <p className="text-gray-600 dark:text-gray-300">Cloudy</p>
+            </div>
+            <div className="h-16 w-16 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-500 dark:to-gray-700 rounded-full"></div>
+          </div>
+          <div className="mt-3 h-px bg-gray-200 dark:bg-gray-700"></div>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">Precipitation: 10%</p>
+        </div>
+      ),
+    }
+  ],
 }
 
 export default function ComponentsPage() {
