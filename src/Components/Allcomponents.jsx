@@ -1657,13 +1657,11 @@ const sampleComponents = {
         name: "Media Timeline",
         description: "Vertical timeline with image cards and staggered layout",
         code: `<div className="space-y-12">
-        {/* Event 1 */}
         <div className="flex flex-col md:flex-row gap-6 group">
           <div className="md:w-1/3 relative">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 md:hidden"></div>
             <div className="w-8 h-8 rounded-full bg-amber-400 dark:bg-amber-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">1</div>
             <div className="h-48 md:h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-xl overflow-hidden shadow-md">
-              {/* Image placeholder */}
             </div>
           </div>
           <div className="md:w-2/3">
@@ -1676,15 +1674,11 @@ const sampleComponents = {
               </div>
             </div>
           </div>
-        </div>
-      
-        {/* Event 2 */}
         <div className="flex flex-col md:flex-row gap-6 group">
           <div className="md:w-1/3 relative md:order-last">
             <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 md:hidden"></div>
             <div className="w-8 h-8 rounded-full bg-blue-400 dark:bg-blue-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">2</div>
             <div className="h-48 md:h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-xl overflow-hidden shadow-md">
-              {/* Image placeholder */}
             </div>
           </div>
           <div className="md:w-2/3 md:order-first">
@@ -1701,13 +1695,11 @@ const sampleComponents = {
       </div>`,
         preview: () => (
           <div className="space-y-12">
-            {/* Event 1 */}
             <div className="flex flex-col md:flex-row gap-6 group">
               <div className="md:w-1/3 relative">
                 <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 md:hidden"></div>
                 <div className="w-8 h-8 rounded-full bg-amber-400 dark:bg-amber-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">1</div>
                 <div className="h-48 md:h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-xl overflow-hidden shadow-md">
-                  {/* Image placeholder */}
                 </div>
               </div>
               <div className="md:w-2/3">
@@ -1721,15 +1713,11 @@ const sampleComponents = {
                 </div>
               </div>
             </div>
-          
-    
-            {/* Event 2 */}
             <div className="flex flex-col md:flex-row gap-6 group">
               <div className="md:w-1/3 relative md:order-last">
                 <div className="absolute -left-4 top-0 bottom-0 w=1 bg-gray=200 dark:bg-gray=800 md:hidden"></div>
                 <div className="w-8 h-8 rounded-full bg-blue-400 dark:bg-blue-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">2</div>
                 <div className="h-48 md:h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-xl overflow-hidden shadow-md">
-                  {/* Image placeholder */}
                 </div>
               </div>
               <div className="md:w-2/3 md:order-first">
@@ -1752,10 +1740,7 @@ const sampleComponents = {
         name: "Split Milestones",
         description: "Alternating timeline with connected cards and progress indicators",
         code: `<div className="relative">
-        {/* Center line */}
         <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 transform -translate-x-1/2"></div>
-      
-        {/* Milestone 1 */}
         <div className="flex justify-between items-stretch mb-16">
           <div className="w-5/12 pr-8">
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
@@ -1767,8 +1752,6 @@ const sampleComponents = {
           </div>
           <div className="w-5/12"></div> {/* Spacer */}
         </div>
-      
-        {/* Milestone 2 */}
         <div className="flex justify-between items-stretch mb-16">
           <div className="w-5/12"></div> {/* Spacer */}
           <div className="w-5/12 pl-8">
@@ -1780,8 +1763,6 @@ const sampleComponents = {
             </div>
           </div>
         </div>
-      
-        {/* Milestone 3 */}
         <div className="flex justify-between items-stretch">
           <div className="w-5/12 pr-8">
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
@@ -1796,10 +1777,7 @@ const sampleComponents = {
       </div>`,
         preview: () => (
           <div className="relative">
-            {/* Center line */}
             <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 transform -translate-x-1/2"></div>
-          
-            {/* Milestone 1 */}
             <div className="flex justify-between items-stretch mb-16">
               <div className="w-5/12 pr-8">
                 <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
@@ -1809,12 +1787,10 @@ const sampleComponents = {
                   <p className="text-gray-600 dark:text-gray-400 mt-2">Core component library and design system established</p>
                 </div>
               </div>
-              <div className="w-5/12"></div> {/* Spacer */}
+              <div className="w-5/12"></div>
             </div>
-          
-            {/* Milestone 2 */}
             <div className="flex justify-between items-stretch mb-16">
-              <div className="w-5/12"></div> {/* Spacer */}
+              <div className="w-5/12"></div> 
               <div className="w-5/12 pl-8">
                 <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
                   <div className="absolute -left-6 top-1/2 w-6 h-6 bg-blue-400 dark:bg-blue-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
@@ -1824,8 +1800,6 @@ const sampleComponents = {
                 </div>
               </div>
             </div>
-
-            {/* Milestone 3 */}
         <div className="flex justify-between items-stretch">
           <div className="w-5/12 pr-8">
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
@@ -1835,7 +1809,7 @@ const sampleComponents = {
               <p className="text-gray-600 dark:text-gray-400 mt-2">AI-powered component generation</p>
             </div>
           </div>
-          <div className="w-5/12"></div> {/* Spacer */}
+          <div className="w-5/12"></div> 
         </div>
         </div>
         )
