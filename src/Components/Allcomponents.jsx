@@ -1653,154 +1653,275 @@ const sampleComponents = {
     ],
     Timeline: [
       {
-        id: "vertical-timeline",
-  
-        name: "Vertical Timeline",
-        description: "A vertical timeline with events",
-        code: `<div className="space-y-6">
-    <div className="flex gap-4">
-      <div className="flex flex-col items-center">
-        <div className="w-4 h-4 bg-amber-400 dark:bg-amber-600 rounded-full"></div>
-        <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
-      </div>
-      <div>
-        <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.0</p>
-        <p className="font-medium dark:text-white">Initial Release</p>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Just the beginning of something great</p>
-      </div>
-    </div>
-    <div className="flex gap-4">
-      <div className="flex flex-col items-center">
-        <div className="w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full"></div>
-        <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
-      </div>
-      <div>
-        <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.5</p>
-        <p className="font-medium dark:text-white">Components Added</p>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More building blocks for your projects</p>
-      </div>
-    </div>
-  </div>`,
-        preview: () => (
-          <div className="space-y-6">
-            <div className="flex gap-4">
-              <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-amber-400 dark:bg-amber-600 rounded-full"></div>
-                <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
-              </div>
-              <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.0</p>
-                <p className="font-medium dark:text-white">Initial Release</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">Just the beginning of something great</p>
-              </div>
+        id: "media-timeline",
+        name: "Media Timeline",
+        description: "Vertical timeline with image cards and staggered layout",
+        code: `<div className="space-y-12">
+        {/* Event 1 */}
+        <div className="flex flex-col md:flex-row gap-6 group">
+          <div className="md:w-1/3 relative">
+            <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 md:hidden"></div>
+            <div className="w-8 h-8 rounded-full bg-amber-400 dark:bg-amber-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">1</div>
+            <div className="h-48 md:h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-xl overflow-hidden shadow-md">
+              {/* Image placeholder */}
             </div>
-            <div className="flex gap-4">
-              <div className="flex flex-col items-center">
-                <div className="w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full"></div>
-                <div className="w-px h-full bg-gray-300 dark:bg-gray-600"></div>
-              </div>
-              <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI v1.5</p>
-                <p className="font-medium dark:text-white">Components Added</p>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More building blocks for your projects</p>
+          </div>
+          <div className="md:w-2/3">
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm p-6 border border-gray-100 dark:border-gray-800">
+              <p className="text-sm text-amber-500 dark:text-amber-400 mb-1">2023</p>
+              <h3 className="text-xl font-bold dark:text-white">Kaisen UI Born</h3>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">The initial concept for a revolutionary UI kit was created during a hackathon</p>
+              <div className="mt-4 flex gap-2">
+                <span className="px-3 py-1 text-xs rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200">Milestone</span>
               </div>
             </div>
           </div>
-        ),
+        </div>
+      
+        {/* Event 2 */}
+        <div className="flex flex-col md:flex-row gap-6 group">
+          <div className="md:w-1/3 relative md:order-last">
+            <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 md:hidden"></div>
+            <div className="w-8 h-8 rounded-full bg-blue-400 dark:bg-blue-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">2</div>
+            <div className="h-48 md:h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-xl overflow-hidden shadow-md">
+              {/* Image placeholder */}
+            </div>
+          </div>
+          <div className="md:w-2/3 md:order-first">
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm p-6 border border-gray-100 dark:border-gray-800">
+              <p className="text-sm text-blue-500 dark:text-blue-400 mb-1">2024</p>
+              <h3 className="text-xl font-bold dark:text-white">Version 2.0</h3>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">Complete redesign with adaptive dark mode and performance improvements</p>
+              <div className="mt-4 flex gap-2">
+                <span className="px-3 py-1 text-xs rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200">Released</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`,
+        preview: () => (
+          <div className="space-y-12">
+            {/* Event 1 */}
+            <div className="flex flex-col md:flex-row gap-6 group">
+              <div className="md:w-1/3 relative">
+                <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 md:hidden"></div>
+                <div className="w-8 h-8 rounded-full bg-amber-400 dark:bg-amber-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">1</div>
+                <div className="h-48 md:h-full bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-xl overflow-hidden shadow-md">
+                  {/* Image placeholder */}
+                </div>
+              </div>
+              <div className="md:w-2/3">
+                <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm p-6 border border-gray-100 dark:border-gray-800">
+                  <p className="text-sm text-amber-500 dark:text-amber-400 mb-1">2023</p>
+                  <h3 className="text-xl font-bold dark:text-white">Kaisen UI Born</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2">The initial concept for a revolutionary UI kit was created during a hackathon</p>
+                  <div className="mt-4 flex gap-2">
+                    <span className="px-3 py-1 text-xs rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-200">Milestone</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+    
+            {/* Event 2 */}
+            <div className="flex flex-col md:flex-row gap-6 group">
+              <div className="md:w-1/3 relative md:order-last">
+                <div className="absolute -left-4 top-0 bottom-0 w=1 bg-gray=200 dark:bg-gray=800 md:hidden"></div>
+                <div className="w-8 h-8 rounded-full bg-blue-400 dark:bg-blue-600 flex items-center justify-center text-white font-bold absolute left-0 top-4 z-10">2</div>
+                <div className="h-48 md:h-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-800 dark:to-blue-900 rounded-xl overflow-hidden shadow-md">
+                  {/* Image placeholder */}
+                </div>
+              </div>
+              <div className="md:w-2/3 md:order-first">
+                <div className="bg-white dark:bg-gray-900 rounded-xl shadow-sm p-6 border border-gray-100 dark:border-gray-800">
+                  <p className="text-sm text-blue-500 dark:text-blue-400 mb-1">2024</p>
+                  <h3 className="text-xl font-bold dark:text-white">Version 2.0</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2">Complete redesign with adaptive dark mode and performance improvements</p>
+                  <div className="mt-4 flex gap-2">
+                    <span className="px-3 py-1 text-xs rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200">Released</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        )
       },
       {
-        id: "horizontal-timeline",
-        name: "Horizontal Timeline",
-        description: "A horizontal timeline with events",
+        id: "split-milestones",
+        name: "Split Milestones",
+        description: "Alternating timeline with connected cards and progress indicators",
         code: `<div className="relative">
-    <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-200 dark:bg-gray-700 transform -translate-y-1/2"></div>
-    <div className="flex justify-between relative">
-      <div className="flex flex-col items-center">
-        <div className="w-6 h-6 bg-amber-400 dark:bg-amber-600 rounded-full mb-2"></div>
-        <p className="text-xs font-medium dark:text-white">Start</p>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Kaisen UI</p>
-      </div>
-      <div className="flex flex-col items-center">
-        <div className="w-6 h-6 bg-gray-300 dark:bg-gray-500 rounded-full mb-2"></div>
-        <p className="text-xs font-medium dark:text-white">Progress</p>
-      </div>
-      <div className="flex flex-col items-center">
-        <div className="w-6 h-6 border-2 border-gray-300 dark:border-gray-500 rounded-full mb-2"></div>
-        <p className="text-xs font-medium dark:text-white">Future</p>
-      </div>
-    </div>
-  </div>`,
-  preview: () => (
-    <div className="relative">
-      <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-200 dark:bg-gray-700 transform -translate-y-1/2"></div>
-      <div className="flex justify-between relative px-4">
-        <div className="flex flex-col items-center w-20">
-          <div className="w-6 h-6 bg-amber-400 dark:bg-amber-600 rounded-full mb-2"></div>
-          <p className="text-xs font-medium dark:text-white text-center">Start</p>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1 text-center">Kaisen UI</p>
+        {/* Center line */}
+        <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 transform -translate-x-1/2"></div>
+      
+        {/* Milestone 1 */}
+        <div className="flex justify-between items-stretch mb-16">
+          <div className="w-5/12 pr-8">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
+              <div className="absolute -right-6 top-1/2 w-6 h-6 bg-amber-400 dark:bg-amber-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
+              <p className="text-xs font-mono text-amber-500 dark:text-amber-400 mb-1">PHASE 1</p>
+              <h3 className="text-xl font-bold dark:text-white">Foundation</h3>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">Core component library and design system established</p>
+            </div>
+          </div>
+          <div className="w-5/12"></div> {/* Spacer */}
         </div>
-        <div className="flex flex-col items-center w-20">
-          <div className="w-6 h-6 bg-gray-300 dark:bg-gray-500 rounded-full mb-2"></div>
-          <p className="text-xs font-medium dark:text-white text-center">Progress</p>
+      
+        {/* Milestone 2 */}
+        <div className="flex justify-between items-stretch mb-16">
+          <div className="w-5/12"></div> {/* Spacer */}
+          <div className="w-5/12 pl-8">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
+              <div className="absolute -left-6 top-1/2 w-6 h-6 bg-blue-400 dark:bg-blue-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
+              <p className="text-xs font-mono text-blue-500 dark:text-blue-400 mb-1">PHASE 2</p>
+              <h3 className="text-xl font-bold dark:text-white">Expansion</h3>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">Added 50+ new components and utilities</p>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col items-center w-20">
-          <div className="w-6 h-6 border-2 border-gray-300 dark:border-gray-500 rounded-full mb-2"></div>
-          <p className="text-xs font-medium dark:text-white text-center">Future</p>
+      
+        {/* Milestone 3 */}
+        <div className="flex justify-between items-stretch">
+          <div className="w-5/12 pr-8">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
+              <div className="absolute -right-6 top-1/2 w-6 h-6 bg-purple-400 dark:bg-purple-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
+              <p className="text-xs font-mono text-purple-500 dark:text-purple-400 mb-1">PHASE 3</p>
+              <h3 className="text-xl font-bold dark:text-white">Innovation</h3>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">AI-powered component generation</p>
+            </div>
+          </div>
+          <div className="w-5/12"></div> {/* Spacer */}
         </div>
-      </div>
-    </div>
-  )
-      },
-      {
-        id: "timeline-card",
-        name: "Timeline Card",
-        description: "A timeline card with a gradient background",
-        code: `<div className="space-y-4">
-    <div className="relative pl-8">
-      <div className="absolute left-0 top-0 w-4 h-4 bg-gray-800 dark:bg-gray-200 rounded-full mt-1"></div>
-      <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
-        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
-          <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
-          <p className="font-medium dark:text-white">Milestone Reached</p>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">100+ components added</p>
-        </div>
-      </div>
-    </div>
-    <div className="relative pl-8">
-      <div className="absolute left-0 top-0 w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full mt-1"></div>
-      <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
-        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
-          <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
-          <p className="font-medium dark:text-white">What's Next</p>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More innovative components coming</p>
-        </div>
-      </div>
-    </div>
-  </div>`,
+      </div>`,
         preview: () => (
-          <div className="space-y-4">
-            <div className="relative pl-8">
-              <div className="absolute left-0 top-0 w-4 h-4 bg-gray-800 dark:bg-gray-200 rounded-full mt-1"></div>
-              <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
-                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
-                  <p className="font-medium dark:text-white">Milestone Reached</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">100+ components added</p>
+          <div className="relative">
+            {/* Center line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-800 transform -translate-x-1/2"></div>
+          
+            {/* Milestone 1 */}
+            <div className="flex justify-between items-stretch mb-16">
+              <div className="w-5/12 pr-8">
+                <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
+                  <div className="absolute -right-6 top-1/2 w-6 h-6 bg-amber-400 dark:bg-amber-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
+                  <p className="text-xs font-mono text-amber-500 dark:text-amber-400 mb-1">PHASE 1</p>
+                  <h3 className="text-xl font-bold dark:text-white">Foundation</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2">Core component library and design system established</p>
+                </div>
+              </div>
+              <div className="w-5/12"></div> {/* Spacer */}
+            </div>
+          
+            {/* Milestone 2 */}
+            <div className="flex justify-between items-stretch mb-16">
+              <div className="w-5/12"></div> {/* Spacer */}
+              <div className="w-5/12 pl-8">
+                <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
+                  <div className="absolute -left-6 top-1/2 w-6 h-6 bg-blue-400 dark:bg-blue-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
+                  <p className="text-xs font-mono text-blue-500 dark:text-blue_400 mb_1">PHASE 2</p>
+                  <h3 className="text-xl font-bold dark:text-white">Expansion</h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2">Added 50+ new components and utilities</p>
                 </div>
               </div>
             </div>
-            <div className="relative pl-8">
-              <div className="absolute left-0 top-0 w-4 h-4 bg-gray-300 dark:bg-gray-500 rounded-full mt-1"></div>
-              <div className="border-l-2 border-gray-300 dark:border-gray-600 pl-6">
-                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Kaisen UI</p>
-                  <p className="font-medium dark:text-white">What's Next</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">More innovative components coming</p>
+
+            {/* Milestone 3 */}
+        <div className="flex justify-between items-stretch">
+          <div className="w-5/12 pr-8">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-100 dark:border-gray-800 relative">
+              <div className="absolute -right-6 top-1/2 w-6 h-6 bg-purple-400 dark:bg-purple-600 rounded-full transform -translate-y-1/2 border-4 border-white dark:border-gray-900"></div>
+              <p className="text-xs font-mono text-purple-500 dark:text-purple-400 mb-1">PHASE 3</p>
+              <h3 className="text-xl font-bold dark:text-white">Innovation</h3>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">AI-powered component generation</p>
+            </div>
+          </div>
+          <div className="w-5/12"></div> {/* Spacer */}
+        </div>
+        </div>
+        )
+      },
+      {
+        id: "fluid-motion-timeline",
+        name: "Fluid Motion Timeline",
+        description: "Timeline with organic shapes and animated SVG path connections",
+        code: `<div className="relative">
+        <svg className="absolute left-6 top-0 h-full w-4" viewBox="0 0 10 100" preserveAspectRatio="none">
+          <path 
+            d="M5 0 Q10 25 5 50 T10 100" 
+            stroke="url(#gradient)" 
+            strokeWidth="2" 
+            fill="none" 
+            strokeDasharray="5 3"
+            className="animate-[dash_10s_linear_infinite]"
+          />
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.7" />
+              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.7" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div className="space-y-16 pl-20">
+          <div className="relative">
+            <div className="absolute -left-16 top-0 w-12 h-12 rounded-3xl bg-gradient-to-br from-amber-400 to-amber-600 dark:from-amber-600 dark:to-amber-800 flex items-center justify-center shadow-lg transform rotate-12">
+              <div className="w-8 h-8 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white font-bold">1</div>
+            </div>
+            <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-800/50">
+              <h3 className="text-xl font-bold dark:text-white mb-2">Genesis</h3>
+              <p className="text-gray-600 dark:text-gray-400">Kaisen UI conceptualized as a design system for the metaverse era</p>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="absolute -left-16 top-0 w-12 h-12 rounded-3xl bg-gradient-to-br from-blue-400 to-blue-600 dark:from-blue-600 dark:to-blue-800 flex items-center justify-center shadow-lg transform -rotate-12">
+              <div className="w-8 h-8 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white font-bold">2</div>
+            </div>
+            <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-800/50">
+              <h3 className="text-xl font-bold dark:text-white mb-2">Evolution</h3>
+              <p className="text-gray-600 dark:text-gray-400">Adaptive components that learn from user interactions</p>
+            </div>
+          </div>
+        </div>
+      </div>`,
+        preview: () => (
+          <div className="relative">
+            <svg className="absolute left-6 top-0 h-full w-4" viewBox="0 0 10 100" preserveAspectRatio="none">
+              <path 
+                d="M5 0 Q10 25 5 50 T10 100" 
+                stroke="url(#gradient)" 
+                strokeWidth="2" 
+                fill="none" 
+                strokeDasharray="5 3"
+                className="animate-[dash_10s_linear_infinite]"
+              />
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.7" />
+                  <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.7" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div className="space-y-16 pl-20">
+              <div className="relative">
+                <div className="absolute -left-16 top-0 w-12 h-12 rounded-3xl bg-gradient-to-br from-amber-400 to-amber-600 dark:from-amber-600 dark:to-amber-800 flex items-center justify-center shadow-lg transform rotate-12">
+                  <div className="w-8 h-8 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white font-bold">1</div>
+                </div>
+                <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-800/50">
+                  <h3 className="text-xl font-bold dark:text-white mb-2">Genesis</h3>
+                  <p className="text-gray-600 dark:text-gray-400">Kaisen UI conceptualized as a design system for the metaverse era</p>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute -left-16 top-0 w-12 h-12 rounded-3xl bg-gradient-to-br from-blue-400 to-blue-600 dark:from-blue-600 dark:to-blue-800 flex items-center justify-center shadow-lg transform -rotate-12">
+                  <div className="w-8 h-8 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white font-bold">2</div>
+                </div>
+                <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-800/50">
+                  <h3 className="text-xl font-bold dark:text-white mb-2">Evolution</h3>
+                  <p className="text-gray-600 dark:text-gray-400">Adaptive components that learn from user interactions</p>
                 </div>
               </div>
             </div>
           </div>
-        ),
+        )
       }
     ],
     Weather: [
