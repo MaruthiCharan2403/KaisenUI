@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 transition-all duration-300bg-zinc-900 border-b border-zinc-800 backdrop-blur-sm">
+<nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-black">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
