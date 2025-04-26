@@ -107,7 +107,7 @@ export default function ComponentsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col pt-12">
+    <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col ">
       {/* Inject custom scrollbar styles */}
       <style dangerouslySetInnerHTML={{ __html: customScrollbarStyles }} />
       
