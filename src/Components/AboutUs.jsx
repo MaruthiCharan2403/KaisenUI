@@ -73,8 +73,8 @@ export default function AboutUs() {
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-3xl">
       {[
-        { name: "Charan", role: "Lead Developer", color: "bg-pink-500" },
-        { name: "Varun", role: "Accessibility Expert", color: "bg-blue-500" }
+        { name: "Charan", role: "Developer", color: "bg-pink-500" },
+        { name: "Varun", role: "Developer", color: "bg-blue-500" }
       ].map((person, i) => (
         <div key={i} className="relative group mx-auto w-full max-w-xs">
           <div className={`${person.color} h-60 rounded-2xl transform transition-all group-hover:scale-95`}></div>
