@@ -25,8 +25,7 @@ export default function Navbar() {
                 to="/" 
                 className="text-xl font-bold"
               >
-                <span className="text-white">Kaisen</span>
-                <span className="text-pink-500"> UI</span>
+                <span className="font-extrabold text-white">KAISEN<span className="text-pink-500">UI</span></span>
               </Link>
             </div>
 
