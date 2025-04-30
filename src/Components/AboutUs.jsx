@@ -1,8 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { pageview } from './Analytics'
+import { useEffect } from 'react'
+import { useLocation } from "react-router-dom"
 
 export default function AboutUs() {
     const navigate = useNavigate()
+    const location = useLocation();
+    
+      useEffect(() => {
+        pageview(location.pathname + location.search);
+      }, [location]);
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
   {/* Hero Section with Animated Elements */}

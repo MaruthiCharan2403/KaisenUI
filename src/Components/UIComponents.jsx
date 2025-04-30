@@ -1,9 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
 import { Copy, Check, Code, Eye, ChevronDown, ChevronRight, Search, Github, Menu, X } from "lucide-react"
 import sampleComponents from "./Allcomponents"
+import { pageview } from "./Analytics"
+import { useLocation } from "react-router-dom"
 
 // Component categories
 const componentCategories = [
@@ -31,6 +33,8 @@ const componentCategories = [
   { name: "Testimonial" },
   { name: "Timeline" },
   { name: "Weather" },
+  {name:"404"},
+  {name:"Background"},
 ]
 
 // Custom scrollbar styles
@@ -65,6 +69,11 @@ const customScrollbarStyles = `
 `;
 
 export default function ComponentsPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    pageview(location.pathname + location.search);
+  }, [location]);
   const [selectedCategory, setSelectedCategory] = useState("Article")
   const [selectedComponent, setSelectedComponent] = useState("basic-article")
   const [viewMode, setViewMode] = useState("preview") // "preview" or "code"

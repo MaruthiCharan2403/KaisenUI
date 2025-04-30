@@ -3983,7 +3983,419 @@ const sampleComponents = {
       },
       
     ],
-    
-  }
+    404: [
+      {
+        id: "cosmic",
+        name: "Cosmic",
+        description: "A cosmic-themed 404 page",
+        code: `<div className="relative h-screen w-full overflow-hidden bg-black dark:bg-gray-950 flex items-center justify-center">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-violet-800 via-transparent to-transparent opacity-50 dark:opacity-70"></div>
+  
+  <div className="absolute inset-0">
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-1/4 left-1/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-1/3 right-1/3 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-1/4 right-1/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-1/3 left-1/3 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-1/2 left-1/2 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-2/3 right-1/4 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-1/2 right-1/2 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-2/3 left-1/4 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-3/4 left-3/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-3/4 right-3/4 animate-ping"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-1/5 left-1/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-1/6 right-1/6 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-1/5 left-2/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-1/6 right-2/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-2/5 left-3/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-3/5 right-1/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-2/5 left-4/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-3/5 right-4/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-4/5 left-1/6 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-5/6 right-3/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-4/5 left-3/4 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-5/6 right-1/6 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-1/4 right-4/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-3/4 left-1/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-1/4 right-2/3 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-3/4 left-2/3 animate-pulse"></div>
+  </div>
+  
+  <div className="relative z-10 text-center">
+    <div className="relative">
+      <div className="text-[12rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 dark:from-orange-400 dark:via-red-400 dark:to-purple-500">
+        404
+      </div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+        <div className="w-32 h-32 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400 animate-ping opacity-75"></div>
+      </div>
+    </div>
+    <div className="text-2xl text-white dark:text-white/90 font-bold max-w-md mx-auto mt-8">
+      Cosmic fail! You've discovered a black hole in our website. Your page has been crushed into digital nothingness.
+    </div>
+  </div>
+</div>`,
+        preview: () => (
+          <div className="relative h-screen w-full overflow-hidden bg-black dark:bg-gray-950 flex items-center justify-center">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-violet-800 via-transparent to-transparent opacity-50 dark:opacity-70"></div>
+  
+  <div className="absolute inset-0">
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-1/4 left-1/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-1/3 right-1/3 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-1/4 right-1/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-1/3 left-1/3 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-1/2 left-1/2 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-2/3 right-1/4 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-1/2 right-1/2 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-2/3 left-1/4 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-3/4 left-3/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-3/4 right-3/4 animate-ping"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-1/5 left-1/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-1/6 right-1/6 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-1/5 left-2/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-1/6 right-2/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-2/5 left-3/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-3/5 right-1/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-2/5 left-4/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-3/5 right-4/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-4/5 left-1/6 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-5/6 right-3/4 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-4/5 left-3/4 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-5/6 right-1/6 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full top-1/4 right-4/5 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full top-3/4 left-1/5 animate-pulse"></div>
+    <div className="absolute w-1 h-1 bg-white dark:bg-white/90 rounded-full bottom-1/4 right-2/3 animate-ping"></div>
+    <div className="absolute w-2 h-2 bg-white dark:bg-white/90 rounded-full bottom-3/4 left-2/3 animate-pulse"></div>
+  </div>
+  
+  <div className="relative z-10 text-center">
+    <div className="relative">
+      <div className="text-[12rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 dark:from-orange-400 dark:via-red-400 dark:to-purple-500">
+        404
+      </div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+        <div className="w-32 h-32 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400 animate-ping opacity-75"></div>
+      </div>
+    </div>
+    <div className="text-2xl text-white dark:text-white/90 font-bold max-w-md mx-auto mt-8">
+      Cosmic fail! You've discovered a black hole in our website. Your page has been crushed into digital nothingness.
+    </div>
+  </div>
+</div>
+        ),
+      },
+      {
+        id:"Neon",
+        name: "Neon",
+        description: "A neon-themed 404 page",
+        code : `<div className="relative h-screen w-full overflow-hidden bg-gray-950 dark:bg-black flex items-center justify-center">
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="absolute w-[80%] h-[80%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-40 animate-pulse origin-center"></div>
+    <div className="absolute w-[70%] h-[70%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-50 animate-pulse origin-center delay-300"></div>
+    <div className="absolute w-[60%] h-[60%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-60 animate-pulse origin-center delay-600"></div>
+    <div className="absolute w-[50%] h-[50%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-70 animate-pulse origin-center delay-900"></div>
+    <div className="absolute w-[40%] h-[40%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-80 animate-pulse origin-center delay-1200"></div>
+    <div className="absolute w-[30%] h-[30%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-90 animate-pulse origin-center delay-1500"></div>
+  </div>
+  <div className="relative z-10 text-center transform rotate-12">
+    <div className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500 dark:from-fuchsia-400 dark:to-cyan-400 mb-8 animate-pulse">
+      404
+    </div>
+    <div className="text-2xl text-white dark:text-white/90 font-bold max-w-md mx-auto">
+      You've been sucked into the void! Don't worry, it happens to the best of us... just not usually twice in one day.
+    </div>
+  </div>
+</div>`,
+        preview: () => (
+          <div className="relative h-screen w-full overflow-hidden bg-gray-950 dark:bg-black flex items-center justify-center">
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="absolute w-[80%] h-[80%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-40 animate-pulse origin-center"></div>
+    <div className="absolute w-[70%] h-[70%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-50 animate-pulse origin-center delay-300"></div>
+    <div className="absolute w-[60%] h-[60%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-60 animate-pulse origin-center delay-600"></div>
+    <div className="absolute w-[50%] h-[50%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-70 animate-pulse origin-center delay-900"></div>
+    <div className="absolute w-[40%] h-[40%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-80 animate-pulse origin-center delay-1200"></div>
+    <div className="absolute w-[30%] h-[30%] rounded-full border-4 border-fuchsia-500 dark:border-fuchsia-600 opacity-90 animate-pulse origin-center delay-1500"></div>
+  </div>
+  <div className="relative z-10 text-center transform rotate-12">
+    <div className="text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-cyan-500 dark:from-fuchsia-400 dark:to-cyan-400 mb-8 animate-pulse">
+      404
+    </div>
+    <div className="text-2xl text-white dark:text-white/90 font-bold max-w-md mx-auto">
+      You've been sucked into the void! Don't worry, it happens to the best of us... just not usually twice in one day.
+    </div>
+  </div>
+</div>
+        ),
+      },{
+        id: "Vignette",
+        name: "Vignette",
+        description: "A vignette-themed 404 page",
+          code: `<div className="relative h-screen w-full overflow-hidden bg-gradient-to-r from-fuchsia-600 via-purple-700 to-indigo-800 dark:from-fuchsia-900 dark:via-purple-950 dark:to-indigo-950 flex items-center justify-center perspective-[2000px]">
+  {/* Shattered Reality Background */}
+  <div className="absolute inset-0 flex flex-wrap opacity-80">
+    <div className="w-full h-1/6 bg-gradient-to-r from-pink-500 to-rose-500 dark:from-pink-700 dark:to-rose-700 transform -skew-y-12 translate-y-4 animate-pulse"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-rose-500 to-orange-500 dark:from-rose-700 dark:to-orange-700 transform skew-y-12 -translate-y-4 animate-pulse delay-150"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-orange-500 to-amber-500 dark:from-orange-700 dark:to-amber-700 transform -skew-y-12 translate-y-4 animate-pulse delay-300"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-amber-500 to-yellow-500 dark:from-amber-700 dark:to-yellow-700 transform skew-y-12 -translate-y-4 animate-pulse delay-500"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-yellow-500 to-lime-500 dark:from-yellow-700 dark:to-lime-700 transform -skew-y-12 translate-y-4 animate-pulse delay-700"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-lime-500 to-green-500 dark:from-lime-700 dark:to-green-700 transform skew-y-12 -translate-y-4 animate-pulse delay-1000"></div>
+  </div>
+  <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white/20 backdrop-blur-md rounded-lg rotate-12 animate-bounce"></div>
+    <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-white/20 backdrop-blur-md rounded-lg -rotate-12 animate-pulse"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-20 h-20 bg-white/20 backdrop-blur-md rounded-lg rotate-45 animate-bounce delay-300"></div>
+    <div className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-white/20 backdrop-blur-md rounded-lg -rotate-45 animate-pulse delay-500"></div>
+    <div className="absolute top-1/2 left-1/2 w-40 h-40 bg-white/10 backdrop-blur-md rounded-full animate-ping"></div>
+    <div className="absolute top-10 left-10 w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 dark:from-cyan-600 dark:to-blue-700 rounded-full blur-xl animate-pulse"></div>
+    <div className="absolute top-3/4 right-1/4 w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-500 dark:from-purple-600 dark:to-indigo-700 rounded-full blur-xl animate-pulse delay-700"></div>
+    <div className="absolute bottom-20 left-20 w-20 h-20 bg-gradient-to-br from-rose-400 to-pink-500 dark:from-rose-600 dark:to-pink-700 rounded-full blur-xl animate-pulse delay-500"></div>
+  </div>
+  <div className="relative z-10 transform -rotate-6 scale-110">
+    <div className="relative">
+      {/* Main 404 Text */}
+      <div className="text-[15rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-br from-white to-white/70 dark:from-white dark:to-white/50 select-none">
+        404
+      </div>
+      <div className="absolute -inset-1 text-[15rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-blue-600 dark:from-cyan-300 dark:to-blue-500 opacity-70 blur-sm animate-pulse select-none">
+        404
+      </div>
+      
+      <div className="absolute -inset-2 text-[15rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-br from-fuchsia-400 to-pink-600 dark:from-fuchsia-300 dark:to-pink-500 opacity-70 blur-sm animate-pulse delay-300 select-none">
+        404
+      </div>
+    </div>
+    <div className="relative mt-8 text-3xl font-bold text-white dark:text-white/90 text-center transform rotate-2 select-none">
+      <div className="absolute inset-0 blur-sm text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400 animate-pulse">
+        Congratulations! You broke the internet!
+      </div>
+      <div>
+        Congratulations! You broke the internet!
+      </div>
+    </div>
+    <div className="mt-4 text-xl text-white/80 dark:text-white/70 text-center max-w-lg mx-auto font-medium italic transform -rotate-1 select-none">
+      We'd give you a prize, but it was on this page... which doesn't exist.
+    </div>
+  </div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent dark:from-black/40 dark:to-transparent pointer-events-none"></div>
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse" style={{top: '10%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-100" style={{top: '20%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-200" style={{top: '30%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-300" style={{top: '40%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-400" style={{top: '50%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-500" style={{top: '60%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-600" style={{top: '70%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-700" style={{top: '80%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-800" style={{top: '90%'}}></div>
+  </div>
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_50%,_black_120%)] opacity-40 dark:opacity-60 pointer-events-none"></div>
+  <div className="absolute bottom-4 left-0 right-0 text-center text-white/50 dark:text-white/30 text-sm animate-bounce select-none">
+    Try clicking anywhere... or don't, this page is broken anyway
+  </div>
+</div>`,
+preview: () => (
+  <div className="relative h-screen w-full overflow-hidden bg-gradient-to-r from-fuchsia-600 via-purple-700 to-indigo-800 dark:from-fuchsia-900 dark:via-purple-950 dark:to-indigo-950 flex items-center justify-center perspective-[2000px]">
+  <div className="absolute inset-0 flex flex-wrap opacity-80">
+    <div className="w-full h-1/6 bg-gradient-to-r from-pink-500 to-rose-500 dark:from-pink-700 dark:to-rose-700 transform -skew-y-12 translate-y-4 animate-pulse"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-rose-500 to-orange-500 dark:from-rose-700 dark:to-orange-700 transform skew-y-12 -translate-y-4 animate-pulse delay-150"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-orange-500 to-amber-500 dark:from-orange-700 dark:to-amber-700 transform -skew-y-12 translate-y-4 animate-pulse delay-300"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-amber-500 to-yellow-500 dark:from-amber-700 dark:to-yellow-700 transform skew-y-12 -translate-y-4 animate-pulse delay-500"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-yellow-500 to-lime-500 dark:from-yellow-700 dark:to-lime-700 transform -skew-y-12 translate-y-4 animate-pulse delay-700"></div>
+    <div className="w-full h-1/6 bg-gradient-to-r from-lime-500 to-green-500 dark:from-lime-700 dark:to-green-700 transform skew-y-12 -translate-y-4 animate-pulse delay-1000"></div>
+  </div>
+  <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-white/20 backdrop-blur-md rounded-lg rotate-12 animate-bounce"></div>
+    <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-white/20 backdrop-blur-md rounded-lg -rotate-12 animate-pulse"></div>
+    <div className="absolute bottom-1/4 right-1/4 w-20 h-20 bg-white/20 backdrop-blur-md rounded-lg rotate-45 animate-bounce delay-300"></div>
+    <div className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-white/20 backdrop-blur-md rounded-lg -rotate-45 animate-pulse delay-500"></div>
+    <div className="absolute top-1/2 left-1/2 w-40 h-40 bg-white/10 backdrop-blur-md rounded-full animate-ping"></div>
+    <div className="absolute top-10 left-10 w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 dark:from-cyan-600 dark:to-blue-700 rounded-full blur-xl animate-pulse"></div>
+    <div className="absolute top-3/4 right-1/4 w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-500 dark:from-purple-600 dark:to-indigo-700 rounded-full blur-xl animate-pulse delay-700"></div>
+    <div className="absolute bottom-20 left-20 w-20 h-20 bg-gradient-to-br from-rose-400 to-pink-500 dark:from-rose-600 dark:to-pink-700 rounded-full blur-xl animate-pulse delay-500"></div>
+  </div>
+  <div className="relative z-10 transform -rotate-6 scale-110">
+    <div className="relative">
+      <div className="text-[15rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-br from-white to-white/70 dark:from-white dark:to-white/50 select-none">
+        404
+      </div>
+      <div className="absolute -inset-1 text-[15rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-blue-600 dark:from-cyan-300 dark:to-blue-500 opacity-70 blur-sm animate-pulse select-none">
+        404
+      </div>
+      
+      <div className="absolute -inset-2 text-[15rem] font-black tracking-tighter leading-none text-transparent bg-clip-text bg-gradient-to-br from-fuchsia-400 to-pink-600 dark:from-fuchsia-300 dark:to-pink-500 opacity-70 blur-sm animate-pulse delay-300 select-none">
+        404
+      </div>
+    </div>
+    <div className="relative mt-8 text-3xl font-bold text-white dark:text-white/90 text-center transform rotate-2 select-none">
+      <div className="absolute inset-0 blur-sm text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400 animate-pulse">
+        Congratulations! You broke the internet!
+      </div>
+      <div>
+        Congratulations! You broke the internet!
+      </div>
+    </div>
+    <div className="mt-4 text-xl text-white/80 dark:text-white/70 text-center max-w-lg mx-auto font-medium italic transform -rotate-1 select-none">
+      We'd give you a prize, but it was on this page... which doesn't exist.
+    </div>
+  </div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent dark:from-black/40 dark:to-transparent pointer-events-none"></div>
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse" style={{top: '10%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-100" style={{top: '20%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-200" style={{top: '30%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-300" style={{top: '40%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-400" style={{top: '50%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-500" style={{top: '60%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-600" style={{top: '70%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-700" style={{top: '80%'}}></div>
+    <div className="w-full h-px bg-white/20 dark:bg-white/10 animate-pulse delay-800" style={{top: '90%'}}></div>
+  </div>
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_50%,_black_120%)] opacity-40 dark:opacity-60 pointer-events-none"></div>
+  <div className="absolute bottom-4 left-0 right-0 text-center text-white/50 dark:text-white/30 text-sm animate-bounce select-none">
+    Try clicking anywhere... or don't, this page is broken anyway
+  </div>
+</div>
+        ),
+      }
+     ],
+     Background: [
+      {
+        id: "Geometric",
+        name: "Geometric Pattern",
+        description: "A geometric pattern background with interactive tiles",
+        code: `<div className="fixed overflow-hidden h-screen w-screen   rounded-2xl bg-white dark:bg-gray-800 shadow-xl relative overflow-hidden">
+          <div className="absolute inset-0 grid grid-cols-8 grid-rows-8">
+            {Array.from({ length: 64 }).map((_, i) => (
+              <div
+                key={i}
+                className={\`transform transition-all duration-700 hover:scale-110 \${
+                  i % 3 === 0
+                    ? "bg-rose-400 dark:bg-rose-600"
+                    : i % 3 === 1
+                      ? "bg-amber-400 dark:bg-amber-600"
+                      : "bg-emerald-400 dark:bg-emerald-600"
+                } \${Math.random() > 0.5 ? "opacity-80" : "opacity-40"}\`}
+              ></div>
+            ))}
+          </div>
+          <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center">
+            <span className="text-gray-800 dark:text-white font-bold text-xl">Geometric Pattern</span>
+          </div>
+        </div>`,
+        preview: () => (
+          <div className="fixed overflow-hidden h-screen w-screen  rounded-2xl bg-white dark:bg-gray-800 shadow-xl relative overflow-hidden">
+            <div className="absolute inset-0 grid grid-cols-8 grid-rows-8">
+              {Array.from({ length: 64 }).map((_, i) => (
+                <div
+                  key={i}
+                  className={`transform transition-all duration-700 hover:scale-110 ${
+                    i % 3 === 0
+                      ? "bg-rose-400 dark:bg-rose-600"
+                      : i % 3 === 1
+                        ? "bg-amber-400 dark:bg-amber-600"
+                        : "bg-emerald-400 dark:bg-emerald-600"
+                  } ${Math.random() > 0.5 ? "opacity-80" : "opacity-40"}`}
+                ></div>
+              ))}
+            </div>
+            <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center">
+              <span className="text-gray-800 dark:text-white font-bold text-xl">Geometric Pattern</span>
+            </div>
+          </div>
+        ),
+      }
+      ,{
+        id:"Panel",
+        name: "Panel",
+        description: "A panel with a gradient background and shadow",
+        code : ` <div className="fixed overflow-hidden h-screen w-screen rounded-2xl bg-gray-900 dark:bg-black shadow-xl flex items-center justify-center relative overflow-hidden border border-cyan-500/50 dark:border-cyan-600/50">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBmZmZmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1vcGFjaXR5PSIwLjEiLz48L3N2Zz4=')] opacity-50"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+        <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-transparent via-cyan-500 to-transparent"></div>
+        <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-cyan-500 to-transparent"></div>
+        <div className="absolute top-4 left-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+        <div className="absolute top-4 right-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-4 left-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-4 right-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+        <span className="text-cyan-500 font-bold text-xl relative z-10">FUTURISTIC PANEL</span>
+      </div>
+    </div>`,
+    preview: () => (
+      <div className="fixed overflow-hidden h-screen w-screen   rounded-2xl bg-gray-900 dark:bg-black shadow-xl flex items-center relative justify-center border border-cyan-500/50 dark:border-cyan-600/50">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBmZmZmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1vcGFjaXR5PSIwLjEiLz48L3N2Zz4=')] opacity-50"></div>
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-transparent via-cyan-500 to-transparent"></div>
+      <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-cyan-500 to-transparent"></div>
+      <div className="absolute top-4 left-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+      <div className="absolute top-4 right-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-4 left-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-4 right-4 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+      <span className="text-cyan-500 font-bold text-xl relative z-10">FUTURISTIC PANEL</span>
+    </div>
+  
+    ),
 
+      },
+      {
+        id: "Floating",
+        name: "Floating Elements",
+        description: "A background with randomly floating colored circles",
+        code: `<div className="fixed overflow-hidden h-screen w-screen  bg-gradient-to-br from-cyan-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 shadow-xl flex items-center justify-center relative overflow-hidden">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div
+              key={i}
+              className={\`absolute rounded-full \${
+                i % 4 === 0
+                  ? "bg-cyan-400 dark:bg-cyan-600"
+                  : i % 4 === 1
+                    ? "bg-pink-400 dark:bg-pink-600"
+                    : i % 4 === 2
+                      ? "bg-yellow-400 dark:bg-yellow-600"
+                      : "bg-green-400 dark:bg-green-600"
+              }\`}
+              style={{
+                width: \`\${Math.random() * 20 + 5}px\`,
+                height: \`\${Math.random() * 20 + 5}px\`,
+                left: \`\${Math.random() * 100}%\`,
+                top: \`\${Math.random() * 100}%\`,
+                opacity: Math.random() * 0.5 + 0.3,
+                animation: \`float \${Math.random() * 10 + 10}s linear infinite\`,
+                animationDelay: \`\${Math.random() * 5}s\`,
+              }}
+            ></div>
+          ))}
+          <span className="text-gray-800 dark:text-white font-bold text-xl relative z-10">Floating Elements</span>
+        </div>`,
+        preview: () => (
+          <div className="fixed overflow-hidden h-screen w-screen bg-gradient-to-br from-cyan-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 shadow-xl flex items-center justify-center relative overflow-hidden">
+            {Array.from({ length: 20 }).map((_, i) => (
+              <div
+                key={i}
+                className={`absolute rounded-full ${
+                  i % 4 === 0
+                    ? "bg-cyan-400 dark:bg-cyan-600"
+                    : i % 4 === 1
+                      ? "bg-pink-400 dark:bg-pink-600"
+                      : i % 4 === 2
+                        ? "bg-yellow-400 dark:bg-yellow-600"
+                        : "bg-green-400 dark:bg-green-600"
+                }`}
+                style={{
+                  width: `${Math.random() * 20 + 5}px`,
+                  height: `${Math.random() * 20 + 5}px`,
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                  opacity: Math.random() * 0.5 + 0.3,
+                  animation: `float ${Math.random() * 10 + 10}s linear infinite`,
+                  animationDelay: `${Math.random() * 5}s`,
+                }}
+              ></div>
+            ))}
+            <span className="text-gray-800 dark:text-white font-bold text-xl relative z-10">Floating Elements</span>
+          </div>
+        ),
+      }
+    ]
+  }
 export default sampleComponents;

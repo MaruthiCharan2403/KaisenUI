@@ -2,9 +2,16 @@
 import { useState, useEffect } from "react"
 import {Link} from "react-router-dom"
 import { Copy, Check, ChevronRight, Github, Twitter } from "lucide-react"
+import { pageview } from "./Analytics"
+import { useLocation } from "react-router-dom"
 
 export default function Home() {
   const [copied, setCopied] = useState(false)
+  const location = useLocation();
+
+  useEffect(() => {
+    pageview(location.pathname + location.search);
+  }, [location]);
   
   const copyToClipboard = () => {
     navigator.clipboard.writeText("npm install @yourlib/ui")
