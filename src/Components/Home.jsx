@@ -206,12 +206,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      
-
-      
-
-      {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-5xl">
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-rose-500 to-purple-600 p-8 md:p-12">
@@ -238,7 +232,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       
     </div>
   )

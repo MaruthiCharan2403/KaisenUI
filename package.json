@@ -13,10 +13,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@rollup/rollup-win32-x64-msvc": "^4.40.0",
     "@tailwindcss/vite": "^4.1.4",
     "axios": "^1.8.4",
-    "lightningcss": "^1.29.3",
     "lucide-react": "^0.503.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

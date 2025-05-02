@@ -11,21 +11,30 @@ import { useLocation } from "react-router-dom"
 const componentCategories = [
   { name: "Article" },
   { name: "Avatar" },
+  {name:"Background"},
   { name: "Banner" },
   { name: "Blog" },
   { name: "Breadcrumb" },
   { name: "Button" },
-  { name: "CTA" },
   { name: "Card" },
+  {name:"ChatUI"},
   { name: "Contact" },
+  { name: "CTA" },
   { name: "Faq" },
+  {name:"Footer"},
+  {name:"Form"},
   { name: "Gallery" },
   { name: "Hero" },
   { name: "Loaders" },
+  {name:"Navbar"},
+  {name:"News"},
+  {name:"OTP"},
   { name: "Pagination" },
   { name: "Pricing" },
   { name: "Profile" },
+  {name:"Register_Login"},
   { name: "Review" },
+  {name:"Social"},
   { name: "Steps" },
   { name: "Table" },
   { name: "Tabs" },
@@ -34,10 +43,11 @@ const componentCategories = [
   { name: "Timeline" },
   { name: "Weather" },
   {name:"404"},
-  {name:"Background"},
+  
+  
+  
 ]
 
-// Custom scrollbar styles
 const customScrollbarStyles = `
   /* Custom scrollbar for WebKit browsers (Chrome, Safari, newer Edge) */
   .custom-scrollbar::-webkit-scrollbar {

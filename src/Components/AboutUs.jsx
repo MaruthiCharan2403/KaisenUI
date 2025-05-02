@@ -72,8 +72,6 @@ export default function AboutUs() {
       </div>
     </div>
   </div>
-
-  {/* Team Section */}
   <div className="py-20 px-4 md:px-8 bg-white/5">
   <div className="max-w-7xl mx-auto flex flex-col items-center">
     <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
@@ -129,30 +127,11 @@ export default function AboutUs() {
       <p className="text-xl text-gray-300 mb-10">Join thousands of developers creating amazing experiences with KAISENUI</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <button className="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-100 transition-colors" onClick={()=>{navigate('/components')}}>Get Started</button>
-        {/* <button className="px-8 py-4 bg-transparent border-2 border-white rounded-xl hover:bg-white/10 transition-colors">View Documentation</button> */}
+        
       </div>
     </div>
   </div>
 
-  {/* Footer */}
-  {/* <div className="py-10 px-4 md:px-8 border-t border-white/10">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-      <div className="flex items-center mb-6 md:mb-0">
-        <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center mr-3">
-          <div className="w-6 h-6 bg-black rounded-md flex items-center justify-center">
-            <span className="text-white text-xs font-bold">UI</span>
-          </div>
-        </div>
-        <span className="text-xl font-bold">PRISMUI</span>
-      </div>
-      <div className="flex gap-8">
-        <a href="#" className="hover:text-pink-500 transition-colors">GitHub</a>
-        <a href="#" className="hover:text-pink-500 transition-colors">Twitter</a>
-        <a href="#" className="hover:text-pink-500 transition-colors">Discord</a>
-        <a href="#" className="hover:text-pink-500 transition-colors">Documentation</a>
-      </div>
-    </div> */}
-  {/* </div> */}
 </div>
   )
 }
