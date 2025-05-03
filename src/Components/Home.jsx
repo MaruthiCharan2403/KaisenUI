@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import { Copy, Check, ChevronRight, Github, Twitter } from "lucide-react"
 import { pageview } from "./Analytics"
 import { useLocation } from "react-router-dom"
+import HelmetSEO from "./helmetseo"
 
 export default function Home() {
   const [copied, setCopied] = useState(false)
@@ -22,6 +23,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-900 text-zinc-100">
       {/* Header */}
+      <HelmetSEO
+        title="Kaisen UI - Beautiful React & Tailwind CSS Component Library"
+        description="A collection of high-quality React components built with Tailwind CSS. The perfect UI library for modern web apps with copy-paste simplicity."
+        keywords="react component library, next component library, tailwindcss component library, best ui components, react ui, tailwind components, ui library, react components, web components, kaisen ui"
+        canonicalUrl="https://kaisenui.me"
+      />
       
       
 {/* Main content - wild cards */}

@@ -6,6 +6,7 @@ import { Copy, Check, Code, Eye, ChevronDown, ChevronRight, Search, Github, Menu
 import sampleComponents from "./Allcomponents"
 import { pageview } from "./Analytics"
 import { useLocation } from "react-router-dom"
+import HelmetSEO from "./helmetseo"
 
 // Component categories
 const componentCategories = [
@@ -127,6 +128,12 @@ export default function ComponentsPage() {
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col ">
+      <HelmetSEO
+        title="React & Tailwind CSS Components - Kaisen UI"
+        description="Explore our collection of beautiful, accessible React components built with Tailwind CSS. Copy and paste into your projects."
+        keywords="react components, tailwind components, ui components, react ui library, tailwindcss components, accessible components, modern ui components"
+        canonicalUrl="https://kaisenui.me/components"
+      />
       {/* Inject custom scrollbar styles */}
       <style dangerouslySetInnerHTML={{ __html: customScrollbarStyles }} />
       

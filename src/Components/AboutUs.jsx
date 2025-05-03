@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { pageview } from './Analytics'
 import { useEffect } from 'react'
 import { useLocation } from "react-router-dom"
+import HelmetSEO from './helmetseo'
 
 export default function AboutUs() {
     const navigate = useNavigate()
@@ -14,6 +15,12 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
   {/* Hero Section with Animated Elements */}
+  <HelmetSEO
+        title="About Kaisen UI - Modern React Component Library"
+        description="Learn about Kaisen UI, a modern React component library built with Tailwind CSS. Designed for developers who want beautiful components without sacrificing flexibility."
+        keywords="about kaisen ui, react component library, tailwind css components, ui library, modern web components"
+        canonicalUrl="https://kaisenui.me/about"
+      />
   <div className="relative h-screen flex items-center justify-center">
     <div className="absolute inset-0 overflow-hidden">
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
