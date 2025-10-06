@@ -1,25 +1,13 @@
 # 🎨 Kaisen UI
 
-[![npm version](https://img.shields.io/npm/v/kaisen.svg)](https://www.npmjs.com/package/kaisenui)
-[![Li| Command | Description | Example |
-|---------|-------------|----------|
-| `kaisenui init` | Initialize Kaisen UI in your project | `npx kaisenuiui init` |
-|6. **Commit and push**
-   ```bash
-   git add .
-   git commit -m "Add: Your descriptive commit message"
-   git push origin feature/your-feature-name
-   ```
-
-7. **Create a Pull Request**ui add <component>` | Add a component to your project | `npx kaisenuiui add glow-button` |
-| `kaisenui list` | List all available components | `npx kaisenuiui list` |
-| `kaisenui list -c <category>` | Filter components by category | `npx kaisenuiui list -c buttons` | MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/kaisenui.svg)](https://www.npmjs.com/package/kaisenui)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
 > Beautiful, accessible, and customizable React + Tailwind CSS components that you can copy and paste into your apps.
 
 🌐 **Website**: [kaisenui.me](https://kaisenui.me)  
-📦 **NPM**: [@kaisenui](https://www.npmjs.com/package/kaisenuiui)  
+📦 **NPM**: [@kaisenui](https://www.npmjs.com/package/kaisenui)  
 ⭐ **GitHub**: [MaruthiCharan2403/KaisenUI](https://github.com/MaruthiCharan2403/KaisenUI)
 
 ---
@@ -47,14 +35,14 @@ The fastest way to add components to your project:
 
 ```bash
 # Using npx (no installation needed)
-npx kaisenuiui init
+npx kaisenui init
 
 # Or install globally
 npm install -g kaisenui
 kaisenui init
 
 # Add components
-npx kaisenuiui add glow-button
+npx kaisenui add glow-button
 ```
 
 **Supports**: npm, pnpm, yarn, bun
@@ -294,7 +282,7 @@ We love contributions! Whether it's bug fixes, new components, or documentation 
    git push origin feature/your-feature-name
    ```
 
-6. **Create a Pull Request**
+7. **Create a Pull Request**
    - Go to your fork on GitHub
    - Click "Pull Request"
    - Describe your changes clearly
@@ -459,7 +447,7 @@ MIT License - see [LICENSE.md](LICENSE.md) for details.
 
 **Made with ❤️ by the Kaisen UI Team**
 
-[Website](https://kaisenui.me) • [NPM](https://www.npmjs.com/package/kaisenuiui) • [GitHub](https://github.com/MaruthiCharan2403/KaisenUI)
+[Website](https://kaisenui.me) • [NPM](https://www.npmjs.com/package/kaisenui) • [GitHub](https://github.com/MaruthiCharan2403/KaisenUI)
 
 ⭐ **Star us on GitHub** if you find this useful!
 
