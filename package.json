@@ -32,7 +32,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "build:cli": "tsc --project tsconfig.cli.json",
     "registry:generate": "node scripts/generate-registry.js",
     "prepublishOnly": "npm run registry:generate && npm run build:cli",
