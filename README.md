@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
-> Beautiful, accessible, and customizable React + Tailwind CSS components that you can copy and paste into your apps.
+> Beautiful, accessible, and customizable Tailwind CSS components that you can copy and paste into your apps.
 
 🌐 **Website**: [kaisenui.me](https://kaisenui.me)  
 📦 **NPM**: [@kaisenui](https://www.npmjs.com/package/kaisenui)  
@@ -430,18 +430,6 @@ MIT License - see [LICENSE.md](LICENSE.md) for details.
 
 ---
 
-## 🗺️ Roadmap
-
-- [ ] More component categories (Charts, Maps, etc.)
-- [ ] Figma design kit
-- [ ] Storybook documentation
-- [ ] Component playground with live editing
-- [ ] VS Code extension
-- [ ] Themes and presets
-- [ ] Unit tests for all components
-- [ ] Performance benchmarks
-
----
 
 <div align="center">
 
