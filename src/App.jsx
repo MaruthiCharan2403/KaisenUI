@@ -5,6 +5,7 @@ import Footer from './Components/Footer'
 import ComponentsPage from './Components/UIComponents'
 import Home from './Components/Home'
 import AboutUs from './Components/AboutUs'
+import ComponentGenerator from './Components/Gc'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/components" element={<ComponentsPage />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/generate" element={<ComponentGenerator />} />
         </Routes>
         <Footer />
       </Router>
