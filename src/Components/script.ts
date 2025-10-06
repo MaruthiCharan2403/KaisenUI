@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import sampleComponents from './Allcomponents.js';
+import sampleComponents from '../utils/componentLoader.js';
 
 // Helper to remove whitespace and special chars for filenames
 const makeFileName = (name) =>

@@ -1,0 +1,55 @@
+# Source files
+src/
+public/
+cli/
+
+# Config files
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+eslint.config.js
+
+# Build artifacts (keep only dist)
+*.tsbuildinfo
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.cache
+
+# Tests
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Documentation (keep only CLI_README as README)
+docs/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Package managers
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Misc
+*.md
+!README.md
+!LICENSE.md
+!CLI_README.md
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.env.*.local

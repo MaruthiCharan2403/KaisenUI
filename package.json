@@ -1,12 +1,41 @@
 {
-  "name": "kaisenui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "kaisen",
+  "version": "1.0.0",
+  "description": "Beautiful, accessible React components built with Tailwind CSS",
   "homepage": "https://kaisenui.me",
   "type": "module",
+  "bin": {
+    "kaisen": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "components",
+    "ui",
+    "design-system",
+    "component-library",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaruthiCharan2403/KaisenUI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaruthiCharan2403/KaisenUI/issues"
+  },
+  "author": "Maruthi Charan",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
+    "build:cli": "tsc --project tsconfig.cli.json",
+    "registry:generate": "node scripts/generate-registry.js",
+    "prepublishOnly": "npm run registry:generate && npm run build:cli",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -15,8 +44,13 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "axios": "^1.8.4",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
     "jszip": "^3.10.1",
     "lucide-react": "^0.503.0",
+    "ora": "^8.1.0",
+    "prompts": "^2.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",
@@ -25,8 +59,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.7.0",
+    "@types/prompts": "^2.4.9",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "@types/react-helmet": "^6.1.11",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
@@ -34,6 +72,7 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "rollup": "^4.40.0",
+    "typescript": "^5.9.3",
     "vite": "^6.3.1"
   }
 }

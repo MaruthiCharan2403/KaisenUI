@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import JSZip from "jszip";
-import sampleComponents from "./Allcomponents"; // Your data file (only code, no preview functions!)
+import sampleComponents from "../utils/componentLoader";
 
 const makeFileName = (name) =>
   name.replace(/[\s\-]+/g, "").replace(/[^\w]/g, "") + ".jsx";
