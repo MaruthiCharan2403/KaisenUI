@@ -1,13 +1,25 @@
 # 🎨 Kaisen UI
 
-[![npm version](https://img.shields.io/npm/v/kaisen.svg)](https://www.npmjs.com/package/kaisen)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/kaisen.svg)](https://www.npmjs.com/package/kaisenui)
+[![Li| Command | Description | Example |
+|---------|-------------|----------|
+| `kaisenui init` | Initialize Kaisen UI in your project | `npx kaisenuiui init` |
+|6. **Commit and push**
+   ```bash
+   git add .
+   git commit -m "Add: Your descriptive commit message"
+   git push origin feature/your-feature-name
+   ```
+
+7. **Create a Pull Request**ui add <component>` | Add a component to your project | `npx kaisenuiui add glow-button` |
+| `kaisenui list` | List all available components | `npx kaisenuiui list` |
+| `kaisenui list -c <category>` | Filter components by category | `npx kaisenuiui list -c buttons` | MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
 > Beautiful, accessible, and customizable React + Tailwind CSS components that you can copy and paste into your apps.
 
 🌐 **Website**: [kaisenui.me](https://kaisenui.me)  
-📦 **NPM**: [@kaisen](https://www.npmjs.com/package/kaisen)  
+📦 **NPM**: [@kaisenui](https://www.npmjs.com/package/kaisenuiui)  
 ⭐ **GitHub**: [MaruthiCharan2403/KaisenUI](https://github.com/MaruthiCharan2403/KaisenUI)
 
 ---
@@ -35,14 +47,14 @@ The fastest way to add components to your project:
 
 ```bash
 # Using npx (no installation needed)
-npx kaisen init
+npx kaisenuiui init
 
 # Or install globally
-npm install -g kaisen
-kaisen init
+npm install -g kaisenui
+kaisenui init
 
 # Add components
-npx kaisen add glow-button
+npx kaisenuiui add glow-button
 ```
 
 **Supports**: npm, pnpm, yarn, bun
@@ -70,16 +82,16 @@ Run the init command in your project root:
 
 ```bash
 # npm
-npx kaisen init
+npx kaisenui init
 
 # pnpm  
-pnpm dlx kaisen init
+pnpm dlx kaisenui init
 
 # yarn
-yarn dlx kaisen init
+yarn dlx kaisenui init
 
 # bun
-bunx kaisen init
+bunx kaisenui init
 ```
 
 This will:
@@ -93,13 +105,13 @@ This will:
 
 ```bash
 # Add a specific component
-npx kaisen add glow-button
+npx kaisenui add glow-button
 
 # List all available components
-npx kaisen list
+npx kaisenui list
 
 # List components by category
-npx kaisen list --category buttons
+npx kaisenui list --category buttons
 ```
 
 ### Step 3: Import and Use
@@ -120,10 +132,10 @@ function App() {
 
 | Command | Description | Example |
 |---------|-------------|---------|
-| `kaisen init` | Initialize Kaisen UI in your project | `npx kaisen init` |
-| `kaisen add <component>` | Add a component to your project | `npx kaisen add glow-button` |
-| `kaisen list` | List all available components | `npx kaisen list` |
-| `kaisen list -c <category>` | Filter components by category | `npx kaisen list -c buttons` |
+| `kaisenui init` | Initialize Kaisen UI in your project | `npx kaisenui init` |
+| `kaisenui add <component>` | Add a component to your project | `npx kaisenui add glow-button` |
+| `kaisenui list` | List all available components | `npx kaisenui list` |
+| `kaisenui list -c <category>` | Filter components by category | `npx kaisenui list -c buttons` |
 
 ### CLI Options
 
@@ -260,14 +272,22 @@ We love contributions! Whether it's bug fixes, new components, or documentation 
    - Follow existing naming conventions
    - Use TypeScript and Tailwind CSS
    - Ensure components are responsive and accessible
+   - **Important**: Add your component to `cli/registry.ts` (see Registry section below)
 
-4. **Test your changes**
+4. **Generate the registry** (if you added a new component)
    ```bash
-   npm run dev
-   # Test your component thoroughly
+   npm run registry:generate
+   # This auto-generates the component registry from src/ui/
    ```
 
-5. **Commit and push**
+5. **Test your changes**
+   ```bash
+   npm run dev
+   # Test your component thoroughly in the browser
+   # Also test the CLI: npx kaisenui add your-component
+   ```
+
+6. **Commit and push**
    ```bash
    git add .
    git commit -m "Add: Your descriptive commit message"
@@ -279,6 +299,41 @@ We love contributions! Whether it's bug fixes, new components, or documentation 
    - Click "Pull Request"
    - Describe your changes clearly
    - Wait for review
+
+### Component Registry
+
+**Important**: After creating a new component, it must be registered to be available via CLI!
+
+The registry auto-generates from your component structure. Run:
+
+```bash
+npm run registry:generate
+```
+
+This script scans `src/ui/` and creates `cli/registry.ts` with all components, including:
+- Component ID (e.g., `glow-button`)
+- Category (folder name, e.g., `Button`)
+- File name (e.g., `GlowButton.tsx`)
+- Description (auto-generated or custom)
+- Dependencies (auto-detected from imports)
+
+**File Structure for Auto-Detection:**
+```
+src/ui/
+├── Button/
+│   ├── GlowButton.tsx       → ID: glow-button, Category: Button
+│   ├── NeonButton.tsx       → ID: neon-button, Category: Button
+│   └── SimpleButton.tsx     → ID: simple-button, Category: Button
+├── Card/
+│   ├── FeatureCard.tsx      → ID: featurecard, Category: Card
+│   └── GlowCard.tsx         → ID: glowcard, Category: Card
+```
+
+The generator automatically:
+- ✅ Converts file names to kebab-case IDs
+- ✅ Detects category from folder name
+- ✅ Scans for dependencies (lucide-react, clsx, etc.)
+- ✅ Generates descriptions
 
 ### Component Guidelines
 
@@ -292,6 +347,7 @@ When creating new components:
 - ✅ Use **Lucide React** for icons
 - ✅ Export as **default export**
 - ✅ Keep components **self-contained**
+- ✅ **Run `npm run registry:generate`** after adding components
 
 ### Example Component Structure
 
@@ -350,7 +406,7 @@ export default ColorMatrix;
 
 ---
 
-## � Creators
+## Creators
 
 <div align="center">
 
@@ -363,7 +419,7 @@ export default ColorMatrix;
 
 ---
 
-## �📄 License
+## 📄 License
 
 MIT License - see [LICENSE.md](LICENSE.md) for details.
 
@@ -403,7 +459,7 @@ MIT License - see [LICENSE.md](LICENSE.md) for details.
 
 **Made with ❤️ by the Kaisen UI Team**
 
-[Website](https://kaisenui.me) • [NPM](https://www.npmjs.com/package/kaisen) • [GitHub](https://github.com/MaruthiCharan2403/KaisenUI)
+[Website](https://kaisenui.me) • [NPM](https://www.npmjs.com/package/kaisenuiui) • [GitHub](https://github.com/MaruthiCharan2403/KaisenUI)
 
 ⭐ **Star us on GitHub** if you find this useful!
 

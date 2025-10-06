@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
 import { Copy, Check, Code, Eye, Search, Menu, X } from "lucide-react"
 import sampleComponents from "../utils/componentLoader"
 import { pageview } from "./Analytics"
@@ -90,10 +89,10 @@ export default function ComponentsPage() {
       if (installMethod === "cli") {
         // Copy CLI command based on package manager
         const commands = {
-          npm: `npx kaisen add ${currentComponent.id}`,
-          pnpm: `pnpm dlx kaisen add ${currentComponent.id}`,
-          yarn: `yarn dlx kaisen add ${currentComponent.id}`,
-          bun: `bunx kaisen add ${currentComponent.id}`
+          npm: `npx kaisenui add ${currentComponent.id}`,
+          pnpm: `pnpm dlx kaisenui add ${currentComponent.id}`,
+          yarn: `yarn dlx kaisenui add ${currentComponent.id}`,
+          bun: `bunx kaisenui add ${currentComponent.id}`
         }
         navigator.clipboard.writeText(commands[packageManager]);
       } else {
@@ -307,10 +306,10 @@ export default function ComponentsPage() {
                           {/* Quick Command */}
                           <div className="bg-zinc-950 rounded-lg p-4 border border-zinc-700 max-w-2xl mx-auto mb-6">
                             <code className="text-lg text-rose-500">
-                              {packageManager === "npm" && `npx kaisen add ${currentComponent.id}`}
-                              {packageManager === "pnpm" && `pnpm dlx kaisen add ${currentComponent.id}`}
-                              {packageManager === "yarn" && `yarn dlx kaisen add ${currentComponent.id}`}
-                              {packageManager === "bun" && `bunx kaisen add ${currentComponent.id}`}
+                              {packageManager === "npm" && `npx kaisenui add ${currentComponent.id}`}
+                              {packageManager === "pnpm" && `pnpm dlx kaisenui add ${currentComponent.id}`}
+                              {packageManager === "yarn" && `yarn dlx kaisenui add ${currentComponent.id}`}
+                              {packageManager === "bun" && `bunx kaisenui add ${currentComponent.id}`}
                             </code>
                           </div>                          
                         </div>

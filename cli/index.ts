@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { init } from './commands/init';
-import { add } from './commands/add';
-import { list } from './commands/list';
+import { init } from './commands/init.js';
+import { add } from './commands/add.js';
+import { list } from './commands/list.js';
 
 const program = new Command();
 
 program
-  .name('kaisen')
+  .name('kaisenui')
   .description('CLI tool for Kaisen UI - Beautiful React + Tailwind components')
   .version('1.0.0');
 

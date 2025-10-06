@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react"
-import {Link} from "react-router-dom"
-import { Copy, Check, ChevronRight, Github, Twitter } from "lucide-react"
+import { Link } from "react-router-dom"
+import { ChevronRight, Github,} from "lucide-react"
 import { pageview } from "./Analytics"
 import { useLocation } from "react-router-dom"
 import HelmetSEO from "./helmetseo"
@@ -30,12 +29,11 @@ export default function Home() {
         canonicalUrl="https://kaisenui.me"
       />
       
-      
-{/* Main content - wild cards */}
-<div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Main content - wild cards */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Card 1 */}
+      </div>
 
-        </div>
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto max-w-7xl">
@@ -58,11 +56,19 @@ export default function Home() {
                 Get Started
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
-              
+              {/* Star us on GitHub */}
+              <a
+                href="https://github.com/MaruthiCharan2403/kaisenui"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md bg-rose-600 text-white hover:bg-rose-700 transition-colors"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                Star us on GitHub
+              </a>
             </div>
           </div>
-
-          </div>
+        </div>
       </section>
 
       {/* Features Section */}
@@ -76,7 +82,6 @@ export default function Home() {
               Designed for developers who want beautiful components without sacrificing flexibility
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1 */}
             <div className="bg-zinc-800/50 border border-zinc-700/50 rounded-xl p-6 hover:border-rose-500/50 transition-colors">
@@ -232,14 +237,11 @@ export default function Home() {
                   Get Started
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
-                
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      
     </div>
   )
 }

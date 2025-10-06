@@ -14,7 +14,6 @@ export default function AboutUs() {
       }, [location]);
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
-  {/* Hero Section with Animated Elements */}
   <HelmetSEO
         title="About Kaisen UI - Modern React Component Library"
         description="Learn about Kaisen UI, a modern React component library built with Tailwind CSS. Designed for developers who want beautiful components without sacrificing flexibility."
@@ -49,7 +48,6 @@ export default function AboutUs() {
     </div>
   </div>
 
-  {/* Our Mission */}
   <div className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
     <div className="flex flex-col md:flex-row items-center">
       <div className="md:w-1/2 mb-10 md:mb-0">
@@ -101,8 +99,6 @@ export default function AboutUs() {
     </div>
   </div>
 </div>
-
-  {/* Features */}
   <div className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
     <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Why <span className="text-pink-500">KAISEN</span>UI?</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -125,8 +121,6 @@ export default function AboutUs() {
       ))}
     </div>
   </div>
-
-  {/* CTA */}
   <div className="py-20 px-4 md:px-8 bg-gradient-to-br from-purple-900/50 to-pink-900/50">
     <div className="max-w-4xl mx-auto text-center">
       <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to build <span className="text-pink-500">beautiful</span> interfaces?</h2>

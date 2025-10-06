@@ -12,33 +12,31 @@ export default function CliInstallation() {
     setCopied(id)
     setTimeout(() => setCopied(null), 2000)
   }
-
-  // Get command based on selected package manager
   const getCommand = (type: "install" | "init" | "add" | "list", component?: string) => {
     const commands = {
       npm: {
-        install: "npm install -g kaisen",
-        init: "npx kaisen init",
-        add: component ? `npx kaisen add ${component}` : "npx kaisen add",
-        list: "npx kaisen list"
+        install: "npm install -g kaisenui",
+        init: "npx kaisenui init",
+        add: component ? `npx kaisenui add ${component}` : "npx kaisenui add",
+        list: "npx kaisenui list"
       },
       pnpm: {
-        install: "pnpm add -g kaisen",
-        init: "pnpm dlx kaisen init",
-        add: component ? `pnpm dlx kaisen add ${component}` : "pnpm dlx kaisen add",
-        list: "pnpm dlx kaisen list"
+        install: "pnpm add -g kaisenui",
+        init: "pnpm dlx kaisenui init",
+        add: component ? `pnpm dlx kaisenui add ${component}` : "pnpm dlx kaisenui add",
+        list: "pnpm dlx kaisenui list"
       },
       yarn: {
-        install: "yarn global add kaisen",
-        init: "yarn dlx kaisen init",
-        add: component ? `yarn dlx kaisen add ${component}` : "yarn dlx kaisen add",
-        list: "yarn dlx kaisen list"
+        install: "yarn global add kaisenui",
+        init: "yarn dlx kaisenui init",
+        add: component ? `yarn dlx kaisenui add ${component}` : "yarn dlx kaisenui add",
+        list: "yarn dlx kaisenui list"
       },
       bun: {
-        install: "bun add -g kaisen",
-        init: "bunx kaisen init",
-        add: component ? `bunx kaisen add ${component}` : "bunx kaisen add",
-        list: "bunx kaisen list"
+        install: "bun add -g kaisenui",
+        init: "bunx kaisenui init",
+        add: component ? `bunx kaisenui add ${component}` : "bunx kaisenui add",
+        list: "bunx kaisenui list"
       }
     }
     return commands[packageManager][type]
@@ -53,8 +51,6 @@ export default function CliInstallation() {
         canonicalUrl="https://kaisenui.me/cli-installation"
         children={undefined}
       />
-
-      {/* Hero Section */}
       <div className="border-b border-zinc-800 bg-gradient-to-b from-zinc-900 to-zinc-950">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-4xl mx-auto text-center">
@@ -70,7 +66,6 @@ export default function CliInstallation() {
               <br />
               Works with Vite, Next.js, Create React App, and Remix.
             </p>
-            {/* Package Manager Selector */}
             <div className="flex justify-center mb-6">
               <div className="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-lg p-1">
                 {(["npm", "pnpm", "yarn", "bun"] as const).map((pm) => (
@@ -109,19 +104,14 @@ export default function CliInstallation() {
           </div>
         </div>
       </div>
-
-      {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto space-y-16">
-          
-          {/* Quick Start */}
           <section>
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
               <Zap className="h-8 w-8 text-rose-400" />
               Quick Start
             </h2>
             <div className="space-y-6">
-              {/* Step 1 */}
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-rose-600 text-white text-lg font-bold flex-shrink-0">
@@ -169,7 +159,6 @@ export default function CliInstallation() {
                 </div>
               </div>
 
-              {/* Step 2 */}
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-rose-600 text-white text-lg font-bold flex-shrink-0">
@@ -207,7 +196,7 @@ export default function CliInstallation() {
                 </div>
               </div>
 
-              {/* Step 3 */}
+              
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-rose-600 text-white text-lg font-bold flex-shrink-0">
@@ -255,7 +244,7 @@ export default function CliInstallation() {
                 </div>
               </div>
 
-              {/* Step 4 */}
+              
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <div className="flex items-start gap-4">
                   <span className="flex items-center justify-center w-10 h-10 rounded-full bg-rose-600 text-white text-lg font-bold flex-shrink-0">
@@ -268,7 +257,7 @@ export default function CliInstallation() {
                     </p>
                     <div className="bg-zinc-950 rounded-lg p-4 border border-zinc-700">
                       <pre className="text-sm text-zinc-300 overflow-x-auto">
-                        <code>{`import GlowButton from '@/ui/Button/GlowButton'\n\nfunction App() {\n  return <GlowButton>Click me</GlowButton>\n}`}</code>
+                        <code>{`import GlowButton from '@/ui/Button/GlowButton'\n\nfunction App() {\n  return <GlowButton/> \n}`}</code>
                       </pre>
                     </div>
                   </div>
@@ -277,7 +266,7 @@ export default function CliInstallation() {
             </div>
           </section>
 
-          {/* Available Commands */}
+          
           <section>
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
               <Terminal className="h-8 w-8 text-rose-400" />
@@ -315,7 +304,7 @@ export default function CliInstallation() {
             </div>
           </section>
 
-          {/* Framework Support */}
+          
           <section>
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
               <Package className="h-8 w-8 text-rose-400" />
@@ -349,7 +338,6 @@ export default function CliInstallation() {
             </div>
           </section>
 
-          {/* Features */}
           <section>
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
               <Sparkles className="h-8 w-8 text-rose-400" />
@@ -379,7 +367,6 @@ export default function CliInstallation() {
             </div>
           </section>
 
-          {/* Resources */}
           <section className="border-t border-zinc-800 pt-16">
             <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
               <BookOpen className="h-8 w-8 text-rose-400" />
@@ -405,7 +392,7 @@ export default function CliInstallation() {
                 <p className="text-sm text-zinc-400">View source code and contribute</p>
               </a>
               <a
-                href="https://www.npmjs.com/package/kaisen"
+                href="https://www.npmjs.com/package/kaisenui"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block p-6 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-rose-500/50 transition-all group"
@@ -422,7 +409,6 @@ export default function CliInstallation() {
   )
 }
 
-// Helper Components
 function CommandCard({ command, description, example, options, copied, onCopy }: {
   command: string
   description: string

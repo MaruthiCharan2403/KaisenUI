@@ -5,7 +5,6 @@ import { ComponentInfo } from '../registry';
 
 export function detectDependencies(component: ComponentInfo): string[] {
   return component.dependencies.filter((dep) => {
-    // Check if dependency is already installed
     try {
       require.resolve(dep);
       return false;

@@ -1,11 +1,11 @@
 {
-  "name": "kaisen",
+  "name": "kaisenui",
   "version": "1.0.0",
   "description": "Beautiful, accessible React components built with Tailwind CSS",
   "homepage": "https://kaisenui.me",
   "type": "module",
   "bin": {
-    "kaisen": "./dist/cli/index.js"
+    "kaisenui": "./dist/cli/index.js"
   },
   "files": [
     "dist",

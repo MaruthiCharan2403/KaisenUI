@@ -1,7 +1,6 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link,} from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { Copy, Check, ChevronRight, Github, Twitter, Menu, X } from "lucide-react"
+import {Menu, X } from "lucide-react"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,8 +27,6 @@ export default function Navbar() {
                 <span className="font-extrabold text-white">KAISEN<span className="text-pink-500">UI</span></span>
               </Link>
             </div>
-
-            {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <Link to="/components" className="text-zinc-300 hover:text-white transition-colors">
                 Components
@@ -104,7 +101,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Add padding to the top of the page content to account for the fixed navbar */}
       <div className="pt-16"></div>
     </>
   )

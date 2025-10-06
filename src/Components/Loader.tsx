@@ -3,20 +3,11 @@ import React from 'react';
 export default function Loader() {
   return (
     <div className="relative flex justify-center items-center h-32">
-      {/* Spinning tire */}
       <div className="absolute animate-bounce text-6xl">
       ☢
       </div>
-      
-      {/* Road line animation */}
       <div className="absolute w-full h-2 bg-yellow-400 animate-road-line"></div>
-      
-      
-      
-      
-      
-      {/* Custom animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes spin-slow {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }

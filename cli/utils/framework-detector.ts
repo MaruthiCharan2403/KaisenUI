@@ -4,7 +4,7 @@ import path from 'path';
 export interface FrameworkInfo {
   name: 'nextjs' | 'vite' | 'cra' | 'remix' | 'unknown';
   version?: string;
-  isAppRouter?: boolean; // For Next.js 13+
+  isAppRouter?: boolean; 
   srcDir: boolean;
   componentsPath: string;
   aliasPrefix: string;

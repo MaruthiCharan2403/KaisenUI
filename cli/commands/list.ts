@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import ora from 'ora';
-import { getComponentRegistry } from '../registry';
+import { getComponentRegistry } from '../registry.js';
 
 export async function list(options: { category?: string }) {
   const spinner = ora('Loading components...').start();
@@ -11,16 +11,14 @@ export async function list(options: { category?: string }) {
 
   if (options.category) {
     components = registry.filter(
-      (c) => c.category.toLowerCase() === options.category.toLowerCase()
+      (c: { category: string; }) => c.category.toLowerCase() === (options.category ? options.category.toLowerCase() : '')
     );
   }
-
-  // Group by category
-  const grouped = components.reduce((acc, component) => {
+  const grouped = components.reduce((acc: { [x: string]: any[]; }, component: { category: string | number; }) => {
     if (!acc[component.category]) {
       acc[component.category] = [];
     }
-    acc[component.category].push(component);
+    acc[component.category]!.push(component);
     return acc;
   }, {} as Record<string, typeof components>);
 
@@ -30,7 +28,7 @@ export async function list(options: { category?: string }) {
     .sort(([a], [b]) => a.localeCompare(b))
     .forEach(([category, comps]) => {
       console.log(chalk.bold.cyan(`\n${category} (${comps.length})`));
-      comps.forEach((comp) => {
+      (comps as Array<{ id: string; description: string; }>).forEach((comp) => {
         console.log(`  ${chalk.white(comp.id.padEnd(30))} ${chalk.gray(comp.description)}`);
       });
     });

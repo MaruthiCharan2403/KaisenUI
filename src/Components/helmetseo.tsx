@@ -1,4 +1,13 @@
 import { Helmet } from "react-helmet"
+import { ReactNode } from "react";
+export interface HelmetSEOProps {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  canonicalUrl?: string;
+  ogImage?: string;
+  children?: ReactNode;
+}
 
 export default function HelmetSEO({
   title = "Kaisen UI - Beautiful React & Tailwind CSS Component Library",
@@ -7,7 +16,7 @@ export default function HelmetSEO({
   canonicalUrl = "https://kaisenui.me",
   ogImage = "https://kaisenui.me/Kaisen.png", 
   children,
-}) {
+}: HelmetSEOProps) {
   return (
     <Helmet>
       {/* Primary Meta Tags */}
