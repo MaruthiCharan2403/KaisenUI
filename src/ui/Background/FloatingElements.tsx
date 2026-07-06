@@ -17,13 +17,13 @@ const FloatingElements = () => {
                       : "bg-green-400 dark:bg-green-600"
               }`}
               style={{
-                width: `${Math.random() * 20 + 5}px`,
-                height: `${Math.random() * 20 + 5}px`,
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                opacity: Math.random() * 0.5 + 0.3,
-                animation: `float ${Math.random() * 10 + 10}s linear infinite`,
-                animationDelay: `${Math.random() * 5}s`,
+                width: `${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 20 + 5}px`,
+                height: `${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 20 + 5}px`,
+                left: `${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 100}%`,
+                top: `${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 100}%`,
+                opacity: crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 0.5 + 0.3,
+                animation: `float ${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 10 + 10}s linear infinite`,
+                animationDelay: `${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 * 5}s`,
               }}
             ></div>
           ))}
