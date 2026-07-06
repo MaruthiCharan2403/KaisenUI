@@ -14,7 +14,7 @@ const GeometricPattern = () => {
                     : i % 3 === 1
                       ? "bg-amber-400 dark:bg-amber-600"
                       : "bg-emerald-400 dark:bg-emerald-600"
-                } ${Math.random() > 0.5 ? "opacity-80" : "opacity-40"}`}
+                } ${crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295 > 0.5 ? "opacity-80" : "opacity-40"}`}
               ></div>
             ))}
           </div>
